@@ -1,0 +1,2 @@
+So acceleration grows with force and shrinks as mass
+grows.

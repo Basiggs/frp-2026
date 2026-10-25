@@ -1,0 +1,35 @@
+{
+  "out": "out/newton-s-second-law-en.mp4",
+  "scenes": [
+    {
+      "img": "runs/newton-s-second-law/img/s1.jpg",
+      "audio": "runs/newton-s-second-law/audio/v1.wav",
+      "cap": "runs/newton-s-second-law/cap/c1.txt"
+    },
+    {
+      "img": "runs/newton-s-second-law/img/s2.jpg",
+      "audio": "runs/newton-s-second-law/audio/v2.wav",
+      "cap": "runs/newton-s-second-law/cap/c2.txt"
+    },
+    {
+      "img": "runs/newton-s-second-law/img/s3.jpg",
+      "audio": "runs/newton-s-second-law/audio/v3.wav",
+      "cap": "runs/newton-s-second-law/cap/c3.txt"
+    },
+    {
+      "img": "runs/newton-s-second-law/img/s4.jpg",
+      "audio": "runs/newton-s-second-law/audio/v4.wav",
+      "cap": "runs/newton-s-second-law/cap/c4.txt"
+    },
+    {
+      "img": "runs/newton-s-second-law/img/s5.jpg",
+      "audio": "runs/newton-s-second-law/audio/v5.wav",
+      "cap": "runs/newton-s-second-law/cap/c5.txt"
+    },
+    {
+      "img": "runs/newton-s-second-law/img/s6.jpg",
+      "audio": "runs/newton-s-second-law/audio/v6.wav",
+      "cap": "runs/newton-s-second-law/cap/c6.txt"
+    }
+  ]
+}

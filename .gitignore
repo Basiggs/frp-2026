@@ -1,0 +1,7 @@
+guides/
+node_modules/
+jobs/
+materials/
+__pycache__/
+*.pyc
+*.log

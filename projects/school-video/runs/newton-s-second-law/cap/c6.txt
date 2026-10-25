@@ -1,0 +1,2 @@
+Try it: double the push on the same object and its
+acceleration doubles.

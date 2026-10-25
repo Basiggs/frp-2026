@@ -1,0 +1,30 @@
+{
+  "out": "out/закон-ома-ru.mp4",
+  "scenes": [
+    {
+      "img": "runs/закон-ома/img/s1.jpg",
+      "audio": "runs/закон-ома/audio/v1.wav",
+      "cap": "runs/закон-ома/cap/c1.txt"
+    },
+    {
+      "img": "runs/закон-ома/img/s2.jpg",
+      "audio": "runs/закон-ома/audio/v2.wav",
+      "cap": "runs/закон-ома/cap/c2.txt"
+    },
+    {
+      "img": "runs/закон-ома/img/s3.jpg",
+      "audio": "runs/закон-ома/audio/v3.wav",
+      "cap": "runs/закон-ома/cap/c3.txt"
+    },
+    {
+      "img": "runs/закон-ома/img/s4.jpg",
+      "audio": "runs/закон-ома/audio/v4.wav",
+      "cap": "runs/закон-ома/cap/c4.txt"
+    },
+    {
+      "img": "runs/закон-ома/img/s5.jpg",
+      "audio": "runs/закон-ома/audio/v5.wav",
+      "cap": "runs/закон-ома/cap/c5.txt"
+    }
+  ]
+}

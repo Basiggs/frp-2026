@@ -1,0 +1,48 @@
+{
+  "videos": [
+    {
+      "file": "out/закон-ома-ru.mp4",
+      "poster": "posters/закон-ома-ru.jpg",
+      "title": "Закон Ома",
+      "lang": "ru",
+      "seconds": 49.4,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 5,
+      "modified": 1792918201
+    },
+    {
+      "file": "out/newton-s-second-law-en.mp4",
+      "poster": "posters/newton-s-second-law-en.jpg",
+      "title": "Newton's Second Law",
+      "lang": "en",
+      "seconds": 26.2,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 6,
+      "modified": 1792918044
+    },
+    {
+      "file": "out/arifmeticheskaya-progressiya-1min.mp4",
+      "poster": "posters/arifmeticheskaya-progressiya-1min.jpg",
+      "title": "Arifmeticheskaya progressiya (1min)",
+      "lang": "",
+      "seconds": 62.4,
+      "width": 1920,
+      "height": 1080,
+      "scenes": null,
+      "modified": 1792916959
+    },
+    {
+      "file": "out/arifmeticheskaya-progressiya.mp4",
+      "poster": "posters/arifmeticheskaya-progressiya.jpg",
+      "title": "Arifmeticheskaya progressiya",
+      "lang": "",
+      "seconds": 28.1,
+      "width": 1920,
+      "height": 1080,
+      "scenes": null,
+      "modified": 1792840717
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+The same push moves a heavy box more slowly than a light
+box.

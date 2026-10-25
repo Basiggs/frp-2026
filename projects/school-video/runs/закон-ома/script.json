@@ -1,0 +1,30 @@
+{
+  "title": "Закон Ома",
+  "scenes": [
+    {
+      "narration": "Представь, что электрический ток — это поток воды в трубе. Напряжение толкает заряды, а сопротивление мешает им двигаться вперёд.",
+      "math": "Ток, Напряжение, Сопротивление",
+      "picture": "A clear plastic pipe with blue water flowing through it, a pump pushing the water and a narrow section slowing it down, bright illustration on white background"
+    },
+    {
+      "narration": "Возьмём лампочку с сопротивлением десять ом и подключим её к батарейке на пять вольт. Тогда по цепи потечёт ток ровно пол-ампера.",
+      "math": "R = 10 Ом, U = 5 В, I = 5 / 10 = 0,5 А",
+      "picture": "A small glowing light bulb connected by wires to a battery, an ammeter and a voltmeter on a wooden table, realistic school lab photo"
+    },
+    {
+      "narration": "Закон Ома связывает эти три величины: сила тока равна напряжению, делённому на сопротивление. Чем больше напряжение, тем сильнее ток.",
+      "math": "I = U / R",
+      "picture": "A simple triangle diagram shape showing three blank colored circles connected by arrows, abstract clean illustration, no symbols inside"
+    },
+    {
+      "narration": "А чем больше сопротивление, тем слабее ток при том же напряжении. Это и есть главная идея закона Ома.",
+      "math": "U = I · R, R = U / I",
+      "picture": "Two water pipes side by side, one wide and one narrow, with the narrow one showing a smaller water flow, clear educational illustration"
+    },
+    {
+      "narration": "Попробуй сам: если напряжение двенадцать вольт, а сопротивление четыре ома, какой будет ток? Посчитай по формуле и проверь ответ.",
+      "math": "U = 12 В, R = 4 Ом, I = ?",
+      "picture": "A student's hand holding a pencil over a blank notebook page next to a battery and a resistor on a desk, warm study lighting"
+    }
+  ]
+}

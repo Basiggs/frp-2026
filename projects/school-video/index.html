@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>School topics as videos</title>
+<style>
+  :root{
+    --bg:#0e1117; --panel:#171c26; --panel2:#1f2634; --line:#2a3342;
+    --text:#e8edf5; --dim:#9aa7ba; --accent:#5b9dff; --accent2:#7ef0c4;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:radial-gradient(1200px 600px at 15% -10%,#1b2a45 0%,transparent 60%),var(--bg);
+       color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  .wrap{max-width:1120px;margin:0 auto;padding:28px 20px 60px}
+  header{display:flex;flex-wrap:wrap;align-items:flex-end;gap:12px;justify-content:space-between;margin-bottom:22px}
+  h1{margin:0;font-size:clamp(22px,3vw,32px);letter-spacing:-.02em}
+  .sub{color:var(--dim);font-size:14px;margin-top:4px}
+  .chips{display:flex;gap:8px}
+  .chip{border:1px solid var(--line);background:var(--panel);color:var(--dim);border-radius:999px;
+        padding:7px 14px;font:inherit;font-size:13px;cursor:pointer;transition:.15s}
+  .chip:hover{color:var(--text);border-color:#3c4a60}
+  .chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#08101d;font-weight:600}
+
+  #now{display:none;background:var(--panel);border:1px solid var(--line);border-radius:18px;
+       padding:14px;margin-bottom:26px;box-shadow:0 20px 60px rgba(0,0,0,.35)}
+  #now.on{display:block;animation:rise .25s ease-out}
+  #now video{width:100%;aspect-ratio:16/9;border-radius:12px;background:#000;display:block}
+  .nowbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:12px 6px 2px}
+  .nowbar h2{margin:0;font-size:17px;font-weight:650}
+  .nowbar .meta{color:var(--dim);font-size:13px}
+  .nowbar .spacer{flex:1}
+  .ghost{border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:10px;
+         padding:8px 12px;font:inherit;font-size:13px;cursor:pointer;text-decoration:none}
+  .ghost:hover{border-color:#41516a}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
+  .card{position:relative;padding:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;
+        background:var(--panel);cursor:pointer;text-align:left;color:inherit;font:inherit;
+        transition:transform .18s,border-color .18s,box-shadow .18s}
+  .card:hover{transform:translateY(-3px);border-color:#3f5170;box-shadow:0 14px 34px rgba(0,0,0,.4)}
+  .card:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .card[aria-current="true"]{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset}
+  .thumb{position:relative;aspect-ratio:16/9;background:#0a0d13}
+  .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+  .play{position:absolute;inset:0;display:grid;place-items:center}
+  .play span{width:54px;height:54px;border-radius:50%;background:rgba(10,14,22,.62);
+              border:1px solid rgba(255,255,255,.5);display:grid;place-items:center;
+              transition:.18s;backdrop-filter:blur(3px)}
+  .play span::after{content:"";margin-left:3px;border-style:solid;border-width:9px 0 9px 15px;
+                    border-color:transparent transparent transparent #fff}
+  .card:hover .play span{background:var(--accent);border-color:var(--accent)}
+  .card:hover .play span::after{border-left-color:#08101d}
+  .dur{position:absolute;right:8px;bottom:8px;background:rgba(6,9,14,.8);border-radius:6px;
+       padding:2px 7px;font-size:12px;font-variant-numeric:tabular-nums}
+  .lang{position:absolute;left:8px;top:8px;background:rgba(6,9,14,.75);border:1px solid rgba(255,255,255,.18);
+        border-radius:6px;padding:1px 7px;font-size:11px;letter-spacing:.06em;text-transform:uppercase}
+  .body{padding:12px 14px 14px}
+  .body h3{margin:0 0 4px;font-size:15px;line-height:1.35;font-weight:650}
+  .body p{margin:0;color:var(--dim);font-size:12.5px}
+  .empty{color:var(--dim);padding:30px 0}
+  footer{margin-top:34px;color:#6f7d92;font-size:12px}
+  @keyframes rise{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>School topics as videos</h1>
+      <div class="sub" id="count">Loading…</div>
+    </div>
+    <div class="chips" role="group" aria-label="Filter by language">
+      <button class="chip" data-lang="" aria-pressed="true">All</button>
+      <button class="chip" data-lang="ru" aria-pressed="false">Русский</button>
+      <button class="chip" data-lang="en" aria-pressed="false">English</button>
+    </div>
+  </header>
+
+  <section id="now" aria-live="polite">
+    <video id="player" controls playsinline preload="metadata"></video>
+    <div class="nowbar">
+      <div>
+        <h2 id="nowTitle"></h2>
+        <div class="meta" id="nowMeta"></div>
+      </div>
+      <div class="spacer"></div>
+      <a class="ghost" id="download" download>Download</a>
+      <button class="ghost" id="close">Close</button>
+    </div>
+  </section>
+
+  <main class="grid" id="grid"></main>
+  <div class="empty" id="empty" hidden>No videos in this language yet.</div>
+  <footer id="foot"></footer>
+</div>
+
+<script>
+(function () {
+  const grid = document.getElementById('grid');
+  const now = document.getElementById('now');
+  const player = document.getElementById('player');
+  const nowTitle = document.getElementById('nowTitle');
+  const nowMeta = document.getElementById('nowMeta');
+  const download = document.getElementById('download');
+  const countEl = document.getElementById('count');
+  const emptyEl = document.getElementById('empty');
+  const foot = document.getElementById('foot');
+  let all = [];
+  let currentLang = '';
+
+  function hhmmss(sec) {
+    const s = Math.round(sec);
+    const m = Math.floor(s / 60);
+    return m + ':' + String(s % 60).padStart(2, '0');
+  }
+
+  function esc(t) {
+    return String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  }
+
+  function metaLine(v) {
+    const parts = [];
+    if (v.lang) parts.push(v.lang.toUpperCase());
+    parts.push(hhmmss(v.seconds));
+    if (v.scenes) parts.push(v.scenes + ' scenes');
+    if (v.width) parts.push(v.height + 'p');
+    return parts.join(' · ');
+  }
+
+  function play(v, card) {
+    player.src = v.file;
+    player.poster = v.poster;
+    nowTitle.textContent = v.title;
+    nowMeta.textContent = metaLine(v);
+    download.href = v.file;
+    download.setAttribute('download', v.file.split('/').pop());
+    now.classList.add('on');
+    document.querySelectorAll('.card').forEach(c => c.setAttribute('aria-current', 'false'));
+    card.setAttribute('aria-current', 'true');
+    player.play().catch(() => {});
+    now.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function render() {
+    const list = all.filter(v => !currentLang || v.lang === currentLang);
+    grid.innerHTML = '';
+    list.forEach(v => {
+      const card = document.createElement('button');
+      card.type = 'button';
+      card.className = 'card';
+      card.setAttribute('aria-current', 'false');
+      card.innerHTML =
+        '<div class="thumb">' +
+          '<img loading="lazy" src="' + esc(v.poster) + '" alt="">' +
+          (v.lang ? '<span class="lang">' + esc(v.lang) + '</span>' : '') +
+          '<span class="dur">' + hhmmss(v.seconds) + '</span>' +
+          '<span class="play"><span></span></span>' +
+        '</div>' +
+        '<div class="body"><h3>' + esc(v.title) + '</h3><p>' + esc(metaLine(v)) + '</p></div>';
+      card.addEventListener('click', () => play(v, card));
+      grid.appendChild(card);
+    });
+    emptyEl.hidden = list.length > 0;
+    countEl.textContent = list.length + (list.length === 1 ? ' video' : ' videos') +
+      (currentLang ? ' in ' + (currentLang === 'ru' ? 'Russian' : 'English') : '');
+  }
+
+  document.querySelectorAll('.chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      currentLang = chip.dataset.lang;
+      document.querySelectorAll('.chip').forEach(c =>
+        c.setAttribute('aria-pressed', String(c === chip)));
+      render();
+    });
+  });
+
+  document.getElementById('close').addEventListener('click', () => {
+    player.pause();
+    player.removeAttribute('src');
+    player.load();
+    now.classList.remove('on');
+    document.querySelectorAll('.card').forEach(c => c.setAttribute('aria-current', 'false'));
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && now.classList.contains('on')) document.getElementById('close').click();
+  });
+
+  fetch('data.json')
+    .then(r => {
+      if (!r.ok) throw new Error('data.json: HTTP ' + r.status);
+      return r.json();
+    })
+    .then(d => {
+      all = d.videos || [];
+      render();
+      if (all.length) {
+        const newest = new Date(all[0].modified * 1000);
+        foot.textContent = 'Latest video: ' + newest.toLocaleDateString() +
+          ' · made with the class chat, image and voice models';
+      }
+    })
+    .catch(err => {
+      countEl.textContent = 'Could not load the list';
+      emptyEl.hidden = false;
+      emptyEl.textContent = String(err.message || err) + ' — run python3 make_gallery.py and reload.';
+    });
+})();
+</script>
+</body>
+</html>

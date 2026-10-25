@@ -1,0 +1,35 @@
+{
+  "title": "Newton's Second Law",
+  "scenes": [
+    {
+      "narration": "Push a box and it speeds up; push harder and it speeds up more.",
+      "math": "bigger F → bigger a",
+      "picture": "A child's hands pushing a cardboard box across a smooth wooden floor, motion lines behind the box, bright classroom setting, no text"
+    },
+    {
+      "narration": "The same push moves a heavy box more slowly than a light box.",
+      "math": "same F, bigger m → smaller a",
+      "picture": "Two identical cardboard boxes side by side, one light and empty, one filled with heavy books, a single hand pushing each, simple illustration, no text"
+    },
+    {
+      "narration": "So acceleration grows with force and shrinks as mass grows.",
+      "math": "a ∝ F, a ∝ 1/m",
+      "picture": "A simple balance scale comparing a small force arrow and a large mass block, clean flat illustration, soft blue background, no text"
+    },
+    {
+      "narration": "Put together: acceleration equals force divided by mass.",
+      "math": "a = F / m",
+      "picture": "A glowing simple equation symbol made of three blank shapes connected by arrows, abstract science illustration, no text or symbols"
+    },
+    {
+      "narration": "For example, ten newtons pushing two kilograms gives five metres per second squared.",
+      "math": "F = 10 N, m = 2 kg → a = 5 m/s²",
+      "picture": "A small cart on a track pushed by a hand, floating blank coloured discs representing force and mass, physics lab illustration, no text"
+    },
+    {
+      "narration": "Try it: double the push on the same object and its acceleration doubles.",
+      "math": "2F → 2a",
+      "picture": "A skateboard pushed by two hands instead of one, twice as many motion lines, cheerful cartoon style, no text"
+    }
+  ]
+}
