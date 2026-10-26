@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "q": "What does twenty-five percent mean?",
+      "options": [
+        "Twenty-five out of every hundred parts",
+        "One out of every twenty-five parts",
+        "Twenty-five out of every forty parts",
+        "One hundred out of twenty-five parts"
+      ],
+      "answer": 0,
+      "why": "The script says a percentage means per hundred, so 25% = 25/100."
+    },
+    {
+      "q": "In a class of forty students, ten ride bicycles. What percent is that?",
+      "options": [
+        "10%",
+        "40%",
+        "25%",
+        "20%"
+      ],
+      "answer": 2,
+      "why": "10/40 = 0.25 = 25%, as shown in the script."
+    },
+    {
+      "q": "A jacket costs eighty dollars and is twenty-five percent off. What is the discount?",
+      "options": [
+        "25 dollars",
+        "20 dollars",
+        "60 dollars",
+        "80 dollars"
+      ],
+      "answer": 1,
+      "why": "The script computes discount = 80 × 25/100 = 20 dollars."
+    }
+  ]
+}

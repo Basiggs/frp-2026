@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "q": "How many planets orbit the Sun in our solar system?",
+      "options": [
+        "Four",
+        "Eight",
+        "Six",
+        "Ten"
+      ],
+      "answer": 1,
+      "why": "The script says the Sun is orbited by eight planets."
+    },
+    {
+      "q": "About how far is Earth from the Sun?",
+      "options": [
+        "88 million kilometers",
+        "165 million kilometers",
+        "150 million kilometers",
+        "15 million kilometers"
+      ],
+      "answer": 2,
+      "why": "The script states Earth is about 150 million kilometers from the Sun."
+    },
+    {
+      "q": "Which planet takes about 165 Earth years to orbit the Sun once?",
+      "options": [
+        "Mercury",
+        "Earth",
+        "Jupiter",
+        "Neptune"
+      ],
+      "answer": 3,
+      "why": "The script says Neptune needs about 165 Earth years per orbit."
+    }
+  ]
+}

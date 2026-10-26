@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "q": "What is 34 + 25?",
+      "options": [
+        "59",
+        "69",
+        "49",
+        "58"
+      ],
+      "answer": 0,
+      "why": "The video shows 30 + 20 = 50 and 4 + 5 = 9, giving 59."
+    },
+    {
+      "q": "What is 72 - 38?",
+      "options": [
+        "44",
+        "34",
+        "36",
+        "42"
+      ],
+      "answer": 1,
+      "why": "The video shows 72 - 30 = 42, then 42 - 8 = 34."
+    },
+    {
+      "q": "What is 46 + 27?",
+      "options": [
+        "63",
+        "73",
+        "53",
+        "72"
+      ],
+      "answer": 1,
+      "why": "Adding tens 40 + 20 = 60 and ones 6 + 7 = 13 gives 73."
+    }
+  ]
+}

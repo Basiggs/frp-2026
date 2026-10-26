@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "q": "About how much milk can a dairy cow make in one day?",
+      "options": [
+        "25 liters",
+        "4 kilograms",
+        "300 liters",
+        "100 liters"
+      ],
+      "answer": 0,
+      "why": "The script says a dairy cow can make about 25 liters of milk in one day."
+    },
+    {
+      "q": "About how many eggs does a hen lay in one year?",
+      "options": [
+        "42 eggs",
+        "365 eggs",
+        "300 eggs",
+        "100 eggs"
+      ],
+      "answer": 2,
+      "why": "The script says a hen can lay about 300 eggs in one year."
+    },
+    {
+      "q": "A farmer has 6 hens, and each hen lays 1 egg per day. How many eggs do the 6 hens lay in one week?",
+      "options": [
+        "6 eggs",
+        "7 eggs",
+        "42 eggs",
+        "13 eggs"
+      ],
+      "answer": 2,
+      "why": "6 hens × 1 egg/day × 7 days = 42 eggs."
+    }
+  ]
+}

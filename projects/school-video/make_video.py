@@ -21,6 +21,27 @@ Answer with JSON only:
 Make the scenes build the idea step by step: the idea, an example with numbers, the formula, one thing for the student."""
 
 
+CHECK = """You are a strict school textbook editor. Check the script of a school explainer video.
+Topic: "{topic}"
+Language: {lang}
+Scenes:
+{scenes}
+
+Check all of it:
+- facts: nothing false or made up;
+- numbers: every arithmetic result must be correct;
+- formulas: correct and used correctly;
+- level: simple school material, not university level.
+Answer with JSON only:
+{{"ok": true, "problems": []}}
+or
+{{"ok": false, "problems": ["scene 2: 5 x 3 = 20 is wrong, it is 15"]}}
+Write one problem per string, name the scene, and say what is wrong. Be strict about numbers and formulas.
+Do not report style or missing pictures.
+The last scene may ask the student a question and leave the value open (for example "4 x 4 = ?").
+That is allowed: report only a result that is written out and wrong."""
+
+
 def post(path, body, raw=False, timeout=300):
     req = urllib.request.Request(API + path, json.dumps(body).encode(),
                                  {"Content-Type": "application/json"})
@@ -56,6 +77,21 @@ def script(topic, lang):
     sys.exit("the chat model did not give a usable script")
 
 
+def check_script(data, topic, lang):
+    scenes = "\n".join(f"{i}. {s['narration']} [math: {s['math']}]"
+                       for i, s in enumerate(data["scenes"], 1))
+    body = {"model": "DeepSeek-V4.1-Flash", "max_tokens": 4000,
+            "messages": [{"role": "system", "content": SYSTEM},
+                         {"role": "user", "content": CHECK.format(
+                             topic=topic, lang=LANG[lang], scenes=scenes)}]}
+    text = post("/chat/completions", body)["choices"][0]["message"]["content"] or ""
+    m = re.search(r"\{.*\}", text, re.S)
+    if not m:
+        sys.exit("the checker did not answer JSON:\n" + text[:300])
+    verdict = json.loads(m.group(0))
+    return bool(verdict.get("ok")), [str(p) for p in (verdict.get("problems") or [])]
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("topic")
@@ -67,12 +103,21 @@ def main():
         os.makedirs(os.path.join(run, d), exist_ok=True)
     out = os.path.join("out", f"{slug(a.topic)}-{a.lang}.mp4")
 
-    print(f"1/3 script ({a.topic}, {a.lang}) ...", flush=True)
+    print(f"1/4 script ({a.topic}, {a.lang}) ...", flush=True)
     data = script(a.topic, a.lang)
     json.dump(data, open(os.path.join(run, "script.json"), "w"), ensure_ascii=False, indent=2)
     print(f"    {data.get('title', a.topic)}: {len(data['scenes'])} scenes", flush=True)
 
-    print("2/3 pictures and voice ...", flush=True)
+    print("2/4 check the script ...", flush=True)
+    ok, problems = check_script(data, a.topic, a.lang)
+    if not ok:
+        print("check failed:", flush=True)
+        for problem in problems:
+            print("  -", problem, flush=True)
+        sys.exit("stopped: the script has mistakes, so no video was made")
+    print("    check ok", flush=True)
+
+    print("3/4 pictures and voice ...", flush=True)
     manifest = {"out": out, "scenes": []}
     for i, sc in enumerate(data["scenes"], 1):
         img = os.path.join(run, "img", f"s{i}.jpg")
@@ -90,10 +135,12 @@ def main():
     mp = os.path.join(run, "manifest.json")
     json.dump(manifest, open(mp, "w"), ensure_ascii=False, indent=2)
 
-    print("3/3 video ...", flush=True)
+    print("4/4 video ...", flush=True)
     subprocess.run([sys.executable, "build.py", mp], check=True)
+    subprocess.run([sys.executable, "make_quiz.py"], check=True)
     subprocess.run([sys.executable, "make_gallery.py"], check=True)
     print(f"done: {out}")
 
 
-main()
+if __name__ == "__main__":
+    main()

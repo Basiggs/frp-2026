@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "q": "What is a magnetic field?",
+      "options": [
+        "An invisible area around a magnet where magnetic forces act on other magnets or moving charges",
+        "A visible line drawn around a magnet",
+        "A type of electric charge",
+        "A force that only acts on stationary objects"
+      ],
+      "answer": 0,
+      "why": "The script says a magnetic field is an invisible area around a magnet where magnetic forces act."
+    },
+    {
+      "q": "According to the video, what can the field strength near a strong MRI machine be?",
+      "options": [
+        "0.01 tesla",
+        "1 tesla",
+        "1.5 tesla",
+        "90 tesla"
+      ],
+      "answer": 2,
+      "why": "The script states that near a strong MRI machine it can be 1.5 tesla."
+    },
+    {
+      "q": "A charge of 1 coulomb moves at 1 meter per second perpendicular to a 1 tesla field. What is the force?",
+      "options": [
+        "0.01 N",
+        "1 N",
+        "1.5 N",
+        "90 N"
+      ],
+      "answer": 1,
+      "why": "Using F = q v B sin(θ) gives (1 C)(1 m/s)(1 T) sin(90°) = 1 N."
+    }
+  ]
+}

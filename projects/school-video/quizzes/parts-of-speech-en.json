@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "q": "How many main parts of speech are there to learn?",
+      "options": [
+        "Four",
+        "Six",
+        "Eight",
+        "Ten"
+      ],
+      "answer": 2,
+      "why": "The video says there are eight main kinds to learn."
+    },
+    {
+      "q": "Which word is a preposition?",
+      "options": [
+        "quickly",
+        "under",
+        "because",
+        "wow"
+      ],
+      "answer": 1,
+      "why": "The video lists in, on, and under as prepositions."
+    },
+    {
+      "q": "In \"The clever fox quickly jumps over the fence,\" which word is the adjective?",
+      "options": [
+        "fox",
+        "jumps",
+        "clever",
+        "quickly"
+      ],
+      "answer": 2,
+      "why": "The video identifies clever as the adjective in that sentence."
+    }
+  ]
+}

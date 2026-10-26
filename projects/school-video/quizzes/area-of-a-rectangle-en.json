@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "q": "What does the area of a rectangle measure?",
+      "options": [
+        "The space inside its edges",
+        "The distance around its edges",
+        "The length of its longest side",
+        "The number of corners it has"
+      ],
+      "answer": 0,
+      "why": "The video says area is the amount of flat space inside the edges."
+    },
+    {
+      "q": "A rectangle is 5 units long and 3 units wide. What is its area?",
+      "options": [
+        "8 square units",
+        "15 square units",
+        "16 square units",
+        "10 square units"
+      ],
+      "answer": 1,
+      "why": "The video shows 5 × 3 = 15 square units."
+    },
+    {
+      "q": "What is the rule for the area of a rectangle?",
+      "options": [
+        "Area = length + width",
+        "Area = length × width",
+        "Area = length − width",
+        "Area = 2 × length"
+      ],
+      "answer": 1,
+      "why": "The video states A = length × width."
+    }
+  ]
+}

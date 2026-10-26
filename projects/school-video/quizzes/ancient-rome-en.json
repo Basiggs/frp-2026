@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "q": "In what year was Rome founded?",
+      "options": [
+        "753 BCE",
+        "117 CE",
+        "80,000 BCE",
+        "5,000 BCE"
+      ],
+      "answer": 0,
+      "why": "The script states Ancient Rome began in 753 BCE."
+    },
+    {
+      "q": "About how many kilometers of Roman roads stretched across the empire?",
+      "options": [
+        "5,000 km",
+        "80,000 km",
+        "117 km",
+        "753 km"
+      ],
+      "answer": 1,
+      "why": "The script says Roman roads stretched about 80,000 kilometers."
+    },
+    {
+      "q": "About how many soldiers were in a Roman legion?",
+      "options": [
+        "117",
+        "5,000",
+        "80,000",
+        "753"
+      ],
+      "answer": 1,
+      "why": "The script states a Roman legion had about 5,000 soldiers."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "q": "What does density tell us?",
+      "options": [
+        "How much mass is packed into a given space",
+        "How heavy an object is regardless of size",
+        "How much volume an object takes up",
+        "How long an object is"
+      ],
+      "answer": 0,
+      "why": "The video defines density as mass packed into volume."
+    },
+    {
+      "q": "A metal cube has a mass of 8 g and a volume of 2 cm³. What is its density?",
+      "options": [
+        "2 g/cm³",
+        "4 g/cm³",
+        "8 g/cm³",
+        "16 g/cm³"
+      ],
+      "answer": 1,
+      "why": "8 g divided by 2 cm³ equals 4 g/cm³."
+    },
+    {
+      "q": "A block has a mass of 30 g and a volume of 10 cm³. What is its density?",
+      "options": [
+        "3 g/cm³",
+        "10 g/cm³",
+        "30 g/cm³",
+        "40 g/cm³"
+      ],
+      "answer": 0,
+      "why": "Using d = m / V, 30 g divided by 10 cm³ equals 3 g/cm³."
+    }
+  ]
+}

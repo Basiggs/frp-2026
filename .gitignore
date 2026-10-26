@@ -5,3 +5,9 @@ materials/
 __pycache__/
 *.pyc
 *.log
+
+page-check.png
+projects/school-video/out/*.mp4
+projects/school-video/out/*.webm
+projects/school-video/timing/
+projects/school-video/runs/

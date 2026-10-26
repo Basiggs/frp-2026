@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "q": "How do we split 23 and 14 in the video's method?",
+      "options": [
+        "23 = 20 + 3 and 14 = 10 + 4",
+        "23 = 10 + 13 and 14 = 7 + 7",
+        "23 = 2 + 3 and 14 = 1 + 4",
+        "23 = 25 - 2 and 14 = 15 - 1"
+      ],
+      "answer": 0,
+      "why": "The script splits 23 into 20 + 3 and 14 into 10 + 4."
+    },
+    {
+      "q": "What are the four products from 23 × 14 in the video?",
+      "options": [
+        "200, 80, 30, and 12",
+        "200, 40, 60, and 12",
+        "230, 80, 30, and 10",
+        "20, 80, 30, and 24"
+      ],
+      "answer": 0,
+      "why": "The script lists 20×10, 20×4, 3×10, and 3×4 as 200, 80, 30, and 12."
+    },
+    {
+      "q": "What is the final answer to 23 × 14 in the video?",
+      "options": [
+        "322",
+        "232",
+        "344",
+        "242"
+      ],
+      "answer": 0,
+      "why": "The script adds 200 + 80 + 30 + 12 to get 322."
+    }
+  ]
+}

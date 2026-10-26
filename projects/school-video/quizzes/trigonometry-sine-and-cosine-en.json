@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "q": "In the video, sine of theta equals the opposite side divided by which side?",
+      "options": [
+        "the adjacent side",
+        "the hypotenuse",
+        "the longest angle",
+        "the angle theta"
+      ],
+      "answer": 1,
+      "why": "The script says sine = opposite divided by the hypotenuse."
+    },
+    {
+      "q": "For a triangle with opposite side 3 and hypotenuse 5, what is the sine of theta?",
+      "options": [
+        "0.8",
+        "0.6",
+        "3.5",
+        "0.5"
+      ],
+      "answer": 1,
+      "why": "The script shows sin theta = 3 / 5 = 0.6."
+    },
+    {
+      "q": "With adjacent side 4 and hypotenuse 5, what is the cosine of theta?",
+      "options": [
+        "0.6",
+        "0.4",
+        "0.8",
+        "4.5"
+      ],
+      "answer": 2,
+      "why": "The script shows cos theta = 4 / 5 = 0.8."
+    }
+  ]
+}

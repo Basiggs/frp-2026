@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "q": "What does photosynthesis require to produce glucose?",
+      "options": [
+        "Carbon dioxide, water, and sunlight",
+        "Oxygen, water, and sunlight",
+        "Glucose, oxygen, and water",
+        "Carbon dioxide, oxygen, and water"
+      ],
+      "answer": 0,
+      "why": "The script states plants use sunlight, water, and carbon dioxide to make food."
+    },
+    {
+      "q": "About how much energy is stored in one mole of glucose?",
+      "options": [
+        "2,800 kilojoules",
+        "280 kilojoules",
+        "28,000 kilojoules",
+        "18 kilojoules"
+      ],
+      "answer": 0,
+      "why": "The script says one mole of glucose stores about 2,800 kJ."
+    },
+    {
+      "q": "How many oxygen molecules are released per glucose molecule produced?",
+      "options": [
+        "6",
+        "1",
+        "12",
+        "18"
+      ],
+      "answer": 0,
+      "why": "The equation in the script shows 6 O₂ released per glucose molecule."
+    }
+  ]
+}

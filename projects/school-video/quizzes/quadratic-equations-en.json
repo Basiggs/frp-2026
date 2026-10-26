@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "q": "What is the standard form of a quadratic equation?",
+      "options": [
+        "ax² + bx + c = 0",
+        "ax + b = 0",
+        "x² = 0",
+        "(x + 2)(x + 3) = 0"
+      ],
+      "answer": 0,
+      "why": "The video states the standard form sets everything equal to zero as ax² + bx + c = 0."
+    },
+    {
+      "q": "How do you factor x² + 5x + 6 = 0?",
+      "options": [
+        "(x + 1)(x + 6) = 0",
+        "(x + 2)(x + 3) = 0",
+        "(x - 2)(x - 3) = 0",
+        "(x + 5)(x + 1) = 0"
+      ],
+      "answer": 1,
+      "why": "Two and three multiply to six and add to five, giving (x + 2)(x + 3) = 0."
+    },
+    {
+      "q": "Solving x² - 4 = 0 gives which solutions?",
+      "options": [
+        "x = 4",
+        "x = -4",
+        "x = ±2",
+        "x = ±4"
+      ],
+      "answer": 2,
+      "why": "Adding four gives x² = 4, so taking the square root gives x = ±2."
+    }
+  ]
+}

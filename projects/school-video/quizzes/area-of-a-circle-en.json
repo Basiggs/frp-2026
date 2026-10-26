@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "q": "What does the area of a circle measure?",
+      "options": [
+        "The distance from the center to the edge",
+        "The amount of flat space inside the circle's edge",
+        "The length around the circle's boundary",
+        "The number of radii that fit across the circle"
+      ],
+      "answer": 1,
+      "why": "The script says area is the flat space inside the circle's edge."
+    },
+    {
+      "q": "For a circle with a radius of 3 cm, what is the area?",
+      "options": [
+        "3π ≈ 9.4 cm²",
+        "6π ≈ 18.8 cm²",
+        "9π ≈ 28.3 cm²",
+        "12π ≈ 37.7 cm²"
+      ],
+      "answer": 2,
+      "why": "The script computes π × 3² = 9π ≈ 28.3 cm²."
+    },
+    {
+      "q": "A circle has a radius of 5 meters. Square the radius and multiply by pi. What is the area?",
+      "options": [
+        "10π ≈ 31.4 m²",
+        "25π ≈ 78.5 m²",
+        "5π ≈ 15.7 m²",
+        "50π ≈ 157 m²"
+      ],
+      "answer": 1,
+      "why": "The script gives π × 5² = 25π ≈ 78.5 m²."
+    }
+  ]
+}

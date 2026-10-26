@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "q": "About how long was the network of Silk Road trade routes linking China to the Mediterranean?",
+      "options": [
+        "About 6,400 km",
+        "About 4,000 km",
+        "About 320 km",
+        "About 150 km"
+      ],
+      "answer": 0,
+      "why": "The script states the routes spanned roughly 6,400 km."
+    },
+    {
+      "q": "If a camel can load about 200 kg, how much can twenty camels carry?",
+      "options": [
+        "4,000 kg",
+        "2,000 kg",
+        "400 kg",
+        "200 kg"
+      ],
+      "answer": 0,
+      "why": "The script gives 20 × 200 kg = 4,000 kg."
+    },
+    {
+      "q": "At about 40 km a day, roughly how long would a 6,000 km journey take?",
+      "options": [
+        "About 150 days",
+        "About 100 days",
+        "About 240 days",
+        "About 60 days"
+      ],
+      "answer": 0,
+      "why": "The script gives 6,000 km ÷ 40 km/day = 150 days."
+    }
+  ]
+}

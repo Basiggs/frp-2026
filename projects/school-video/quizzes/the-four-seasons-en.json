@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "q": "What is the tilt of Earth's axis?",
+      "options": [
+        "23.5 degrees",
+        "45 degrees",
+        "12 degrees",
+        "90 degrees"
+      ],
+      "answer": 0,
+      "why": "The script states the tilt is about twenty-three and a half degrees."
+    },
+    {
+      "q": "What happens when your half of Earth leans toward the Sun?",
+      "options": [
+        "Days are shorter and sunlight spreads out",
+        "Sunlight hits more directly and days are longer",
+        "The tilt changes direction",
+        "Earth stops orbiting the Sun"
+      ],
+      "answer": 1,
+      "why": "Leaning toward the Sun means direct sunlight and longer days, which is summer."
+    },
+    {
+      "q": "About how long does each season last?",
+      "options": [
+        "1 month",
+        "6 months",
+        "3 months",
+        "12 months"
+      ],
+      "answer": 2,
+      "why": "A full year of 12 months divided into four seasons gives about 3 months each."
+    }
+  ]
+}

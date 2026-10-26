@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "q": "How many chromosomes does a human have in total?",
+      "options": [
+        "23",
+        "46",
+        "23 pairs plus one",
+        "44"
+      ],
+      "answer": 1,
+      "why": "The script says humans have 46 chromosomes, sorted into 23 pairs."
+    },
+    {
+      "q": "A child receives how many chromosomes from each parent?",
+      "options": [
+        "46",
+        "23",
+        "12",
+        "22"
+      ],
+      "answer": 1,
+      "why": "A child gets 23 from the mother and 23 from the father."
+    },
+    {
+      "q": "Which combination of alleles gives blue eyes?",
+      "options": [
+        "Bb",
+        "BB",
+        "bB",
+        "bb"
+      ],
+      "answer": 3,
+      "why": "The script says only bb gives blue eyes, while Bb gives brown eyes."
+    }
+  ]
+}

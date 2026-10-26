@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "q": "When you multiply a whole number by 10, what happens to each digit?",
+      "options": [
+        "It moves one place to the left",
+        "It moves two places to the left",
+        "It moves one place to the right",
+        "It stays in the same place"
+      ],
+      "answer": 0,
+      "why": "The script says multiplying by ten moves every digit one place to the left."
+    },
+    {
+      "q": "What is 4 × 100?",
+      "options": [
+        "40",
+        "400",
+        "4000",
+        "1004"
+      ],
+      "answer": 1,
+      "why": "The script shows 4 × 100 = 400, with two zeros appearing."
+    },
+    {
+      "q": "Following the rule in the video, what is 7 × 10?",
+      "options": [
+        "70",
+        "700",
+        "17",
+        "77"
+      ],
+      "answer": 0,
+      "why": "Times ten adds one zero, so 7 × 10 = 70."
+    }
+  ]
+}

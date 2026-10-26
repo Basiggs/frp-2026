@@ -23,15 +23,23 @@ def title_for(stem, slug):
     if os.path.exists(sc):
         d = json.load(open(sc))
         return d.get("title") or stem
+    for folder in (stem, slug):
+        meta = os.path.join("runs", folder, "meta.json")
+        if os.path.exists(meta):
+            d = json.load(open(meta))
+            if d.get("title"):
+                return d["title"]
     t = re.sub(r"-(\d+min)$", r" (\1)", stem).replace("-", " ")
     return t[:1].upper() + t[1:]
 
 
 def main():
     os.makedirs(POSTERS, exist_ok=True)
+    grades = json.load(open("grades.json")) if os.path.exists("grades.json") else {}
     videos = []
-    for path in sorted(glob.glob(os.path.join(OUT, "*.mp4"))):
-        stem = os.path.basename(path)[:-4]
+    files = glob.glob(os.path.join(OUT, "*.mp4")) + glob.glob(os.path.join(OUT, "*.webm"))
+    for path in sorted(files):
+        stem = os.path.splitext(os.path.basename(path))[0]
         m = re.search(r"-(ru|en)$", stem)
         lang = m.group(1) if m else ""
         slug = stem[: -len(lang) - 1] if lang else stem
@@ -42,6 +50,8 @@ def main():
                         "-i", path, "-frames:v", "1", "-q:v", "3", poster], check=True)
         sc = os.path.join("runs", slug, "script.json")
         scenes = len(json.load(open(sc))["scenes"]) if os.path.exists(sc) else None
+        qz = os.path.join("quizzes", stem + ".json")
+        quiz = json.load(open(qz))["questions"] if os.path.exists(qz) else None
         videos.append({
             "file": path.replace(os.sep, "/"),
             "poster": poster.replace(os.sep, "/"),
@@ -50,6 +60,8 @@ def main():
             "seconds": round(seconds, 1),
             "width": w, "height": h,
             "scenes": scenes,
+            "grade": grades.get(os.path.basename(path)),
+            "quiz": quiz,
             "modified": int(os.path.getmtime(path)),
         })
     videos.sort(key=lambda v: v["modified"], reverse=True)

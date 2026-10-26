@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "q": "What does a proportion say about two ratios?",
+      "options": [
+        "They are equal",
+        "They are opposites",
+        "They are both zero",
+        "They are unrelated"
+      ],
+      "answer": 0,
+      "why": "The video states a proportion says two ratios are equal."
+    },
+    {
+      "q": "If three apples cost six dollars, how much do six apples cost?",
+      "options": [
+        "Twelve dollars",
+        "Six dollars",
+        "Three dollars",
+        "Nine dollars"
+      ],
+      "answer": 0,
+      "why": "The script says six apples cost twelve dollars."
+    },
+    {
+      "q": "In cross multiplication of a / b = c / d, what do you set equal?",
+      "options": [
+        "a × d = b × c",
+        "a × b = c × d",
+        "a + d = b + c",
+        "a / d = b / c"
+      ],
+      "answer": 0,
+      "why": "The video gives a × d = b × c as the cross multiplication rule."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "q": "What does the present simple describe?",
+      "options": [
+        "Habits, routines and facts that are always true",
+        "Only things happening right now",
+        "Only past events",
+        "Only future plans"
+      ],
+      "answer": 0,
+      "why": "The video says the present simple describes habits, routines and facts that are always true."
+    },
+    {
+      "q": "Which sentence is correct with he, she or it?",
+      "options": [
+        "She read books before bed.",
+        "She reads books before bed.",
+        "She reading books before bed.",
+        "She is read books before bed."
+      ],
+      "answer": 1,
+      "why": "With he, she and it, you add an s to the verb."
+    },
+    {
+      "q": "At what temperature does water boil, according to the video?",
+      "options": [
+        "50 degrees",
+        "100 degrees",
+        "150 degrees",
+        "200 degrees"
+      ],
+      "answer": 1,
+      "why": "The video says water boils at one hundred degrees."
+    }
+  ]
+}

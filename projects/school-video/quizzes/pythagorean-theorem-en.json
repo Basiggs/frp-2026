@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "q": "In a right triangle, what is the longest side called?",
+      "options": [
+        "The hypotenuse",
+        "The leg",
+        "The square root",
+        "The right angle"
+      ],
+      "answer": 0,
+      "why": "The script says the longest side, across from the right angle, is called the hypotenuse."
+    },
+    {
+      "q": "If the two shorter sides are 3 and 4, what is the hypotenuse?",
+      "options": [
+        "5",
+        "7",
+        "25",
+        "9"
+      ],
+      "answer": 0,
+      "why": "The script shows 9 + 16 = 25, so the hypotenuse is 5."
+    },
+    {
+      "q": "For a right triangle with legs 6 and 8, what is the hypotenuse?",
+      "options": [
+        "10",
+        "14",
+        "48",
+        "100"
+      ],
+      "answer": 0,
+      "why": "The script shows 36 + 64 = 100, and the square root of 100 is 10."
+    }
+  ]
+}

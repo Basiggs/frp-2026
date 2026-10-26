@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "q": "What is the last number you say when you count three apples?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "answer": 2,
+      "why": "The script says the last number said is the total, and three apples count to three."
+    },
+    {
+      "q": "When you count things, how many numbers does each object get?",
+      "options": [
+        "Exactly one",
+        "Two",
+        "Three",
+        "As many as you like"
+      ],
+      "answer": 0,
+      "why": "The script says each object gets exactly one number."
+    },
+    {
+      "q": "Which number comes right after seven when counting to ten?",
+      "options": [
+        "Six",
+        "Eight",
+        "Nine",
+        "Ten"
+      ],
+      "answer": 1,
+      "why": "The script lists seven, eight, nine, ten in order, so eight comes after seven."
+    }
+  ]
+}

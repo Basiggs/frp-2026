@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "q": "According to the video, about how much thread could one skilled spinner make by hand in a day?",
+      "options": [
+        "1 pound",
+        "20 pounds",
+        "48 pounds",
+        "50 pounds"
+      ],
+      "answer": 0,
+      "why": "The script states a hand spinner made about one pound of thread a day."
+    },
+    {
+      "q": "A factory has 50 machines, and each machine makes 20 items per day. How many items are made each day in total?",
+      "options": [
+        "70 items",
+        "100 items",
+        "500 items",
+        "1000 items"
+      ],
+      "answer": 3,
+      "why": "Using output = machines x items per machine per day, 50 x 20 = 1000 items per day."
+    },
+    {
+      "q": "What powered the machines in the factories during the Industrial Revolution, according to the video?",
+      "options": [
+        "Windmills",
+        "Coal-fired steam engines",
+        "Water wheels only",
+        "Hand cranks"
+      ],
+      "answer": 1,
+      "why": "The script says coal-fired steam engines supplied the power to run the machines."
+    }
+  ]
+}

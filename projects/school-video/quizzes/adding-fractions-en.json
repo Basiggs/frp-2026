@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "q": "Before you can add fractions, what must be the same?",
+      "options": [
+        "The numerators",
+        "The denominators",
+        "The whole numbers",
+        "The answer"
+      ],
+      "answer": 1,
+      "why": "The bottom numbers must be the same so each piece is the same size."
+    },
+    {
+      "q": "What is 1/2 + 1/3?",
+      "options": [
+        "2/5",
+        "3/6",
+        "5/6",
+        "2/6"
+      ],
+      "answer": 2,
+      "why": "3/6 + 2/6 = 5/6."
+    },
+    {
+      "q": "After rewriting 1/3 with denominator 6, what fraction do you get?",
+      "options": [
+        "2/6",
+        "3/6",
+        "1/6",
+        "2/3"
+      ],
+      "answer": 0,
+      "why": "The script says one third becomes two sixths."
+    }
+  ]
+}

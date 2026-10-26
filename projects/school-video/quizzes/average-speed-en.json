@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "q": "What is the formula for average speed?",
+      "options": [
+        "v = d / t",
+        "v = t / d",
+        "v = d × t",
+        "v = d + t"
+      ],
+      "answer": 0,
+      "why": "The script states average speed equals total distance divided by total time."
+    },
+    {
+      "q": "A cyclist rides 120 m in 30 s. What is the average speed?",
+      "options": [
+        "2 m/s",
+        "4 m/s",
+        "6 m/s",
+        "90 m/s"
+      ],
+      "answer": 1,
+      "why": "120 m divided by 30 s gives 4 m/s."
+    },
+    {
+      "q": "A runner covers 200 m in 50 s. What is the average speed?",
+      "options": [
+        "2 m/s",
+        "4 m/s",
+        "5 m/s",
+        "250 m/s"
+      ],
+      "answer": 1,
+      "why": "200 m divided by 50 s gives 4 m/s."
+    }
+  ]
+}

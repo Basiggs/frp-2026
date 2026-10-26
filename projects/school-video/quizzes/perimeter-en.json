@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "q": "What is the perimeter of a rectangle with length 5 meters and width 3 meters?",
+      "options": [
+        "16 meters",
+        "8 meters",
+        "15 meters",
+        "30 meters"
+      ],
+      "answer": 0,
+      "why": "The script shows 5 + 3 + 5 + 3 = 16 m."
+    },
+    {
+      "q": "What is the formula for the perimeter of a square with side length s?",
+      "options": [
+        "P = 4s",
+        "P = 2s",
+        "P = 2(l + w)",
+        "P = 2l + 2w"
+      ],
+      "answer": 0,
+      "why": "The script states the perimeter of a square is 4 times s."
+    },
+    {
+      "q": "What is the perimeter of a triangle with sides 6, 8, and 10 inches?",
+      "options": [
+        "24 inches",
+        "14 inches",
+        "18 inches",
+        "48 inches"
+      ],
+      "answer": 0,
+      "why": "The script adds 6 + 8 + 10 = 24 in."
+    }
+  ]
+}

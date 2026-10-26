@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "q": "According to the video, what decides whether electrons are ejected from a clean metal surface?",
+      "options": [
+        "The color of the light",
+        "The brightness of the light",
+        "How long you wait",
+        "The size of the metal"
+      ],
+      "answer": 0,
+      "why": "The script says the color, not the brightness, decides."
+    },
+    {
+      "q": "In the video, Einstein says light comes in packets. What are these packets called?",
+      "options": [
+        "Electrons",
+        "Photons",
+        "Work functions",
+        "Volts"
+      ],
+      "answer": 1,
+      "why": "The script states light comes in packets called photons."
+    },
+    {
+      "q": "A metal has a work function of 2 eV and the photon gives 3 eV. What kinetic energy does the electron get?",
+      "options": [
+        "1 eV",
+        "2 eV",
+        "3 eV",
+        "5 eV"
+      ],
+      "answer": 0,
+      "why": "E_k = hf − W = 3 eV − 2 eV = 1 eV."
+    }
+  ]
+}

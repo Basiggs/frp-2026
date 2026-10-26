@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "q": "What does a logarithm answer?",
+      "options": [
+        "What power you must raise a base to, to get a certain number",
+        "What number you get when you add two numbers",
+        "What base gives the largest exponent",
+        "What number multiplied by zero equals one"
+      ],
+      "answer": 0,
+      "why": "The script says a logarithm answers what power you must raise a base to, to get a certain number."
+    },
+    {
+      "q": "What is log base two of eight?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "8"
+      ],
+      "answer": 1,
+      "why": "Since two times two times two equals eight, log base two of eight is three."
+    },
+    {
+      "q": "According to the video, which value equals zero?",
+      "options": [
+        "log base three of eighty-one",
+        "log base two of eight",
+        "log base ten of one",
+        "log base ten of eight"
+      ],
+      "answer": 2,
+      "why": "The script states that log base ten of one equals zero."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "q": "According to the video, what happens to acceleration when you push harder on a box?",
+      "options": [
+        "It gets bigger",
+        "It gets smaller",
+        "It stays the same",
+        "It becomes zero"
+      ],
+      "answer": 0,
+      "why": "The video says bigger force gives bigger acceleration."
+    },
+    {
+      "q": "A force of 10 N pushes a 2 kg object. What is its acceleration?",
+      "options": [
+        "5 m/s²",
+        "10 m/s²",
+        "20 m/s²",
+        "2 m/s²"
+      ],
+      "answer": 0,
+      "why": "The example gives a = F / m = 10 N / 2 kg = 5 m/s²."
+    },
+    {
+      "q": "You double the push on the same object. What happens to its acceleration?",
+      "options": [
+        "It doubles",
+        "It halves",
+        "It stays the same",
+        "It becomes four times larger"
+      ],
+      "answer": 0,
+      "why": "The video states that 2F gives 2a on the same object."
+    }
+  ]
+}
