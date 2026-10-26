@@ -10,6 +10,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 6,
+      "course": "history",
       "quiz": [
         {
           "q": "Какие металлы сплавляли, чтобы получить бронзу?",
@@ -57,6 +58,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 5,
+      "course": "history",
       "quiz": [
         {
           "q": "In what year was Rome founded?",
@@ -104,6 +106,7 @@
       "height": 1080,
       "scenes": 6,
       "grade": 1,
+      "course": "geography",
       "quiz": [
         {
           "q": "What is the tilt of Earth's axis?",
@@ -151,6 +154,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 1,
+      "course": "geography",
       "quiz": [
         {
           "q": "Что является главной причиной смены времён года?",
@@ -198,6 +202,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 1,
+      "course": "biology",
       "quiz": [
         {
           "q": "About how much milk can a dairy cow make in one day?",
@@ -245,6 +250,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 2,
+      "course": "math",
       "quiz": [
         {
           "q": "На какие два числа удобно разбить 7, чтобы дополнить 8 до 10?",
@@ -292,6 +298,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 1,
+      "course": "math",
       "quiz": [
         {
           "q": "What is the last number you say when you count three apples?",
@@ -339,6 +346,7 @@
       "height": 1080,
       "scenes": 6,
       "grade": 8,
+      "course": "history",
       "quiz": [
         {
           "q": "According to the video, about how much thread could one skilled spinner make by hand in a day?",
@@ -386,6 +394,7 @@
       "height": 1080,
       "scenes": 4,
       "grade": 12,
+      "course": "math",
       "quiz": [
         {
           "q": "Что такое предел функции в точке по смыслу видео?",
@@ -433,6 +442,7 @@
       "height": 1080,
       "scenes": 6,
       "grade": 9,
+      "course": "biology",
       "quiz": [
         {
           "q": "How many chromosomes does a human have in total?",
@@ -480,6 +490,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 5,
+      "course": "history",
       "quiz": [
         {
           "q": "В каком году, согласно видео, был основан Рим?",
@@ -527,6 +538,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 5,
+      "course": "history",
       "quiz": [
         {
           "q": "Какая пирамида самая большая и какова её высота?",
@@ -574,6 +586,7 @@
       "height": 1080,
       "scenes": 6,
       "grade": 11,
+      "course": "history",
       "quiz": [
         {
           "q": "When did the Second World War begin?",
@@ -621,6 +634,7 @@
       "height": 1080,
       "scenes": 6,
       "grade": 7,
+      "course": "history",
       "quiz": [
         {
           "q": "В каком году возникло Казахское ханство?",
@@ -668,6 +682,7 @@
       "height": 1080,
       "scenes": 6,
       "grade": 6,
+      "course": "history",
       "quiz": [
         {
           "q": "About how long was the network of Silk Road trade routes linking China to the Mediterranean?",
@@ -715,6 +730,7 @@
       "height": 1080,
       "scenes": 6,
       "grade": 10,
+      "course": "history",
       "quiz": [
         {
           "q": "Сколько примерно человек погибло в Первой мировой войне?",
@@ -762,6 +778,7 @@
       "height": 1080,
       "scenes": 6,
       "grade": 11,
+      "course": "physics",
       "quiz": [
         {
           "q": "According to the video, what decides whether electrons are ejected from a clean metal surface?",
@@ -809,6 +826,7 @@
       "height": 1080,
       "scenes": 4,
       "grade": 10,
+      "course": "math",
       "quiz": [
         {
           "q": "What does a logarithm answer?",
@@ -856,6 +874,7 @@
       "height": 1080,
       "scenes": 4,
       "grade": 10,
+      "course": "math",
       "quiz": [
         {
           "q": "Что такое логарифм log_a(b)?",
@@ -903,6 +922,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 11,
+      "course": "physics",
       "quiz": [
         {
           "q": "What is a magnetic field?",
@@ -950,6 +970,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 11,
+      "course": "chemistry",
       "quiz": [
         {
           "q": "Что такое электролиз по сценарию видео?",
@@ -997,6 +1018,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 11,
+      "course": "biology",
       "quiz": [
         {
           "q": "Сколько копий гена для каждого признака получает ребёнок?",
@@ -1044,6 +1066,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 10,
+      "course": "math",
       "quiz": [
         {
           "q": "In the video, sine of theta equals the opposite side divided by which side?",
@@ -1091,6 +1114,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 10,
+      "course": "math",
       "quiz": [
         {
           "q": "Что такое синус острого угла прямоугольного треугольника?",
@@ -1138,6 +1162,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 9,
+      "course": "chemistry",
       "quiz": [
         {
           "q": "Какие металлы вытесняют водород из кислот?",
@@ -1185,6 +1210,7 @@
       "height": 1080,
       "scenes": 6,
       "grade": 9,
+      "course": "biology",
       "quiz": [
         {
           "q": "Сколько хромосом у человека?",
@@ -1232,6 +1258,7 @@
       "height": 720,
       "scenes": null,
       "grade": 7,
+      "course": "geography",
       "quiz": null,
       "modified": 1793006673
     },
@@ -1245,6 +1272,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 5,
+      "course": "math",
       "quiz": [
         {
           "q": "Что такое квадрат числа?",
@@ -1292,6 +1320,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 8,
+      "course": "math",
       "quiz": [
         {
           "q": "What does the area of a circle measure?",
@@ -1339,6 +1368,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 8,
+      "course": "math",
       "quiz": [
         {
           "q": "Чему примерно равна площадь круга, если его радиус равен 5 см?",
@@ -1386,6 +1416,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 7,
+      "course": "physics",
       "quiz": [
         {
           "q": "What is the formula for average speed?",
@@ -1433,6 +1464,7 @@
       "height": 1080,
       "scenes": 4,
       "grade": 7,
+      "course": "physics",
       "quiz": [
         {
           "q": "Велосипедист проехал 12 км за 2 часа. Какова его средняя скорость?",
@@ -1480,6 +1512,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 6,
+      "course": "math",
       "quiz": [
         {
           "q": "What does a proportion say about two ratios?",
@@ -1527,6 +1560,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 6,
+      "course": "math",
       "quiz": [
         {
           "q": "Что такое пропорция?",
@@ -1574,6 +1608,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 4,
+      "course": "math",
       "quiz": [
         {
           "q": "What is the perimeter of a rectangle with length 5 meters and width 3 meters?",
@@ -1621,6 +1656,7 @@
       "height": 1080,
       "scenes": 4,
       "grade": 4,
+      "course": "math",
       "quiz": [
         {
           "q": "Что такое периметр?",
@@ -1668,6 +1704,7 @@
       "height": 1080,
       "scenes": 6,
       "grade": 3,
+      "course": "math",
       "quiz": [
         {
           "q": "When you multiply a whole number by 10, what happens to each digit?",
@@ -1715,6 +1752,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 3,
+      "course": "math",
       "quiz": [
         {
           "q": "Что нужно сделать, чтобы умножить число на 10?",
@@ -1762,6 +1800,7 @@
       "height": 1080,
       "scenes": 6,
       "grade": 8,
+      "course": "math",
       "quiz": [
         {
           "q": "What is the standard form of a quadratic equation?",
@@ -1809,6 +1848,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 8,
+      "course": "math",
       "quiz": [
         {
           "q": "Чему равны коэффициенты a, b и c в уравнении x² − 5x + 6 = 0?",
@@ -1856,6 +1896,7 @@
       "height": 1080,
       "scenes": 4,
       "grade": 8,
+      "course": "math",
       "quiz": [
         {
           "q": "In a right triangle, what is the longest side called?",
@@ -1903,6 +1944,7 @@
       "height": 1080,
       "scenes": 4,
       "grade": 8,
+      "course": "math",
       "quiz": [
         {
           "q": "Что утверждает теорема Пифагора?",
@@ -1950,6 +1992,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 6,
+      "course": "math",
       "quiz": [
         {
           "q": "What does twenty-five percent mean?",
@@ -1997,6 +2040,7 @@
       "height": 1080,
       "scenes": 4,
       "grade": 6,
+      "course": "math",
       "quiz": [
         {
           "q": "Что такое процент?",
@@ -2044,6 +2088,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 3,
+      "course": "math",
       "quiz": [
         {
           "q": "What is 34 + 25?",
@@ -2091,6 +2136,7 @@
       "height": 1080,
       "scenes": 4,
       "grade": 3,
+      "course": "math",
       "quiz": [
         {
           "q": "Сколько получится, если к 34 конфетам добавить 28 конфет?",
@@ -2138,6 +2184,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 5,
+      "course": "math",
       "quiz": [
         {
           "q": "In the video, the radius of the circle is 5 cm. What is the diameter?",
@@ -2185,6 +2232,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 5,
+      "course": "math",
       "quiz": [
         {
           "q": "Что называют радиусом окружности?",
@@ -2232,6 +2280,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 4,
+      "course": "physics",
       "quiz": [
         {
           "q": "How many planets orbit the Sun in our solar system?",
@@ -2279,6 +2328,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 4,
+      "course": "physics",
       "quiz": [
         {
           "q": "Сколько планет вращается вокруг Солнца?",
@@ -2326,6 +2376,7 @@
       "height": 1080,
       "scenes": 6,
       "grade": 5,
+      "course": "languages",
       "quiz": [
         {
           "q": "How many main parts of speech are there to learn?",
@@ -2373,6 +2424,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 5,
+      "course": "languages",
       "quiz": [
         {
           "q": "На какой вопрос отвечает имя существительное?",
@@ -2420,6 +2472,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 4,
+      "course": "math",
       "quiz": [
         {
           "q": "How do we split 23 and 14 in the video's method?",
@@ -2467,6 +2520,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 4,
+      "course": "math",
       "quiz": [
         {
           "q": "На какие части раскладывают двузначное число при умножении?",
@@ -2514,6 +2568,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 5,
+      "course": "languages",
       "quiz": [
         {
           "q": "Когда используется настоящее простое время?",
@@ -2561,6 +2616,7 @@
       "height": 1080,
       "scenes": 4,
       "grade": 7,
+      "course": "chemistry",
       "quiz": [
         {
           "q": "What does density tell us?",
@@ -2608,6 +2664,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 7,
+      "course": "chemistry",
       "quiz": [
         {
           "q": "Что показывает плотность вещества?",
@@ -2655,6 +2712,7 @@
       "height": 1080,
       "scenes": 4,
       "grade": 5,
+      "course": "languages",
       "quiz": [
         {
           "q": "What does the present simple describe?",
@@ -2702,6 +2760,7 @@
       "height": 1080,
       "scenes": 6,
       "grade": 4,
+      "course": "geography",
       "quiz": [
         {
           "q": "What turns liquid water into water vapour in the water cycle?",
@@ -2749,6 +2808,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 4,
+      "course": "geography",
       "quiz": [
         {
           "q": "Сколько кубических километров воды испаряется за год с поверхности океанов?",
@@ -2796,6 +2856,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 6,
+      "course": "biology",
       "quiz": [
         {
           "q": "What does photosynthesis require to produce glucose?",
@@ -2843,6 +2904,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 6,
+      "course": "biology",
       "quiz": [
         {
           "q": "Какие вещества нужны растению для фотосинтеза?",
@@ -2890,6 +2952,7 @@
       "height": 1080,
       "scenes": 6,
       "grade": 6,
+      "course": "math",
       "quiz": [
         {
           "q": "Before you can add fractions, what must be the same?",
@@ -2937,6 +3000,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 6,
+      "course": "math",
       "quiz": [
         {
           "q": "Как сложить дроби с одинаковым знаменателем?",
@@ -2984,6 +3048,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 4,
+      "course": "math",
       "quiz": [
         {
           "q": "What does the area of a rectangle measure?",
@@ -3031,6 +3096,7 @@
       "height": 1080,
       "scenes": 4,
       "grade": 4,
+      "course": "math",
       "quiz": [
         {
           "q": "Что такое площадь?",
@@ -3078,6 +3144,7 @@
       "height": 1080,
       "scenes": 5,
       "grade": 8,
+      "course": "physics",
       "quiz": [
         {
           "q": "Чему равна сила тока в лампочке сопротивлением 10 Ом, подключённой к батарейке на 5 В?",
@@ -3125,6 +3192,7 @@
       "height": 1080,
       "scenes": 6,
       "grade": 9,
+      "course": "physics",
       "quiz": [
         {
           "q": "According to the video, what happens to acceleration when you push harder on a box?",
@@ -3172,6 +3240,7 @@
       "height": 1080,
       "scenes": null,
       "grade": 9,
+      "course": "math",
       "quiz": null,
       "modified": 1792916959
     }

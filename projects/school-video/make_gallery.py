@@ -36,6 +36,7 @@ def title_for(stem, slug):
 def main():
     os.makedirs(POSTERS, exist_ok=True)
     grades = json.load(open("grades.json")) if os.path.exists("grades.json") else {}
+    courses = json.load(open("courses.json")) if os.path.exists("courses.json") else {}
     videos = []
     files = glob.glob(os.path.join(OUT, "*.mp4")) + glob.glob(os.path.join(OUT, "*.webm"))
     for path in sorted(files):
@@ -52,6 +53,10 @@ def main():
         scenes = len(json.load(open(sc))["scenes"]) if os.path.exists(sc) else None
         qz = os.path.join("quizzes", stem + ".json")
         quiz = json.load(open(qz))["questions"] if os.path.exists(qz) else None
+        course = courses.get(slug, "")
+        meta_path = os.path.join("runs", slug, "meta.json")
+        if not course and os.path.exists(meta_path):
+            course = json.load(open(meta_path)).get("course", "")
         videos.append({
             "file": path.replace(os.sep, "/"),
             "poster": poster.replace(os.sep, "/"),
@@ -61,6 +66,7 @@ def main():
             "width": w, "height": h,
             "scenes": scenes,
             "grade": grades.get(os.path.basename(path)),
+            "course": course,
             "quiz": quiz,
             "modified": int(os.path.getmtime(path)),
         })

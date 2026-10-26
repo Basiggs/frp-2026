@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Create a lesson — School topics as videos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+  <header>
+    <div class="headtop">
+      <div>
+        <h1>Create a new lesson</h1>
+        <div class="sub">Make a video about a school topic, or upload one you already made.</div>
+      </div>
+      <div class="headright">
+        <nav class="nav" aria-label="Pages">
+          <a href="index.html">Videos</a>
+          <a href="create.html" class="on" aria-current="page">Create &amp; upload</a>
+        </nav>
+
+      </div>
+    </div>
+  </header>
+
+  <section class="maker">
+    <h2>New lesson: make a video</h2>
+    <p class="hint">Type a school topic and press Make video: the class chat model writes the scenes, the image model draws the pictures, the voice model speaks them, and this page records the video (about 2 minutes, keep the tab open).</p>
+    <form id="scriptForm" autocomplete="off">
+      <input type="text" id="topic" placeholder="Your topic, for example: Newton's second law" aria-label="Topic">
+      <div class="seg" role="group" aria-label="Language of the script">
+        <button type="button" class="langchip" data-lang="ru" aria-pressed="true">Русский</button>
+        <button type="button" class="langchip" data-lang="en" aria-pressed="false">English</button>
+      </div>
+      <select id="gradePick" aria-label="Grade of the video">
+        <option value="">Grade…</option>
+      </select>
+      <button type="submit" class="primary" id="write">Make video</button>
+    </form>
+    <div id="scriptOut" hidden></div>
+    <div class="ideas" id="ideas" hidden>
+      <h3 id="ideaTitle"></h3>
+      <div class="chips" id="ideachips"></div>
+    </div>
+  </section>
+
+  <section class="maker">
+    <h2>Upload your own video</h2>
+    <p class="hint">Made a video on your phone or in another app? Add the file here (mp4, mov, webm, mkv, up to 15 minutes). It becomes a lesson in the list with your grade, and everyone in class can watch it.</p>
+    <form id="upForm" autocomplete="off">
+      <input type="file" id="upFile" accept="video/*,.mkv,.mov" aria-label="Your video file">
+      <input type="text" id="upTitle" placeholder="Title, for example: Volcanoes" aria-label="Title">
+      <select id="upLang" aria-label="Language of the video">
+        <option value="ru">Русский</option>
+        <option value="en">English</option>
+      </select>
+      <select id="upGrade" aria-label="Grade of the video">
+        <option value="">Grade…</option>
+      </select>
+      <button type="submit" class="primary" id="upBtn">Upload</button>
+    </form>
+    <div class="status" id="upNote" role="status"></div>
+  </section>
+
+  <footer id="foot">Made with the class chat, image and voice models.</footer>
+</div>
+<script src="common.js"></script>
+<script src="create.js"></script>
+</body>
+</html>
