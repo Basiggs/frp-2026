@@ -1,8 +1,9 @@
 import argparse, base64, json, os, re, subprocess, sys, textwrap, urllib.request
 
 API = "http://127.0.0.1:19040/v1"
-LANG = {"ru": "Russian", "en": "English"}
+LANG = {"ru": "Russian", "en": "English", "kk": "Kazakh"}
 FRP_IMG = os.path.expanduser("~/.agents/skills/image-gen/frp-img")
+VOICE = "omnivoice"
 
 SYSTEM = (
     "You write short school explainer videos. You answer with JSON only, no other text. "
@@ -19,6 +20,22 @@ Answer with JSON only:
 - picture: an English prompt for a photo or illustration of the scene. Describe what the thing is and how it looks.
   The picture must have NO text, NO letters, NO numbers and NO formulas in it.
 Make the scenes build the idea step by step: the idea, an example with numbers, the formula, one thing for the student."""
+
+
+PDF_PROMPT = """Source text of a school lesson:
+---
+{text}
+---
+Language of the narration: {lang}.
+Turn this text into {n} scenes for a 1-minute explainer video.
+Use only facts, numbers and names that are in the text. Do not add anything that is not in the text.
+Answer with JSON only:
+{{"title": "short title", "scenes": [{{"narration": "...", "math": "...", "picture": "..."}}]}}
+- narration: one or two spoken sentences, 20 to 35 words (about 9 seconds), in {lang}.
+- math: the number, formula or short fact from the text to show on screen for this scene.
+- picture: an English prompt for a photo or illustration of the scene. Describe what the thing is and how it looks.
+  The picture must have NO text, NO letters, NO numbers and NO formulas in it.
+Follow the order of the text and explain it step by step."""
 
 
 CHECK = """You are a strict school textbook editor. Check the script of a school explainer video.
@@ -77,7 +94,25 @@ def script(topic, lang):
     sys.exit("the chat model did not give a usable script")
 
 
-def check_script(data, topic, lang):
+def pdf_script(text, lang):
+    body = {"model": "DeepSeek-V4.1-Flash", "max_tokens": 4000,
+            "messages": [{"role": "system", "content": SYSTEM},
+                         {"role": "user", "content": PDF_PROMPT.format(
+                             text=text[:4000], lang=LANG[lang], n="4 to 6")}]}
+    for attempt in (1, 2):
+        answer = post("/chat/completions", body)["choices"][0]["message"]["content"]
+        m = re.search(r"\{.*\}", answer or "", re.S)
+        try:
+            data = json.loads(m.group(0))
+            if 4 <= len(data["scenes"]) <= 6:
+                return data
+            print(f"script attempt {attempt}: {len(data['scenes'])} scenes, asking again")
+        except Exception as e:
+            print(f"script attempt {attempt}: bad JSON ({e})")
+    sys.exit("the chat model did not give a usable script from the PDF")
+
+
+def check_script(data, topic, lang, run):
     scenes = "\n".join(f"{i}. {s['narration']} [math: {s['math']}]"
                        for i, s in enumerate(data["scenes"], 1))
     body = {"model": "DeepSeek-V4.1-Flash", "max_tokens": 4000,
@@ -89,14 +124,75 @@ def check_script(data, topic, lang):
     if not m:
         sys.exit("the checker did not answer JSON:\n" + text[:300])
     verdict = json.loads(m.group(0))
+    json.dump(verdict, open(os.path.join(run, "check.json"), "w"), ensure_ascii=False, indent=2)
     return bool(verdict.get("ok")), [str(p) for p in (verdict.get("problems") or [])]
+
+
+def pdf_text(path):
+    try:
+        from pypdf import PdfReader
+    except ImportError:
+        sys.exit("pypdf is missing: pip install --user pypdf")
+    reader = PdfReader(path)
+    pages = []
+    for page in reader.pages:
+        pages.append((page.extract_text() or "").strip())
+    text = "\n\n".join(p for p in pages if p)
+    text = re.sub(r"[ \t]+", " ", text)
+    if not text.strip():
+        sys.exit(f"no text in {path} (the PDF may be a scan of pictures)")
+    return text
+
+
+def pdf_names(path, lang):
+    stem = os.path.splitext(os.path.basename(path))[0]
+    base = re.sub(r"[-_](ru|en)$", "", stem)
+    name = slug(base) + "-pdf"
+    return name, os.path.join("out", name + "-" + lang + ".mp4")
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("topic")
-    ap.add_argument("--lang", choices=["ru", "en"], default="ru")
+    ap.add_argument("topic", nargs="?")
+    ap.add_argument("-pdf", "--pdf")
+    ap.add_argument("-lang", "--lang", choices=["ru", "en", "kk"], default="ru")
     a = ap.parse_args()
+
+    if a.pdf:
+        name, out = pdf_names(a.pdf, a.lang)
+        if not os.path.exists(a.pdf):
+            sys.exit(f"no such file: {a.pdf}")
+        text = pdf_text(a.pdf)
+        run = os.path.join("runs", name)
+        os.makedirs(run, exist_ok=True)
+        with open(os.path.join(run, "source.txt"), "w") as f:
+            f.write(text)
+        head = [l for l in text.splitlines() if l.strip()][:5]
+        print(f"PDF: {a.pdf} -> {os.path.join(run, 'source.txt')} ({len(text)} letters)")
+        for line in head:
+            print("  " + line[:110])
+        for d in ("img", "audio", "cap"):
+            os.makedirs(os.path.join(run, d), exist_ok=True)
+        print("1/4 script from the PDF ...", flush=True)
+        data = pdf_script(text, a.lang)
+        json.dump(data, open(os.path.join(run, "script.json"), "w"), ensure_ascii=False, indent=2)
+        topic = data.get("title") or name
+        print(f"    {topic}: {len(data['scenes'])} scenes", flush=True)
+
+        print("2/4 check the script ...", flush=True)
+        ok, problems = check_script(data, topic, a.lang, run)
+        if not ok:
+            print("check failed:", flush=True)
+            for problem in problems:
+                print("  -", problem, flush=True)
+            sys.exit("stopped: the script has mistakes, so no video was made")
+        print("    check ok", flush=True)
+
+        produce(data, run, out, a.lang)
+        return
+
+    if not a.topic:
+        sys.exit("give a topic, or a PDF with -pdf FILE")
 
     run = os.path.join("runs", slug(a.topic))
     for d in ("img", "audio", "cap"):
@@ -109,7 +205,7 @@ def main():
     print(f"    {data.get('title', a.topic)}: {len(data['scenes'])} scenes", flush=True)
 
     print("2/4 check the script ...", flush=True)
-    ok, problems = check_script(data, a.topic, a.lang)
+    ok, problems = check_script(data, a.topic, a.lang, run)
     if not ok:
         print("check failed:", flush=True)
         for problem in problems:
@@ -117,6 +213,10 @@ def main():
         sys.exit("stopped: the script has mistakes, so no video was made")
     print("    check ok", flush=True)
 
+    produce(data, run, out, a.lang)
+
+
+def produce(data, run, out, lang):
     print("3/4 pictures and voice ...", flush=True)
     manifest = {"out": out, "scenes": []}
     for i, sc in enumerate(data["scenes"], 1):
@@ -124,7 +224,7 @@ def main():
         prompt = sc["picture"] + ", no text, no letters, no numbers, no formulas, no writing"
         subprocess.run([FRP_IMG, prompt, "-s", "1536x864", "-o", img], check=True)
         audio = os.path.join(run, "audio", f"v{i}.wav")
-        wav = post("/audio/speech", {"input": sc["narration"], "language": a.lang}, raw=True)
+        wav = post("/audio/speech", {"model": VOICE, "input": sc["narration"], "language": lang}, raw=True)
         open(audio, "wb").write(wav)
         cap = os.path.join(run, "cap", f"c{i}.txt")
         text = "\n".join(textwrap.wrap(sc["narration"], 58))

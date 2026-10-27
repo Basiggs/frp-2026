@@ -280,7 +280,8 @@
   upForm.addEventListener('submit', async ev => {
     ev.preventDefault();
     const file = upFileEl.files && upFileEl.files[0];
-    if (!file) { upSay('Choose a video file first.', true); return; }
+    if (!file) { upSay('Choose a video or PDF file first.', true); return; }
+    const isPdf = /\.pdf$/i.test(file.name);
     if (!upGradeEl.value) { upSay('Choose the grade first, so other students find it in their grade.', true); return; }
     const title = (upTitleEl.value.trim() || file.name.replace(/\.[^.]+$/, '')).slice(0, 80);
     const base = apiUrl('/api/upload');
@@ -291,7 +292,9 @@
       '&name=' + encodeURIComponent(file.name);
     upBtn.disabled = true;
     upBtn.textContent = 'Uploading…';
-    upSay('Uploading ' + Math.round(file.size / 1048576 * 10) / 10 + ' MB of “' + title + '”…');
+    upSay(isPdf
+      ? 'Building a video from “' + title + '” — about 3 minutes, please keep this page open…'
+      : 'Uploading ' + Math.round(file.size / 1048576 * 10) / 10 + ' MB of “' + title + '”…');
     try {
       const r = await fetch(url, {
         method: 'POST',
@@ -307,7 +310,9 @@
         throw new Error('the server said: ' + text.slice(0, 200));
       }
       if (!r.ok || !j || !j.ok) throw new Error((j && j.error) || text.slice(0, 200));
-      upSay('Uploaded as ' + j.file + ' — it is in the lessons list now.');
+      upSay(isPdf
+        ? 'Video made from your PDF: ' + j.file + ' — it is in the lessons list now.'
+        : 'Uploaded as ' + j.file + ' — it is in the lessons list now.');
       upForm.reset();
     } catch (err) {
       upSay('Could not upload: ' + err.message, true);

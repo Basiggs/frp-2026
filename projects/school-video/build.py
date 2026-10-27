@@ -39,9 +39,9 @@ for _, aud, _ in SCENES:
 
 for i in range(len(SCENES)):
     filters.append(
-        f"[{i}:v]scale=2304:1296,zoompan=z='1.04+0.06*on/{int(d[i]*FPS)}':"
+        f"[{i}:v]scale=2304:1296:flags=lanczos,zoompan=z='1.04+0.06*on/{int(d[i]*FPS)}':"
         f"x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s=1920x1080:fps={FPS},"
-        f"setsar=1[v{i}]")
+        f"unsharp=5:5:0.6:5:5:0.0,setsar=1[v{i}]")
 
 parts = []
 prev = "[v0]"
@@ -71,7 +71,7 @@ amix += "".join(f"[a{i}]" for i in range(len(SCENES))) + \
 fc = ";".join(filters) + ";" + chain + ";" + dt + ";" + amix
 cmd = ["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", *inputs,
        "-filter_complex", fc, "-map", "[vout]", "-map", "[aout]",
-       "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p",
+       "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p",
        "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", OUT]
 
 print(f"total {total:.2f}s, scenes {[round(x,2) for x in d]}", flush=True)

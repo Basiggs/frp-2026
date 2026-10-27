@@ -1,0 +1,22 @@
+{
+  "tracks": [
+    {
+      "id": "physics-5",
+      "title": "Physics in 5 Lessons",
+      "subtitle": "Speed, forces, magnetism, light and space — in the right order.",
+      "slugs": ["average-speed-en", "newton-s-second-law-en", "the-magnetic-field-en", "the-photoelectric-effect-en", "the-solar-system-en"]
+    },
+    {
+      "id": "fractions-az",
+      "title": "Fractions & Percent from A to Z",
+      "subtitle": "Add fractions, scale them, compare them, finish with percentages.",
+      "slugs": ["adding-fractions-en", "multiplying-by-10-and-100-en", "proportions-en", "percentages-en"]
+    },
+    {
+      "id": "geometry-ru",
+      "title": "Геометрия за 5 уроков",
+      "subtitle": "От периметра до теоремы Пифагора — шаг за шагом.",
+      "slugs": ["периметр-ru", "площадь-прямоугольника-ru", "окружность-радиус-и-диаметр-ru", "площадь-круга-ru", "теорема-пифагора-ru"]
+    }
+  ]
+}

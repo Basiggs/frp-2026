@@ -85,6 +85,37 @@ class Handler(SimpleHTTPRequestHandler):
         except Exception as e:
             self._json(400, {"ok": False, "error": str(e)})
 
+    def _pdf_video(self, pdf_tmp, title, lang, grade):
+        base = slug(title) or "pdf"
+        stem, n = base, 2
+        while os.path.exists(os.path.join(PRJ, "out", f"{stem}-pdf-{lang}.mp4")):
+            stem = f"{base}-{n}"
+            n += 1
+        work = os.path.join(PRJ, "runs", ".pdf-upload-" + stem)
+        os.makedirs(work, exist_ok=True)
+        pdf = os.path.join(work, stem + ".pdf")
+        os.replace(pdf_tmp, pdf)
+        r = subprocess.run([sys.executable, "make_video.py", "-pdf", pdf, "-lang", lang],
+                           cwd=PRJ, capture_output=True, text=True, timeout=1200)
+        if r.returncode:
+            lines = [l for l in (r.stdout + "\n" + r.stderr).splitlines() if l.strip()]
+            raise ValueError("no video: " + " | ".join(lines[-3:])[:400])
+        run = os.path.join(PRJ, "runs", stem + "-pdf")
+        os.makedirs(run, exist_ok=True)
+        os.replace(pdf, os.path.join(run, "source.pdf"))
+        try:
+            os.rmdir(work)
+        except OSError:
+            pass
+        video = f"{stem}-pdf-{lang}.mp4"
+        if grade is not None:
+            gp = os.path.join(PRJ, "grades.json")
+            grades = json.load(open(gp)) if os.path.exists(gp) else {}
+            grades[video] = grade
+            json.dump(grades, open(gp, "w"), ensure_ascii=False, indent=2)
+        refresh()
+        self._json(200, {"ok": True, "pdf": True, "file": "out/" + video})
+
     def upload(self, url):
         tmp = None
         try:
@@ -98,12 +129,13 @@ class Handler(SimpleHTTPRequestHandler):
             grade = int(grade) if grade.isdigit() and 1 <= int(grade) <= 12 else None
             title = qs("title") or os.path.splitext(qs("name"))[0] or "Lesson"
             title = title[:80]
+            is_pdf = qs("name").lower().endswith(".pdf")
 
             length = int(self.headers.get("Content-Length") or 0)
-            if length < 20000:
+            if length < (1000 if is_pdf else 20000):
                 raise ValueError("the file is too small to be a video")
-            if length > 300 * 1024 * 1024:
-                raise ValueError("the file is bigger than 300 MB")
+            if length > (20 * 1024 * 1024 if is_pdf else 300 * 1024 * 1024):
+                raise ValueError("the file is too big")
 
             out_dir = os.path.join(PRJ, "out")
             os.makedirs(out_dir, exist_ok=True)
@@ -113,7 +145,7 @@ class Handler(SimpleHTTPRequestHandler):
                 stem = f"{name}-{n}"
                 n += 1
 
-            tmp = os.path.join(out_dir, "." + stem + ".upload")
+            tmp = os.path.join(out_dir, "." + stem + (".pdf" if is_pdf else ".upload"))
             left = length
             with open(tmp, "wb") as f:
                 while left > 0:
@@ -122,6 +154,12 @@ class Handler(SimpleHTTPRequestHandler):
                         break
                     f.write(chunk)
                     left -= len(chunk)
+
+            with open(tmp, "rb") as f:
+                if f.read(5) == b"%PDF-":
+                    self._pdf_video(tmp, title, lang, grade)
+                    tmp = None
+                    return
 
             p = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0",
                                 "-show_entries", "stream=codec_name",

@@ -19,10 +19,18 @@
           <a href="index.html" class="on" aria-current="page">Videos</a>
           <a href="create.html">Create &amp; upload</a>
         </nav>
-        <div class="chips" role="group" aria-label="Filter by language">
-          <button class="chip" data-lang="" aria-pressed="true">All</button>
-          <button class="chip" data-lang="ru" aria-pressed="false">Русский</button>
-          <button class="chip" data-lang="en" aria-pressed="false">English</button>
+        <div class="langmenu">
+          <button class="langbtn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-label="Language">
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18"/></svg>
+            <span class="langlabel">All</span>
+            <span class="caret" aria-hidden="true"></span>
+          </button>
+          <div class="langlist" id="langList" role="group" aria-label="Filter by language">
+            <button class="chip" data-lang="" aria-pressed="true">All</button>
+            <button class="chip" data-lang="ru" aria-pressed="false">Русский</button>
+            <button class="chip" data-lang="en" aria-pressed="false">English</button>
+            <button class="chip" data-lang="kk" aria-pressed="false">Қазақша</button>
+          </div>
         </div>
       </div>
     </div>
@@ -52,8 +60,27 @@
       <button class="ghost" id="testBtn" hidden>Test</button>
       <button class="ghost" id="close">Close</button>
     </div>
+    <div class="chapters" id="chapters" hidden aria-label="Video chapters">
+      <div class="chapstrip" id="chapstrip"><div class="chapprog" id="chapprog"></div></div>
+      <div class="chaplist" id="chaplist"></div>
+    </div>
     <div class="quiz" id="quiz" hidden aria-live="polite"></div>
+    <div class="upnext" id="upnext" hidden aria-live="polite"></div>
   </section>
+
+  <section class="tracks" id="tracks" hidden aria-label="Learning tracks">
+    <div class="trackshead">
+      <h2>Learning tracks</h2>
+      <span>Step-by-step series</span>
+    </div>
+    <div class="trackrow" id="trackrow"></div>
+  </section>
+
+  <div class="trackbar" id="trackbar" hidden>
+    <span id="trackbarText"></span>
+    <span class="spacer"></span>
+    <button class="ghost" id="trackClear" type="button">Clear track</button>
+  </div>
 
   <div class="filterbar" id="filterbar">
     <div class="searchrow gradebar">

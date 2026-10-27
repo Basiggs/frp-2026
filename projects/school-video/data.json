@@ -1,6 +1,2418 @@
 {
   "videos": [
     {
+      "file": "out/the-solar-system-en.mp4",
+      "poster": "posters/the-solar-system-en.jpg",
+      "title": "The Solar System in One Minute",
+      "lang": "en",
+      "seconds": 71.7,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 5,
+      "grade": 4,
+      "course": "physics",
+      "quiz": [
+        {
+          "q": "How many planets orbit the Sun in our solar system?",
+          "options": [
+            "Four",
+            "Eight",
+            "Six",
+            "Ten"
+          ],
+          "answer": 1,
+          "why": "The script says the Sun is orbited by eight planets."
+        },
+        {
+          "q": "About how far is Earth from the Sun?",
+          "options": [
+            "88 million kilometers",
+            "165 million kilometers",
+            "150 million kilometers",
+            "15 million kilometers"
+          ],
+          "answer": 2,
+          "why": "The script states Earth is about 150 million kilometers from the Sun."
+        },
+        {
+          "q": "Which planet takes about 165 Earth years to orbit the Sun once?",
+          "options": [
+            "Mercury",
+            "Earth",
+            "Jupiter",
+            "Neptune"
+          ],
+          "answer": 3,
+          "why": "The script says Neptune needs about 165 Earth years per orbit."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "Our solar system is the Sun and everything…"
+        },
+        {
+          "t": 14.0,
+          "title": "The four inner planets are small and rocky…"
+        },
+        {
+          "t": 29.64,
+          "title": "Distance from the Sun sets how long a year…"
+        },
+        {
+          "t": 44.17,
+          "title": "Planets keep orbiting because the Sun's…"
+        },
+        {
+          "t": 57.67,
+          "title": "Try this at home: draw the eight planets in…"
+        }
+      ],
+      "modified": 1793102641
+    },
+    {
+      "file": "out/орташа-жылдамдық-kk.mp4",
+      "poster": "posters/орташа-жылдамдық-kk.jpg",
+      "title": "Орташа жылдамдық",
+      "lang": "kk",
+      "seconds": 48.9,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 4,
+      "grade": 7,
+      "course": "physics",
+      "quiz": [
+        {
+          "q": "Орташа жылдамдық қалай анықталады?",
+          "options": [
+            "Барлық жолды сол жолға кеткен уақытқа бөлу арқылы",
+            "Уақытты жолға көбейту арқылы",
+            "Жолды уақытқа көбейту арқылы",
+            "Уақытты жолға бөлу арқылы"
+          ],
+          "answer": 0,
+          "why": "Скриптте v = s / t формуласы берілген."
+        },
+        {
+          "q": "Велосипедші 24 км жолды 2 сағатта жүрсе, оның орташа жылдамдығы қанша?",
+          "options": [
+            "12 км/сағ",
+            "24 км/сағ",
+            "48 км/сағ",
+            "6 км/сағ"
+          ],
+          "answer": 0,
+          "why": "24 / 2 = 12 км/сағ."
+        },
+        {
+          "q": "Автобус 120 км-ді 2 сағатта жүрсе, оның орташа жылдамдығы қанша болады?",
+          "options": [
+            "60 км/сағ",
+            "120 км/сағ",
+            "240 км/сағ",
+            "40 км/сағ"
+          ],
+          "answer": 0,
+          "why": "120 / 2 = 60 км/сағ."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "V = s / t"
+        },
+        {
+          "t": 13.28,
+          "title": "Мысалы, велосипедші екі сағатта жиырма төрт…"
+        },
+        {
+          "t": 26.32,
+          "title": "Сондықтан формула қарапайым: орташа…"
+        },
+        {
+          "t": 36.56,
+          "title": "Енді өзің қорытындылап көр: автобус бір жүз…"
+        }
+      ],
+      "modified": 1793102470
+    },
+    {
+      "file": "out/the-silk-road-en.mp4",
+      "poster": "posters/the-silk-road-en.jpg",
+      "title": "The Silk Road",
+      "lang": "en",
+      "seconds": 68.0,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 6,
+      "grade": 6,
+      "course": "history",
+      "quiz": [
+        {
+          "q": "About how long was the network of Silk Road trade routes linking China to the Mediterranean?",
+          "options": [
+            "About 6,400 km",
+            "About 4,000 km",
+            "About 320 km",
+            "About 150 km"
+          ],
+          "answer": 0,
+          "why": "The script states the routes spanned roughly 6,400 km."
+        },
+        {
+          "q": "If a camel can load about 200 kg, how much can twenty camels carry?",
+          "options": [
+            "4,000 kg",
+            "2,000 kg",
+            "400 kg",
+            "200 kg"
+          ],
+          "answer": 0,
+          "why": "The script gives 20 × 200 kg = 4,000 kg."
+        },
+        {
+          "q": "At about 40 km a day, roughly how long would a 6,000 km journey take?",
+          "options": [
+            "About 150 days",
+            "About 100 days",
+            "About 240 days",
+            "About 60 days"
+          ],
+          "answer": 0,
+          "why": "The script gives 6,000 km ÷ 40 km/day = 150 days."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "Length ≈ 6,400 km"
+        },
+        {
+          "t": 11.16,
+          "title": "Merchants did not travel the whole way…"
+        },
+        {
+          "t": 21.72,
+          "title": "20 × 200 kg = 4,000 kg"
+        },
+        {
+          "t": 33.52,
+          "title": "Ideas and inventions traveled too: paper…"
+        },
+        {
+          "t": 44.6,
+          "title": "A slow camel could cover about forty…"
+        },
+        {
+          "t": 56.24,
+          "title": "Today we still trade across continents…"
+        }
+      ],
+      "modified": 1793102458
+    },
+    {
+      "file": "out/the-second-world-war-en.mp4",
+      "poster": "posters/the-second-world-war-en.jpg",
+      "title": "The Second World War: A Global Conflict",
+      "lang": "en",
+      "seconds": 64.2,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 6,
+      "grade": 11,
+      "course": "history",
+      "quiz": [
+        {
+          "q": "When did the Second World War begin?",
+          "options": [
+            "September 1, 1939",
+            "June 6, 1944",
+            "May 8, 1945",
+            "September 2, 1945"
+          ],
+          "answer": 0,
+          "why": "The script says it began when Germany invaded Poland on September 1, 1939."
+        },
+        {
+          "q": "How many people died in the Second World War?",
+          "options": [
+            "Around 6 million",
+            "Over 70 million",
+            "Around 70,000",
+            "Over 700 million"
+          ],
+          "answer": 1,
+          "why": "The script states that over 70 million people died."
+        },
+        {
+          "q": "Which event is named as a key turning point that shifted momentum toward the Allies?",
+          "options": [
+            "The invasion of Poland",
+            "The founding of the United Nations",
+            "The Battle of Stalingrad",
+            "The dropping of atomic bombs"
+          ],
+          "answer": 2,
+          "why": "The script lists the Battle of Stalingrad and D-Day as key turning points."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "1939 - 1945"
+        },
+        {
+          "t": 10.68,
+          "title": "September 1, 1939"
+        },
+        {
+          "t": 20.8,
+          "title": "~70,000,000 deaths"
+        },
+        {
+          "t": 31.92,
+          "title": "Key turning points included the Battle of…"
+        },
+        {
+          "t": 41.28,
+          "title": "The war in Europe ended on May 8, 1945, and…"
+        },
+        {
+          "t": 53.28,
+          "title": "UN founded: 1945"
+        }
+      ],
+      "modified": 1793102188
+    },
+    {
+      "file": "out/the-photoelectric-effect-en.mp4",
+      "poster": "posters/the-photoelectric-effect-en.jpg",
+      "title": "The Photoelectric Effect",
+      "lang": "en",
+      "seconds": 79.9,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 6,
+      "grade": 11,
+      "course": "physics",
+      "quiz": [
+        {
+          "q": "According to the video, what decides whether electrons are ejected from a clean metal surface?",
+          "options": [
+            "The color of the light",
+            "The brightness of the light",
+            "How long you wait",
+            "The size of the metal"
+          ],
+          "answer": 0,
+          "why": "The script says the color, not the brightness, decides."
+        },
+        {
+          "q": "In the video, Einstein says light comes in packets. What are these packets called?",
+          "options": [
+            "Electrons",
+            "Photons",
+            "Work functions",
+            "Volts"
+          ],
+          "answer": 1,
+          "why": "The script states light comes in packets called photons."
+        },
+        {
+          "q": "A metal has a work function of 2 eV and the photon gives 3 eV. What kinetic energy does the electron get?",
+          "options": [
+            "1 eV",
+            "2 eV",
+            "3 eV",
+            "5 eV"
+          ],
+          "answer": 0,
+          "why": "E_k = hf − W = 3 eV − 2 eV = 1 eV."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "Shine light on a clean metal surface, and…"
+        },
+        {
+          "t": 12.76,
+          "title": "Strangely, dim blue light ejects electrons…"
+        },
+        {
+          "t": 26.16,
+          "title": "E_photon = h f"
+        },
+        {
+          "t": 40.16,
+          "title": "E_k = h f − W"
+        },
+        {
+          "t": 53.62,
+          "title": "Take a metal with work function two…"
+        },
+        {
+          "t": 67.29,
+          "title": "Try it yourself: if the work function is two…"
+        }
+      ],
+      "modified": 1793102055
+    },
+    {
+      "file": "out/the-magnetic-field-en.mp4",
+      "poster": "posters/the-magnetic-field-en.jpg",
+      "title": "The Magnetic Field",
+      "lang": "en",
+      "seconds": 53.9,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 5,
+      "grade": 11,
+      "course": "physics",
+      "quiz": [
+        {
+          "q": "What is a magnetic field?",
+          "options": [
+            "An invisible area around a magnet where magnetic forces act on other magnets or moving charges",
+            "A visible line drawn around a magnet",
+            "A type of electric charge",
+            "A force that only acts on stationary objects"
+          ],
+          "answer": 0,
+          "why": "The script says a magnetic field is an invisible area around a magnet where magnetic forces act."
+        },
+        {
+          "q": "According to the video, what can the field strength near a strong MRI machine be?",
+          "options": [
+            "0.01 tesla",
+            "1 tesla",
+            "1.5 tesla",
+            "90 tesla"
+          ],
+          "answer": 2,
+          "why": "The script states that near a strong MRI machine it can be 1.5 tesla."
+        },
+        {
+          "q": "A charge of 1 coulomb moves at 1 meter per second perpendicular to a 1 tesla field. What is the force?",
+          "options": [
+            "0.01 N",
+            "1 N",
+            "1.5 N",
+            "90 N"
+          ],
+          "answer": 1,
+          "why": "Using F = q v B sin(θ) gives (1 C)(1 m/s)(1 T) sin(90°) = 1 N."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "A magnetic field is an invisible area around…"
+        },
+        {
+          "t": 10.12,
+          "title": "B = 0.01 T, B = 1.5 T"
+        },
+        {
+          "t": 21.8,
+          "title": "F = q v B sin(θ)"
+        },
+        {
+          "t": 33.44,
+          "title": "If a charge of 1 coulomb moves at 1 meter…"
+        },
+        {
+          "t": 43.68,
+          "title": "You can see magnetic field lines using iron…"
+        }
+      ],
+      "modified": 1793101925
+    },
+    {
+      "file": "out/the-industrial-revolution-en.mp4",
+      "poster": "posters/the-industrial-revolution-en.jpg",
+      "title": "The Industrial Revolution",
+      "lang": "en",
+      "seconds": 76.5,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 6,
+      "grade": 8,
+      "course": "history",
+      "quiz": [
+        {
+          "q": "According to the video, about how much thread could one skilled spinner make by hand in a day?",
+          "options": [
+            "1 pound",
+            "20 pounds",
+            "48 pounds",
+            "50 pounds"
+          ],
+          "answer": 0,
+          "why": "The script states a hand spinner made about one pound of thread a day."
+        },
+        {
+          "q": "A factory has 50 machines, and each machine makes 20 items per day. How many items are made each day in total?",
+          "options": [
+            "70 items",
+            "100 items",
+            "500 items",
+            "1000 items"
+          ],
+          "answer": 3,
+          "why": "Using output = machines x items per machine per day, 50 x 20 = 1000 items per day."
+        },
+        {
+          "q": "What powered the machines in the factories during the Industrial Revolution, according to the video?",
+          "options": [
+            "Windmills",
+            "Coal-fired steam engines",
+            "Water wheels only",
+            "Hand cranks"
+          ],
+          "answer": 1,
+          "why": "The script says coal-fired steam engines supplied the power to run the machines."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "Before the Industrial Revolution, most…"
+        },
+        {
+          "t": 11.6,
+          "title": "New machines and steam power changed…"
+        },
+        {
+          "t": 24.4,
+          "title": "For example, one skilled spinner by hand…"
+        },
+        {
+          "t": 37.6,
+          "title": "Output rises with both the number of…"
+        },
+        {
+          "t": 50.28,
+          "title": "Factories also needed power to run all these…"
+        },
+        {
+          "t": 64.48,
+          "title": "Now you try: if one machine makes 20 items…"
+        }
+      ],
+      "modified": 1793101760
+    },
+    {
+      "file": "out/the-four-seasons-en.mp4",
+      "poster": "posters/the-four-seasons-en.jpg",
+      "title": "Why We Have Four Seasons",
+      "lang": "en",
+      "seconds": 59.6,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 6,
+      "grade": 1,
+      "course": "geography",
+      "quiz": [
+        {
+          "q": "What is the tilt of Earth's axis?",
+          "options": [
+            "23.5 degrees",
+            "45 degrees",
+            "12 degrees",
+            "90 degrees"
+          ],
+          "answer": 0,
+          "why": "The script states the tilt is about twenty-three and a half degrees."
+        },
+        {
+          "q": "What happens when your half of Earth leans toward the Sun?",
+          "options": [
+            "Days are shorter and sunlight spreads out",
+            "Sunlight hits more directly and days are longer",
+            "The tilt changes direction",
+            "Earth stops orbiting the Sun"
+          ],
+          "answer": 1,
+          "why": "Leaning toward the Sun means direct sunlight and longer days, which is summer."
+        },
+        {
+          "q": "About how long does each season last?",
+          "options": [
+            "1 month",
+            "6 months",
+            "3 months",
+            "12 months"
+          ],
+          "answer": 2,
+          "why": "A full year of 12 months divided into four seasons gives about 3 months each."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "Earth moves around the Sun on a slightly…"
+        },
+        {
+          "t": 9.72,
+          "title": "Tilt = 23.5°"
+        },
+        {
+          "t": 19.48,
+          "title": "When your half of Earth leans toward the…"
+        },
+        {
+          "t": 29.04,
+          "title": "When your half leans away, sunlight spreads…"
+        },
+        {
+          "t": 39.24,
+          "title": "In between, spring and autumn appear. Each…"
+        },
+        {
+          "t": 48.56,
+          "title": "Try this: watch how high the Sun is at noon…"
+        }
+      ],
+      "modified": 1793101630
+    },
+    {
+      "file": "out/quadratic-equations-en.mp4",
+      "poster": "posters/quadratic-equations-en.jpg",
+      "title": "Quadratic Equations in 60 Seconds",
+      "lang": "en",
+      "seconds": 55.3,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 6,
+      "grade": 8,
+      "course": "math",
+      "quiz": [
+        {
+          "q": "What is the standard form of a quadratic equation?",
+          "options": [
+            "ax² + bx + c = 0",
+            "ax + b = 0",
+            "x² = 0",
+            "(x + 2)(x + 3) = 0"
+          ],
+          "answer": 0,
+          "why": "The video states the standard form sets everything equal to zero as ax² + bx + c = 0."
+        },
+        {
+          "q": "How do you factor x² + 5x + 6 = 0?",
+          "options": [
+            "(x + 1)(x + 6) = 0",
+            "(x + 2)(x + 3) = 0",
+            "(x - 2)(x - 3) = 0",
+            "(x + 5)(x + 1) = 0"
+          ],
+          "answer": 1,
+          "why": "Two and three multiply to six and add to five, giving (x + 2)(x + 3) = 0."
+        },
+        {
+          "q": "Solving x² - 4 = 0 gives which solutions?",
+          "options": [
+            "x = 4",
+            "x = -4",
+            "x = ±2",
+            "x = ±4"
+          ],
+          "answer": 2,
+          "why": "Adding four gives x² = 4, so taking the square root gives x = ±2."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "Ax² + bx + c = 0"
+        },
+        {
+          "t": 10.2,
+          "title": "X² + 5x + 6 = 0"
+        },
+        {
+          "t": 19.92,
+          "title": "(x + 2)(x + 3) = 0"
+        },
+        {
+          "t": 27.38,
+          "title": "X = -2 or x = -3"
+        },
+        {
+          "t": 36.1,
+          "title": "When factoring is hard, the quadratic…"
+        },
+        {
+          "t": 45.98,
+          "title": "X² - 4 = 0 → x = ±2"
+        }
+      ],
+      "modified": 1793101503
+    },
+    {
+      "file": "out/pythagorean-theorem-en.mp4",
+      "poster": "posters/pythagorean-theorem-en.jpg",
+      "title": "Pythagoras Made Simple",
+      "lang": "en",
+      "seconds": 58.3,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 4,
+      "grade": 8,
+      "course": "math",
+      "quiz": [
+        {
+          "q": "In a right triangle, what is the longest side called?",
+          "options": [
+            "The hypotenuse",
+            "The leg",
+            "The square root",
+            "The right angle"
+          ],
+          "answer": 0,
+          "why": "The script says the longest side, across from the right angle, is called the hypotenuse."
+        },
+        {
+          "q": "If the two shorter sides are 3 and 4, what is the hypotenuse?",
+          "options": [
+            "5",
+            "7",
+            "25",
+            "9"
+          ],
+          "answer": 0,
+          "why": "The script shows 9 + 16 = 25, so the hypotenuse is 5."
+        },
+        {
+          "q": "For a right triangle with legs 6 and 8, what is the hypotenuse?",
+          "options": [
+            "10",
+            "14",
+            "48",
+            "100"
+          ],
+          "answer": 0,
+          "why": "The script shows 36 + 64 = 100, and the square root of 100 is 10."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "A² + b² = c²"
+        },
+        {
+          "t": 15.39,
+          "title": "Suppose the short sides are three and four…"
+        },
+        {
+          "t": 31.48,
+          "title": "A² + b² = c²"
+        },
+        {
+          "t": 45.08,
+          "title": "Now your turn. A right triangle has legs six…"
+        }
+      ],
+      "modified": 1793101388
+    },
+    {
+      "file": "out/proportions-en.mp4",
+      "poster": "posters/proportions-en.jpg",
+      "title": "Proportions Made Simple",
+      "lang": "en",
+      "seconds": 59.7,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 5,
+      "grade": 6,
+      "course": "math",
+      "quiz": [
+        {
+          "q": "What does a proportion say about two ratios?",
+          "options": [
+            "They are equal",
+            "They are opposites",
+            "They are both zero",
+            "They are unrelated"
+          ],
+          "answer": 0,
+          "why": "The video states a proportion says two ratios are equal."
+        },
+        {
+          "q": "If three apples cost six dollars, how much do six apples cost?",
+          "options": [
+            "Twelve dollars",
+            "Six dollars",
+            "Three dollars",
+            "Nine dollars"
+          ],
+          "answer": 0,
+          "why": "The script says six apples cost twelve dollars."
+        },
+        {
+          "q": "In cross multiplication of a / b = c / d, what do you set equal?",
+          "options": [
+            "a × d = b × c",
+            "a × b = c × d",
+            "a + d = b + c",
+            "a / d = b / c"
+          ],
+          "answer": 0,
+          "why": "The video gives a × d = b × c as the cross multiplication rule."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "A proportion says two ratios are equal. If…"
+        },
+        {
+          "t": 12.48,
+          "title": "For example, three apples cost six dollars…"
+        },
+        {
+          "t": 24.0,
+          "title": "The rule is cross multiplication. Multiply…"
+        },
+        {
+          "t": 36.24,
+          "title": "Try this: a recipe uses two cups of flour…"
+        },
+        {
+          "t": 47.44,
+          "title": "A / b = c / d"
+        }
+      ],
+      "modified": 1793101286
+    },
+    {
+      "file": "out/present-simple-en.mp4",
+      "poster": "posters/present-simple-en.jpg",
+      "title": "Present Simple Explained",
+      "lang": "en",
+      "seconds": 51.8,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 4,
+      "grade": 5,
+      "course": "languages",
+      "quiz": [
+        {
+          "q": "What does the present simple describe?",
+          "options": [
+            "Habits, routines and facts that are always true",
+            "Only things happening right now",
+            "Only past events",
+            "Only future plans"
+          ],
+          "answer": 0,
+          "why": "The video says the present simple describes habits, routines and facts that are always true."
+        },
+        {
+          "q": "Which sentence is correct with he, she or it?",
+          "options": [
+            "She read books before bed.",
+            "She reads books before bed.",
+            "She reading books before bed.",
+            "She is read books before bed."
+          ],
+          "answer": 1,
+          "why": "With he, she and it, you add an s to the verb."
+        },
+        {
+          "q": "At what temperature does water boil, according to the video?",
+          "options": [
+            "50 degrees",
+            "100 degrees",
+            "150 degrees",
+            "200 degrees"
+          ],
+          "answer": 1,
+          "why": "The video says water boils at one hundred degrees."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "The present simple describes things that…"
+        },
+        {
+          "t": 14.28,
+          "title": "Look at these examples. I play football…"
+        },
+        {
+          "t": 28.32,
+          "title": "With I, you, we and they, just use the base…"
+        },
+        {
+          "t": 40.08,
+          "title": "Now it is your turn. Say one thing you do…"
+        }
+      ],
+      "modified": 1793101117
+    },
+    {
+      "file": "out/photosynthesis-en.mp4",
+      "poster": "posters/photosynthesis-en.jpg",
+      "title": "Photosynthesis Explained",
+      "lang": "en",
+      "seconds": 46.8,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 5,
+      "grade": 6,
+      "course": "biology",
+      "quiz": [
+        {
+          "q": "What does photosynthesis require to produce glucose?",
+          "options": [
+            "Carbon dioxide, water, and sunlight",
+            "Oxygen, water, and sunlight",
+            "Glucose, oxygen, and water",
+            "Carbon dioxide, oxygen, and water"
+          ],
+          "answer": 0,
+          "why": "The script states plants use sunlight, water, and carbon dioxide to make food."
+        },
+        {
+          "q": "About how much energy is stored in one mole of glucose?",
+          "options": [
+            "2,800 kilojoules",
+            "280 kilojoules",
+            "28,000 kilojoules",
+            "18 kilojoules"
+          ],
+          "answer": 0,
+          "why": "The script says one mole of glucose stores about 2,800 kJ."
+        },
+        {
+          "q": "How many oxygen molecules are released per glucose molecule produced?",
+          "options": [
+            "6",
+            "1",
+            "12",
+            "18"
+          ],
+          "answer": 0,
+          "why": "The equation in the script shows 6 O₂ released per glucose molecule."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "Photosynthesis is how plants make their own…"
+        },
+        {
+          "t": 8.2,
+          "title": "For example, one glucose molecule stores…"
+        },
+        {
+          "t": 19.04,
+          "title": "The overall chemical equation is: six carbon…"
+        },
+        {
+          "t": 30.48,
+          "title": "Remember, plants release oxygen as a…"
+        },
+        {
+          "t": 37.6,
+          "title": "Your turn: try to write the photosynthesis…"
+        }
+      ],
+      "modified": 1793101038
+    },
+    {
+      "file": "out/perimeter-en.mp4",
+      "poster": "posters/perimeter-en.jpg",
+      "title": "Understanding Perimeter",
+      "lang": "en",
+      "seconds": 58.9,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 5,
+      "grade": 4,
+      "course": "math",
+      "quiz": [
+        {
+          "q": "What is the perimeter of a rectangle with length 5 meters and width 3 meters?",
+          "options": [
+            "16 meters",
+            "8 meters",
+            "15 meters",
+            "30 meters"
+          ],
+          "answer": 0,
+          "why": "The script shows 5 + 3 + 5 + 3 = 16 m."
+        },
+        {
+          "q": "What is the formula for the perimeter of a square with side length s?",
+          "options": [
+            "P = 4s",
+            "P = 2s",
+            "P = 2(l + w)",
+            "P = 2l + 2w"
+          ],
+          "answer": 0,
+          "why": "The script states the perimeter of a square is 4 times s."
+        },
+        {
+          "q": "What is the perimeter of a triangle with sides 6, 8, and 10 inches?",
+          "options": [
+            "24 inches",
+            "14 inches",
+            "18 inches",
+            "48 inches"
+          ],
+          "answer": 0,
+          "why": "The script adds 6 + 8 + 10 = 24 in."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "Perimeter is the total distance around the…"
+        },
+        {
+          "t": 11.68,
+          "title": "5 + 3 + 5 + 3 = 16 m"
+        },
+        {
+          "t": 23.84,
+          "title": "The formula for the perimeter of a rectangle…"
+        },
+        {
+          "t": 36.36,
+          "title": "For a square with side length s, the…"
+        },
+        {
+          "t": 47.92,
+          "title": "6 + 8 + 10 = 24 in"
+        }
+      ],
+      "modified": 1793100961
+    },
+    {
+      "file": "out/percentages-en.mp4",
+      "poster": "posters/percentages-en.jpg",
+      "title": "Understanding Percentages",
+      "lang": "en",
+      "seconds": 57.2,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 5,
+      "grade": 6,
+      "course": "math",
+      "quiz": [
+        {
+          "q": "What does twenty-five percent mean?",
+          "options": [
+            "Twenty-five out of every hundred parts",
+            "One out of every twenty-five parts",
+            "Twenty-five out of every forty parts",
+            "One hundred out of twenty-five parts"
+          ],
+          "answer": 0,
+          "why": "The script says a percentage means per hundred, so 25% = 25/100."
+        },
+        {
+          "q": "In a class of forty students, ten ride bicycles. What percent is that?",
+          "options": [
+            "10%",
+            "40%",
+            "25%",
+            "20%"
+          ],
+          "answer": 2,
+          "why": "10/40 = 0.25 = 25%, as shown in the script."
+        },
+        {
+          "q": "A jacket costs eighty dollars and is twenty-five percent off. What is the discount?",
+          "options": [
+            "25 dollars",
+            "20 dollars",
+            "60 dollars",
+            "80 dollars"
+          ],
+          "answer": 1,
+          "why": "The script computes discount = 80 × 25/100 = 20 dollars."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "25% = 25/100"
+        },
+        {
+          "t": 9.48,
+          "title": "10/40 = 0.25 = 25%"
+        },
+        {
+          "t": 21.0,
+          "title": "To find a percent of a number, multiply the…"
+        },
+        {
+          "t": 32.6,
+          "title": "Your turn! A jacket costs eighty dollars and…"
+        },
+        {
+          "t": 45.0,
+          "title": "80 − 20 = 60 dollars"
+        }
+      ],
+      "modified": 1793100872
+    },
+    {
+      "file": "out/parts-of-speech-en.mp4",
+      "poster": "posters/parts-of-speech-en.jpg",
+      "title": "Parts of Speech",
+      "lang": "en",
+      "seconds": 61.2,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 6,
+      "grade": 5,
+      "course": "languages",
+      "quiz": [
+        {
+          "q": "How many main parts of speech are there to learn?",
+          "options": [
+            "Four",
+            "Six",
+            "Eight",
+            "Ten"
+          ],
+          "answer": 2,
+          "why": "The video says there are eight main kinds to learn."
+        },
+        {
+          "q": "Which word is a preposition?",
+          "options": [
+            "quickly",
+            "under",
+            "because",
+            "wow"
+          ],
+          "answer": 1,
+          "why": "The video lists in, on, and under as prepositions."
+        },
+        {
+          "q": "In \"The clever fox quickly jumps over the fence,\" which word is the adjective?",
+          "options": [
+            "fox",
+            "jumps",
+            "clever",
+            "quickly"
+          ],
+          "answer": 2,
+          "why": "The video identifies clever as the adjective in that sentence."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "8 parts of speech"
+        },
+        {
+          "t": 10.64,
+          "title": "A noun names a person, place, or thing, like…"
+        },
+        {
+          "t": 20.6,
+          "title": "A pronoun replaces a noun, like he, she, or…"
+        },
+        {
+          "t": 29.88,
+          "title": "An adverb tells how, when, or where an…"
+        },
+        {
+          "t": 41.0,
+          "title": "A conjunction joins words or groups, like…"
+        },
+        {
+          "t": 51.28,
+          "title": "Now try it: find the noun, verb, and…"
+        }
+      ],
+      "modified": 1793100779
+    },
+    {
+      "file": "out/newton-s-second-law-en.mp4",
+      "poster": "posters/newton-s-second-law-en.jpg",
+      "title": "Newton's Second Law",
+      "lang": "en",
+      "seconds": 36.6,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 6,
+      "grade": 9,
+      "course": "physics",
+      "quiz": [
+        {
+          "q": "According to the video, what happens to acceleration when you push harder on a box?",
+          "options": [
+            "It gets bigger",
+            "It gets smaller",
+            "It stays the same",
+            "It becomes zero"
+          ],
+          "answer": 0,
+          "why": "The video says bigger force gives bigger acceleration."
+        },
+        {
+          "q": "A force of 10 N pushes a 2 kg object. What is its acceleration?",
+          "options": [
+            "5 m/s²",
+            "10 m/s²",
+            "20 m/s²",
+            "2 m/s²"
+          ],
+          "answer": 0,
+          "why": "The example gives a = F / m = 10 N / 2 kg = 5 m/s²."
+        },
+        {
+          "q": "You double the push on the same object. What happens to its acceleration?",
+          "options": [
+            "It doubles",
+            "It halves",
+            "It stays the same",
+            "It becomes four times larger"
+          ],
+          "answer": 0,
+          "why": "The video states that 2F gives 2a on the same object."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "Bigger F → bigger a"
+        },
+        {
+          "t": 5.56,
+          "title": "The same push moves a heavy box more slowly…"
+        },
+        {
+          "t": 11.04,
+          "title": "A ∝ F, a ∝ 1/m"
+        },
+        {
+          "t": 16.56,
+          "title": "A = F / m"
+        },
+        {
+          "t": 21.88,
+          "title": "For example, ten newtons pushing two…"
+        },
+        {
+          "t": 29.52,
+          "title": "2F → 2a"
+        }
+      ],
+      "modified": 1793100596
+    },
+    {
+      "file": "out/multiplying-two-digit-numbers-en.mp4",
+      "poster": "posters/multiplying-two-digit-numbers-en.jpg",
+      "title": "Multiplying Two-Digit Numbers",
+      "lang": "en",
+      "seconds": 56.1,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 5,
+      "grade": 4,
+      "course": "math",
+      "quiz": [
+        {
+          "q": "How do we split 23 and 14 in the video's method?",
+          "options": [
+            "23 = 20 + 3 and 14 = 10 + 4",
+            "23 = 10 + 13 and 14 = 7 + 7",
+            "23 = 2 + 3 and 14 = 1 + 4",
+            "23 = 25 - 2 and 14 = 15 - 1"
+          ],
+          "answer": 0,
+          "why": "The script splits 23 into 20 + 3 and 14 into 10 + 4."
+        },
+        {
+          "q": "What are the four products from 23 × 14 in the video?",
+          "options": [
+            "200, 80, 30, and 12",
+            "200, 40, 60, and 12",
+            "230, 80, 30, and 10",
+            "20, 80, 30, and 24"
+          ],
+          "answer": 0,
+          "why": "The script lists 20×10, 20×4, 3×10, and 3×4 as 200, 80, 30, and 12."
+        },
+        {
+          "q": "What is the final answer to 23 × 14 in the video?",
+          "options": [
+            "322",
+            "232",
+            "344",
+            "242"
+          ],
+          "answer": 0,
+          "why": "The script adds 200 + 80 + 30 + 12 to get 322."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "Multiplying two-digit numbers looks hard…"
+        },
+        {
+          "t": 10.04,
+          "title": "Let us try twenty-three times fourteen…"
+        },
+        {
+          "t": 22.16,
+          "title": "Each part gives two hundred, eighty, thirty…"
+        },
+        {
+          "t": 33.44,
+          "title": "Here is the trick to remember: multiply the…"
+        },
+        {
+          "t": 45.56,
+          "title": "Now it is your turn. Try thirty-one times…"
+        }
+      ],
+      "modified": 1793100542
+    },
+    {
+      "file": "out/multiplying-by-10-and-100-en.mp4",
+      "poster": "posters/multiplying-by-10-and-100-en.jpg",
+      "title": "Multiplying by 10 and 100",
+      "lang": "en",
+      "seconds": 56.8,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 6,
+      "grade": 3,
+      "course": "math",
+      "quiz": [
+        {
+          "q": "When you multiply a whole number by 10, what happens to each digit?",
+          "options": [
+            "It moves one place to the left",
+            "It moves two places to the left",
+            "It moves one place to the right",
+            "It stays in the same place"
+          ],
+          "answer": 0,
+          "why": "The script says multiplying by ten moves every digit one place to the left."
+        },
+        {
+          "q": "What is 4 × 100?",
+          "options": [
+            "40",
+            "400",
+            "4000",
+            "1004"
+          ],
+          "answer": 1,
+          "why": "The script shows 4 × 100 = 400, with two zeros appearing."
+        },
+        {
+          "q": "Following the rule in the video, what is 7 × 10?",
+          "options": [
+            "70",
+            "700",
+            "17",
+            "77"
+          ],
+          "answer": 0,
+          "why": "Times ten adds one zero, so 7 × 10 = 70."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "N × 10"
+        },
+        {
+          "t": 9.6,
+          "title": "4 × 10 = 40"
+        },
+        {
+          "t": 18.72,
+          "title": "N × 100"
+        },
+        {
+          "t": 27.84,
+          "title": "4 × 100 = 400"
+        },
+        {
+          "t": 36.88,
+          "title": "So the rule is simple: times ten adds one…"
+        },
+        {
+          "t": 45.88,
+          "title": "Now you try: what is seven times ten, and…"
+        }
+      ],
+      "modified": 1793100463
+    },
+    {
+      "file": "out/logarithms-en.mp4",
+      "poster": "posters/logarithms-en.jpg",
+      "title": "Logarithms: The Power Finder",
+      "lang": "en",
+      "seconds": 50.6,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 4,
+      "grade": 10,
+      "course": "math",
+      "quiz": [
+        {
+          "q": "What does a logarithm answer?",
+          "options": [
+            "What power you must raise a base to, to get a certain number",
+            "What number you get when you add two numbers",
+            "What base gives the largest exponent",
+            "What number multiplied by zero equals one"
+          ],
+          "answer": 0,
+          "why": "The script says a logarithm answers what power you must raise a base to, to get a certain number."
+        },
+        {
+          "q": "What is log base two of eight?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "8"
+          ],
+          "answer": 1,
+          "why": "Since two times two times two equals eight, log base two of eight is three."
+        },
+        {
+          "q": "According to the video, which value equals zero?",
+          "options": [
+            "log base three of eighty-one",
+            "log base two of eight",
+            "log base ten of one",
+            "log base ten of eight"
+          ],
+          "answer": 2,
+          "why": "The script states that log base ten of one equals zero."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "2^x = 8 → x = 3"
+        },
+        {
+          "t": 14.0,
+          "title": "For example, since two times two times two…"
+        },
+        {
+          "t": 25.25,
+          "title": "Here is the general formula. If b to the…"
+        },
+        {
+          "t": 36.85,
+          "title": "A useful fact: log base ten of one equals…"
+        }
+      ],
+      "modified": 1793100382
+    },
+    {
+      "file": "out/farm-animals-en.mp4",
+      "poster": "posters/farm-animals-en.jpg",
+      "title": "Farm Animals",
+      "lang": "en",
+      "seconds": 59.3,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 5,
+      "grade": 1,
+      "course": "biology",
+      "quiz": [
+        {
+          "q": "About how much milk can a dairy cow make in one day?",
+          "options": [
+            "25 liters",
+            "4 kilograms",
+            "300 liters",
+            "100 liters"
+          ],
+          "answer": 0,
+          "why": "The script says a dairy cow can make about 25 liters of milk in one day."
+        },
+        {
+          "q": "About how many eggs does a hen lay in one year?",
+          "options": [
+            "42 eggs",
+            "365 eggs",
+            "300 eggs",
+            "100 eggs"
+          ],
+          "answer": 2,
+          "why": "The script says a hen can lay about 300 eggs in one year."
+        },
+        {
+          "q": "A farmer has 6 hens, and each hen lays 1 egg per day. How many eggs do the 6 hens lay in one week?",
+          "options": [
+            "6 eggs",
+            "7 eggs",
+            "42 eggs",
+            "13 eggs"
+          ],
+          "answer": 2,
+          "why": "6 hens × 1 egg/day × 7 days = 42 eggs."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "Farm animals are animals that people raise…"
+        },
+        {
+          "t": 11.96,
+          "title": "For example, a dairy cow can make about 25…"
+        },
+        {
+          "t": 24.6,
+          "title": "A hen can lay about 300 eggs in one year. If…"
+        },
+        {
+          "t": 35.92,
+          "title": "A sheep can give around 4 kilograms of wool…"
+        },
+        {
+          "t": 48.28,
+          "title": "Now it is your turn. A farmer has 6 hens…"
+        }
+      ],
+      "modified": 1793100313
+    },
+    {
+      "file": "out/dna-and-inheritance-en.mp4",
+      "poster": "posters/dna-and-inheritance-en.jpg",
+      "title": "DNA and Inheritance",
+      "lang": "en",
+      "seconds": 61.6,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 6,
+      "grade": 9,
+      "course": "biology",
+      "quiz": [
+        {
+          "q": "How many chromosomes does a human have in total?",
+          "options": [
+            "23",
+            "46",
+            "23 pairs plus one",
+            "44"
+          ],
+          "answer": 1,
+          "why": "The script says humans have 46 chromosomes, sorted into 23 pairs."
+        },
+        {
+          "q": "A child receives how many chromosomes from each parent?",
+          "options": [
+            "46",
+            "23",
+            "12",
+            "22"
+          ],
+          "answer": 1,
+          "why": "A child gets 23 from the mother and 23 from the father."
+        },
+        {
+          "q": "Which combination of alleles gives blue eyes?",
+          "options": [
+            "Bb",
+            "BB",
+            "bB",
+            "bb"
+          ],
+          "answer": 3,
+          "why": "The script says only bb gives blue eyes, while Bb gives brown eyes."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "Inside every cell is DNA, a long twisted…"
+        },
+        {
+          "t": 10.08,
+          "title": "23 + 23 = 46"
+        },
+        {
+          "t": 21.08,
+          "title": "Gene: section of DNA"
+        },
+        {
+          "t": 31.12,
+          "title": "Each parent passes on one allele, so a child…"
+        },
+        {
+          "t": 42.64,
+          "title": "A brown-eye allele B beats a blue-eye allele…"
+        },
+        {
+          "t": 51.32,
+          "title": "50% + 50% = 100%"
+        }
+      ],
+      "modified": 1793100152
+    },
+    {
+      "file": "out/density-en.mp4",
+      "poster": "posters/density-en.jpg",
+      "title": "Density: How Much Stuff in How Much Space",
+      "lang": "en",
+      "seconds": 46.3,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 4,
+      "grade": 7,
+      "course": "chemistry",
+      "quiz": [
+        {
+          "q": "What does density tell us?",
+          "options": [
+            "How much mass is packed into a given space",
+            "How heavy an object is regardless of size",
+            "How much volume an object takes up",
+            "How long an object is"
+          ],
+          "answer": 0,
+          "why": "The video defines density as mass packed into volume."
+        },
+        {
+          "q": "A metal cube has a mass of 8 g and a volume of 2 cm³. What is its density?",
+          "options": [
+            "2 g/cm³",
+            "4 g/cm³",
+            "8 g/cm³",
+            "16 g/cm³"
+          ],
+          "answer": 1,
+          "why": "8 g divided by 2 cm³ equals 4 g/cm³."
+        },
+        {
+          "q": "A block has a mass of 30 g and a volume of 10 cm³. What is its density?",
+          "options": [
+            "3 g/cm³",
+            "10 g/cm³",
+            "30 g/cm³",
+            "40 g/cm³"
+          ],
+          "answer": 0,
+          "why": "Using d = m / V, 30 g divided by 10 cm³ equals 3 g/cm³."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "Density tells us how much mass is packed…"
+        },
+        {
+          "t": 12.2,
+          "title": "8 g / 2 cm³ = 4 g/cm³"
+        },
+        {
+          "t": 25.0,
+          "title": "D = m / V"
+        },
+        {
+          "t": 36.24,
+          "title": "Try it yourself: a block has a mass of…"
+        }
+      ],
+      "modified": 1793100057
+    },
+    {
+      "file": "out/counting-to-10-en.mp4",
+      "poster": "posters/counting-to-10-en.jpg",
+      "title": "Counting to 10",
+      "lang": "en",
+      "seconds": 55.9,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 5,
+      "grade": 1,
+      "course": "math",
+      "quiz": [
+        {
+          "q": "What is the last number you say when you count three apples?",
+          "options": [
+            "One",
+            "Two",
+            "Three",
+            "Four"
+          ],
+          "answer": 2,
+          "why": "The script says the last number said is the total, and three apples count to three."
+        },
+        {
+          "q": "When you count things, how many numbers does each object get?",
+          "options": [
+            "Exactly one",
+            "Two",
+            "Three",
+            "As many as you like"
+          ],
+          "answer": 0,
+          "why": "The script says each object gets exactly one number."
+        },
+        {
+          "q": "Which number comes right after seven when counting to ten?",
+          "options": [
+            "Six",
+            "Eight",
+            "Nine",
+            "Ten"
+          ],
+          "answer": 1,
+          "why": "The script lists seven, eight, nine, ten in order, so eight comes after seven."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "Counting means saying number names in order…"
+        },
+        {
+          "t": 12.32,
+          "title": "1, 2, 3 apples"
+        },
+        {
+          "t": 23.4,
+          "title": "The last number you say tells how many there…"
+        },
+        {
+          "t": 34.08,
+          "title": "The numbers go one, two, three, four, five…"
+        },
+        {
+          "t": 44.64,
+          "title": "Count to 10: 1 to 10"
+        }
+      ],
+      "modified": 1793099988
+    },
+    {
+      "file": "out/circle-radius-and-diameter-en.mp4",
+      "poster": "posters/circle-radius-and-diameter-en.jpg",
+      "title": "Radius and Diameter of a Circle",
+      "lang": "en",
+      "seconds": 56.1,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 5,
+      "grade": 5,
+      "course": "math",
+      "quiz": [
+        {
+          "q": "In the video, the radius of the circle is 5 cm. What is the diameter?",
+          "options": [
+            "2.5 cm",
+            "5 cm",
+            "10 cm",
+            "20 cm"
+          ],
+          "answer": 2,
+          "why": "The diameter is twice the radius, so 2 × 5 = 10 cm."
+        },
+        {
+          "q": "Which formula correctly shows the relationship between diameter and radius?",
+          "options": [
+            "d = r / 2",
+            "d = 2r",
+            "d = r + 2",
+            "d = 2 + r"
+          ],
+          "answer": 1,
+          "why": "The script says diameter equals two times radius."
+        },
+        {
+          "q": "The diameter of a circle is 12 cm. What is its radius?",
+          "options": [
+            "24 cm",
+            "12 cm",
+            "6 cm",
+            "3 cm"
+          ],
+          "answer": 2,
+          "why": "Radius equals diameter divided by two, so 12 / 2 = 6 cm."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "A circle is a round shape. The center is the…"
+        },
+        {
+          "t": 10.84,
+          "title": "R = 5 cm"
+        },
+        {
+          "t": 22.12,
+          "title": "The diameter goes all the way across, right…"
+        },
+        {
+          "t": 34.48,
+          "title": "D = 2r, r = d / 2"
+        },
+        {
+          "t": 44.13,
+          "title": "Now it is your turn. If the diameter of a…"
+        }
+      ],
+      "modified": 1793099901
+    },
+    {
+      "file": "out/average-speed-en.mp4",
+      "poster": "posters/average-speed-en.jpg",
+      "title": "Average Speed Made Simple",
+      "lang": "en",
+      "seconds": 63.9,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 5,
+      "grade": 7,
+      "course": "physics",
+      "quiz": [
+        {
+          "q": "What is the formula for average speed?",
+          "options": [
+            "v = d / t",
+            "v = t / d",
+            "v = d × t",
+            "v = d + t"
+          ],
+          "answer": 0,
+          "why": "The script states average speed equals total distance divided by total time."
+        },
+        {
+          "q": "A cyclist rides 120 m in 30 s. What is the average speed?",
+          "options": [
+            "2 m/s",
+            "4 m/s",
+            "6 m/s",
+            "90 m/s"
+          ],
+          "answer": 1,
+          "why": "120 m divided by 30 s gives 4 m/s."
+        },
+        {
+          "q": "A runner covers 200 m in 50 s. What is the average speed?",
+          "options": [
+            "2 m/s",
+            "4 m/s",
+            "5 m/s",
+            "250 m/s"
+          ],
+          "answer": 1,
+          "why": "200 m divided by 50 s gives 4 m/s."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "Average speed tells us how fast something…"
+        },
+        {
+          "t": 12.6,
+          "title": "120 m / 30 s = 4 m/s"
+        },
+        {
+          "t": 25.16,
+          "title": "V = d / t"
+        },
+        {
+          "t": 39.0,
+          "title": "Now it is your turn. If a runner covers two…"
+        },
+        {
+          "t": 50.28,
+          "title": "200 m / 50 s = 4 m/s"
+        }
+      ],
+      "modified": 1793099822
+    },
+    {
+      "file": "out/area-of-a-rectangle-en.mp4",
+      "poster": "posters/area-of-a-rectangle-en.jpg",
+      "title": "Area of a Rectangle",
+      "lang": "en",
+      "seconds": 54.2,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 5,
+      "grade": 4,
+      "course": "math",
+      "quiz": [
+        {
+          "q": "What does the area of a rectangle measure?",
+          "options": [
+            "The space inside its edges",
+            "The distance around its edges",
+            "The length of its longest side",
+            "The number of corners it has"
+          ],
+          "answer": 0,
+          "why": "The video says area is the amount of flat space inside the edges."
+        },
+        {
+          "q": "A rectangle is 5 units long and 3 units wide. What is its area?",
+          "options": [
+            "8 square units",
+            "15 square units",
+            "16 square units",
+            "10 square units"
+          ],
+          "answer": 1,
+          "why": "The video shows 5 × 3 = 15 square units."
+        },
+        {
+          "q": "What is the rule for the area of a rectangle?",
+          "options": [
+            "Area = length + width",
+            "Area = length × width",
+            "Area = length − width",
+            "Area = 2 × length"
+          ],
+          "answer": 1,
+          "why": "The video states A = length × width."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "Imagine a rectangle, like a chocolate bar or…"
+        },
+        {
+          "t": 10.48,
+          "title": "Think of the rectangle as rows and columns…"
+        },
+        {
+          "t": 21.92,
+          "title": "Here is an example: a rectangle is five…"
+        },
+        {
+          "t": 33.64,
+          "title": "A = length × width"
+        },
+        {
+          "t": 44.12,
+          "title": "6 × 4 = ?"
+        }
+      ],
+      "modified": 1793099646
+    },
+    {
+      "file": "out/area-of-a-circle-en.mp4",
+      "poster": "posters/area-of-a-circle-en.jpg",
+      "title": "Area of a Circle",
+      "lang": "en",
+      "seconds": 63.9,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 5,
+      "grade": 8,
+      "course": "math",
+      "quiz": [
+        {
+          "q": "What does the area of a circle measure?",
+          "options": [
+            "The distance from the center to the edge",
+            "The amount of flat space inside the circle's edge",
+            "The length around the circle's boundary",
+            "The number of radii that fit across the circle"
+          ],
+          "answer": 1,
+          "why": "The script says area is the flat space inside the circle's edge."
+        },
+        {
+          "q": "For a circle with a radius of 3 cm, what is the area?",
+          "options": [
+            "3π ≈ 9.4 cm²",
+            "6π ≈ 18.8 cm²",
+            "9π ≈ 28.3 cm²",
+            "12π ≈ 37.7 cm²"
+          ],
+          "answer": 2,
+          "why": "The script computes π × 3² = 9π ≈ 28.3 cm²."
+        },
+        {
+          "q": "A circle has a radius of 5 meters. Square the radius and multiply by pi. What is the area?",
+          "options": [
+            "10π ≈ 31.4 m²",
+            "25π ≈ 78.5 m²",
+            "5π ≈ 15.7 m²",
+            "50π ≈ 157 m²"
+          ],
+          "answer": 1,
+          "why": "The script gives π × 5² = 25π ≈ 78.5 m²."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "A circle's area is the amount of flat space…"
+        },
+        {
+          "t": 13.2,
+          "title": "R = 3 cm"
+        },
+        {
+          "t": 24.56,
+          "title": "Multiply the radius by itself, then multiply…"
+        },
+        {
+          "t": 37.93,
+          "title": "A = π r²"
+        },
+        {
+          "t": 49.93,
+          "title": "Now you try: a circle has a radius of five…"
+        }
+      ],
+      "modified": 1793099569
+    },
+    {
+      "file": "out/ancient-rome-en.mp4",
+      "poster": "posters/ancient-rome-en.jpg",
+      "title": "Ancient Rome",
+      "lang": "en",
+      "seconds": 64.6,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 5,
+      "grade": 5,
+      "course": "history",
+      "quiz": [
+        {
+          "q": "In what year was Rome founded?",
+          "options": [
+            "753 BCE",
+            "117 CE",
+            "80,000 BCE",
+            "5,000 BCE"
+          ],
+          "answer": 0,
+          "why": "The script states Ancient Rome began in 753 BCE."
+        },
+        {
+          "q": "About how many kilometers of Roman roads stretched across the empire?",
+          "options": [
+            "5,000 km",
+            "80,000 km",
+            "117 km",
+            "753 km"
+          ],
+          "answer": 1,
+          "why": "The script says Roman roads stretched about 80,000 kilometers."
+        },
+        {
+          "q": "About how many soldiers were in a Roman legion?",
+          "options": [
+            "117",
+            "5,000",
+            "80,000",
+            "753"
+          ],
+          "answer": 1,
+          "why": "The script states a Roman legion had about 5,000 soldiers."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "753 BCE: Rome founded"
+        },
+        {
+          "t": 12.88,
+          "title": "80,000 km of roads"
+        },
+        {
+          "t": 26.84,
+          "title": "Under Trajan in 117 CE the empire covered…"
+        },
+        {
+          "t": 39.6,
+          "title": "A Roman legion had about 5,000 soldiers and…"
+        },
+        {
+          "t": 52.68,
+          "title": "Your turn: draw one straight Roman road on a…"
+        }
+      ],
+      "modified": 1793099475
+    },
+    {
+      "file": "out/adding-fractions-en.mp4",
+      "poster": "posters/adding-fractions-en.jpg",
+      "title": "Adding Fractions",
+      "lang": "en",
+      "seconds": 67.8,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 6,
+      "grade": 6,
+      "course": "math",
+      "quiz": [
+        {
+          "q": "Before you can add fractions, what must be the same?",
+          "options": [
+            "The numerators",
+            "The denominators",
+            "The whole numbers",
+            "The answer"
+          ],
+          "answer": 1,
+          "why": "The bottom numbers must be the same so each piece is the same size."
+        },
+        {
+          "q": "What is 1/2 + 1/3?",
+          "options": [
+            "2/5",
+            "3/6",
+            "5/6",
+            "2/6"
+          ],
+          "answer": 2,
+          "why": "3/6 + 2/6 = 5/6."
+        },
+        {
+          "q": "After rewriting 1/3 with denominator 6, what fraction do you get?",
+          "options": [
+            "2/6",
+            "3/6",
+            "1/6",
+            "2/3"
+          ],
+          "answer": 0,
+          "why": "The script says one third becomes two sixths."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "Same denominator"
+        },
+        {
+          "t": 11.28,
+          "title": "1/2 + 1/3 → ?/6"
+        },
+        {
+          "t": 21.2,
+          "title": "1/2 = 3/6, 1/3 = 2/6"
+        },
+        {
+          "t": 32.56,
+          "title": "3/6 + 2/6 = 5/6"
+        },
+        {
+          "t": 43.96,
+          "title": "Formally: a over b plus c over d equals a…"
+        },
+        {
+          "t": 54.08,
+          "title": "1/4 + 1/6 = ?"
+        }
+      ],
+      "modified": 1793099379
+    },
+    {
+      "file": "out/adding-and-subtracting-to-100-en.mp4",
+      "poster": "posters/adding-and-subtracting-to-100-en.jpg",
+      "title": "Adding and Subtracting to 100",
+      "lang": "en",
+      "seconds": 62.4,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 5,
+      "grade": 3,
+      "course": "math",
+      "quiz": [
+        {
+          "q": "What is 34 + 25?",
+          "options": [
+            "59",
+            "69",
+            "49",
+            "58"
+          ],
+          "answer": 0,
+          "why": "The video shows 30 + 20 = 50 and 4 + 5 = 9, giving 59."
+        },
+        {
+          "q": "What is 72 - 38?",
+          "options": [
+            "44",
+            "34",
+            "36",
+            "42"
+          ],
+          "answer": 1,
+          "why": "The video shows 72 - 30 = 42, then 42 - 8 = 34."
+        },
+        {
+          "q": "What is 46 + 27?",
+          "options": [
+            "63",
+            "73",
+            "53",
+            "72"
+          ],
+          "answer": 1,
+          "why": "Adding tens 40 + 20 = 60 and ones 6 + 7 = 13 gives 73."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "Today we will learn how to add and subtract…"
+        },
+        {
+          "t": 11.36,
+          "title": "34 + 25 = 59"
+        },
+        {
+          "t": 26.12,
+          "title": "72 - 38 = 34"
+        },
+        {
+          "t": 39.44,
+          "title": "Remember: when adding, add tens and ones…"
+        },
+        {
+          "t": 50.0,
+          "title": "Your turn: try 46 plus 27. What is the sum?…"
+        }
+      ],
+      "modified": 1793099275
+    },
+    {
+      "file": "out/что-такое-звук-ru.mp4",
+      "poster": "posters/что-такое-звук-ru.jpg",
+      "title": "Что такое звук",
+      "lang": "ru",
+      "seconds": 70.5,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 5,
+      "grade": null,
+      "course": "",
+      "quiz": [
+        {
+          "q": "Что происходит с частицами среды при распространении звука?",
+          "options": [
+            "Они колеблются и передают колебания друг другу",
+            "Они движутся вместе со звуком к уху",
+            "Они исчезают в среде",
+            "Они двигаются только вверх и вниз без передачи дальше"
+          ],
+          "answer": 0,
+          "why": "Звук — это продольная волна: колеблющиеся частицы среды передают колебания друг другу."
+        },
+        {
+          "q": "Сколько колебаний в секунду совершает камертон с частотой 440 герц?",
+          "options": [
+            "340",
+            "440",
+            "2000",
+            "6"
+          ],
+          "answer": 1,
+          "why": "Частота 440 Гц означает 440 колебаний в секунду."
+        },
+        {
+          "q": "Гроза находится в 2 км. Примерно через сколько секунд дойдёт звук грома, если скорость звука 340 м/с?",
+          "options": [
+            "Около 340 секунд",
+            "Около 2 секунд",
+            "Около 6 секунд",
+            "Около 440 секунд"
+          ],
+          "answer": 2,
+          "why": "t = s / v = 2000 / 340 ≈ 6 с."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "Звук — это продольная волна: колеблющиеся…"
+        },
+        {
+          "t": 13.32,
+          "title": "Источник звука колеблется. Камертон с…"
+        },
+        {
+          "t": 28.83,
+          "title": "Скорость звука в воздухе примерно 340 метров…"
+        },
+        {
+          "t": 41.08,
+          "title": "S = v · t"
+        },
+        {
+          "t": 53.37,
+          "title": "Проверь сам: если гроза в двух километрах…"
+        }
+      ],
+      "modified": 1793096841
+    },
+    {
+      "file": "out/второй-закон-ньютона-pdf-ru.mp4",
+      "poster": "posters/второй-закон-ньютона-pdf-ru.jpg",
+      "title": "Второй закон Ньютона",
+      "lang": "ru",
+      "seconds": 76.2,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 6,
+      "grade": 9,
+      "course": "",
+      "quiz": [
+        {
+          "q": "Какая формула выражает второй закон Ньютона?",
+          "options": [
+            "F = m · a",
+            "a = m · F",
+            "F = m / a",
+            "m = a / F"
+          ],
+          "answer": 0,
+          "why": "В видео формула второго закона записана как F = m · a."
+        },
+        {
+          "q": "Тележку массой 15 кг толкают с равнодействующей силой 30 Н. Какое у неё ускорение?",
+          "options": [
+            "2 м/с²",
+            "15 м/с²",
+            "30 м/с²",
+            "450 м/с²"
+          ],
+          "answer": 0,
+          "why": "По формуле a = F / m = 30 Н / 15 кг = 2 м/с²."
+        },
+        {
+          "q": "Какая равнодействующая сила действует на автомобиль массой 1200 кг при ускорении 2 м/с²?",
+          "options": [
+            "2400 Н",
+            "600 Н",
+            "1202 Н",
+            "1200 Н"
+          ],
+          "answer": 0,
+          "why": "По формуле F = m · a = 1200 кг · 2 м/с² = 2400 Н."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "Исаак Ньютон, 1687 год"
+        },
+        {
+          "t": 21.66,
+          "title": "F = m · a"
+        },
+        {
+          "t": 36.12,
+          "title": "1 Н = 1 кг·м/с²"
+        },
+        {
+          "t": 45.76,
+          "title": "Тележку массой 15 кг толкают с…"
+        },
+        {
+          "t": 55.81,
+          "title": "Автомобиль массой 1200 кг разгоняется с…"
+        },
+        {
+          "t": 68.69,
+          "title": "При одной и той же силе вдвое большая масса…"
+        }
+      ],
+      "modified": 1793095366
+    },
+    {
+      "file": "out/newtons-second-law-pdf-en.mp4",
+      "poster": "posters/newtons-second-law-pdf-en.jpg",
+      "title": "Newton's Second Law",
+      "lang": "en",
+      "seconds": 70.8,
+      "width": 1920,
+      "height": 1080,
+      "scenes": 6,
+      "grade": null,
+      "course": "",
+      "quiz": [
+        {
+          "q": "Which formula expresses Newton's second law?",
+          "options": [
+            "F = m · a",
+            "a = F · m",
+            "F = m / a",
+            "m = F · a"
+          ],
+          "answer": 0,
+          "why": "The script states force equals mass times acceleration."
+        },
+        {
+          "q": "A 10 kg box is pushed with 50 N while friction pulls back with 20 N. What is its acceleration?",
+          "options": [
+            "5 m/s²",
+            "3 m/s²",
+            "2 m/s²",
+            "7 m/s²"
+          ],
+          "answer": 1,
+          "why": "The net force is 30 N, and 30 N / 10 kg = 3 m/s²."
+        },
+        {
+          "q": "With the same force of 60 N, which mass accelerates at 2 m/s²?",
+          "options": [
+            "10 kg",
+            "20 kg",
+            "30 kg",
+            "60 kg"
+          ],
+          "answer": 2,
+          "why": "60 N / 30 kg = 2 m/s²."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "Why does an empty shopping trolley speed up…"
+        },
+        {
+          "t": 10.64,
+          "title": "F = m · a"
+        },
+        {
+          "t": 20.13,
+          "title": "1 N = 1 kg·m/s²"
+        },
+        {
+          "t": 31.19,
+          "title": "A trolley of mass 15 kilograms pushed with a…"
+        },
+        {
+          "t": 44.64,
+          "title": "You push a 10 kilogram box with 50 newtons…"
+        },
+        {
+          "t": 58.53,
+          "title": "With the same force of 60 newtons, a 10…"
+        }
+      ],
+      "modified": 1793093980
+    },
+    {
       "file": "out/бронзовый-век-ru.mp4",
       "poster": "posters/бронзовый-век-ru.jpg",
       "title": "Бронзовый век: сплав, который изменил мир",
@@ -46,103 +2458,29 @@
           "why": "В сценарии указано расстояние торговли до 1000 км."
         }
       ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "Медь + Олово = Бронза"
+        },
+        {
+          "t": 11.8,
+          "title": "≈ 10% олова + 90% меди"
+        },
+        {
+          "t": 24.25,
+          "title": "Олово встречается редко, поэтому его возили…"
+        },
+        {
+          "t": 35.68,
+          "title": "Бронза была дорогой, и владеть ею могли…"
+        },
+        {
+          "t": 46.86,
+          "title": "Cu : Sn ≈ 9 : 1"
+        }
+      ],
       "modified": 1793011037
-    },
-    {
-      "file": "out/ancient-rome-en.mp4",
-      "poster": "posters/ancient-rome-en.jpg",
-      "title": "Ancient Rome",
-      "lang": "en",
-      "seconds": 43.6,
-      "width": 1920,
-      "height": 1080,
-      "scenes": 5,
-      "grade": 5,
-      "course": "history",
-      "quiz": [
-        {
-          "q": "In what year was Rome founded?",
-          "options": [
-            "753 BCE",
-            "117 CE",
-            "80,000 BCE",
-            "5,000 BCE"
-          ],
-          "answer": 0,
-          "why": "The script states Ancient Rome began in 753 BCE."
-        },
-        {
-          "q": "About how many kilometers of Roman roads stretched across the empire?",
-          "options": [
-            "5,000 km",
-            "80,000 km",
-            "117 km",
-            "753 km"
-          ],
-          "answer": 1,
-          "why": "The script says Roman roads stretched about 80,000 kilometers."
-        },
-        {
-          "q": "About how many soldiers were in a Roman legion?",
-          "options": [
-            "117",
-            "5,000",
-            "80,000",
-            "753"
-          ],
-          "answer": 1,
-          "why": "The script states a Roman legion had about 5,000 soldiers."
-        }
-      ],
-      "modified": 1793010874
-    },
-    {
-      "file": "out/the-four-seasons-en.mp4",
-      "poster": "posters/the-four-seasons-en.jpg",
-      "title": "Why We Have Four Seasons",
-      "lang": "en",
-      "seconds": 40.3,
-      "width": 1920,
-      "height": 1080,
-      "scenes": 6,
-      "grade": 1,
-      "course": "geography",
-      "quiz": [
-        {
-          "q": "What is the tilt of Earth's axis?",
-          "options": [
-            "23.5 degrees",
-            "45 degrees",
-            "12 degrees",
-            "90 degrees"
-          ],
-          "answer": 0,
-          "why": "The script states the tilt is about twenty-three and a half degrees."
-        },
-        {
-          "q": "What happens when your half of Earth leans toward the Sun?",
-          "options": [
-            "Days are shorter and sunlight spreads out",
-            "Sunlight hits more directly and days are longer",
-            "The tilt changes direction",
-            "Earth stops orbiting the Sun"
-          ],
-          "answer": 1,
-          "why": "Leaning toward the Sun means direct sunlight and longer days, which is summer."
-        },
-        {
-          "q": "About how long does each season last?",
-          "options": [
-            "1 month",
-            "6 months",
-            "3 months",
-            "12 months"
-          ],
-          "answer": 2,
-          "why": "A full year of 12 months divided into four seasons gives about 3 months each."
-        }
-      ],
-      "modified": 1793010737
     },
     {
       "file": "out/времена-года-ru.mp4",
@@ -190,55 +2528,29 @@
           "why": "В скрипте указано: 1 год = 365 дней."
         }
       ],
-      "modified": 1793010592
-    },
-    {
-      "file": "out/farm-animals-en.mp4",
-      "poster": "posters/farm-animals-en.jpg",
-      "title": "Farm Animals",
-      "lang": "en",
-      "seconds": 43.0,
-      "width": 1920,
-      "height": 1080,
-      "scenes": 5,
-      "grade": 1,
-      "course": "biology",
-      "quiz": [
+      "chapters": [
         {
-          "q": "About how much milk can a dairy cow make in one day?",
-          "options": [
-            "25 liters",
-            "4 kilograms",
-            "300 liters",
-            "100 liters"
-          ],
-          "answer": 0,
-          "why": "The script says a dairy cow can make about 25 liters of milk in one day."
+          "t": 0.0,
+          "title": "Земля обращается вокруг Солнца за один год…"
         },
         {
-          "q": "About how many eggs does a hen lay in one year?",
-          "options": [
-            "42 eggs",
-            "365 eggs",
-            "300 eggs",
-            "100 eggs"
-          ],
-          "answer": 2,
-          "why": "The script says a hen can lay about 300 eggs in one year."
+          "t": 13.0,
+          "title": "Когда Северное полушарие наклонено к Солнцу…"
         },
         {
-          "q": "A farmer has 6 hens, and each hen lays 1 egg per day. How many eggs do the 6 hens lay in one week?",
-          "options": [
-            "6 eggs",
-            "7 eggs",
-            "42 eggs",
-            "13 eggs"
-          ],
-          "answer": 2,
-          "why": "6 hens × 1 egg/day × 7 days = 42 eggs."
+          "t": 26.67,
+          "title": "Чем выше Солнце над горизонтом, тем больше…"
+        },
+        {
+          "t": 39.64,
+          "title": "Весной и осенью Солнце стоит над горизонтом…"
+        },
+        {
+          "t": 55.42,
+          "title": "Запомни главное: смена времён года…"
         }
       ],
-      "modified": 1793010434
+      "modified": 1793010592
     },
     {
       "file": "out/сложение-до-20-ru.mp4",
@@ -286,103 +2598,29 @@
           "why": "Правильный ответ в ролике: 9 + 6 = 15."
         }
       ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "A + b ≤ 20"
+        },
+        {
+          "t": 8.81,
+          "title": "8 + 7 = 8 + 2 + 5 = 15"
+        },
+        {
+          "t": 17.88,
+          "title": "Удобно дополнять до десяти: разбиваем второе…"
+        },
+        {
+          "t": 28.56,
+          "title": "9 + 6 = ?"
+        },
+        {
+          "t": 36.01,
+          "title": "9 + 6 = 15"
+        }
+      ],
       "modified": 1793010149
-    },
-    {
-      "file": "out/counting-to-10-en.mp4",
-      "poster": "posters/counting-to-10-en.jpg",
-      "title": "Counting to 10",
-      "lang": "en",
-      "seconds": 40.5,
-      "width": 1920,
-      "height": 1080,
-      "scenes": 5,
-      "grade": 1,
-      "course": "math",
-      "quiz": [
-        {
-          "q": "What is the last number you say when you count three apples?",
-          "options": [
-            "One",
-            "Two",
-            "Three",
-            "Four"
-          ],
-          "answer": 2,
-          "why": "The script says the last number said is the total, and three apples count to three."
-        },
-        {
-          "q": "When you count things, how many numbers does each object get?",
-          "options": [
-            "Exactly one",
-            "Two",
-            "Three",
-            "As many as you like"
-          ],
-          "answer": 0,
-          "why": "The script says each object gets exactly one number."
-        },
-        {
-          "q": "Which number comes right after seven when counting to ten?",
-          "options": [
-            "Six",
-            "Eight",
-            "Nine",
-            "Ten"
-          ],
-          "answer": 1,
-          "why": "The script lists seven, eight, nine, ten in order, so eight comes after seven."
-        }
-      ],
-      "modified": 1793009996
-    },
-    {
-      "file": "out/the-industrial-revolution-en.mp4",
-      "poster": "posters/the-industrial-revolution-en.jpg",
-      "title": "The Industrial Revolution",
-      "lang": "en",
-      "seconds": 52.7,
-      "width": 1920,
-      "height": 1080,
-      "scenes": 6,
-      "grade": 8,
-      "course": "history",
-      "quiz": [
-        {
-          "q": "According to the video, about how much thread could one skilled spinner make by hand in a day?",
-          "options": [
-            "1 pound",
-            "20 pounds",
-            "48 pounds",
-            "50 pounds"
-          ],
-          "answer": 0,
-          "why": "The script states a hand spinner made about one pound of thread a day."
-        },
-        {
-          "q": "A factory has 50 machines, and each machine makes 20 items per day. How many items are made each day in total?",
-          "options": [
-            "70 items",
-            "100 items",
-            "500 items",
-            "1000 items"
-          ],
-          "answer": 3,
-          "why": "Using output = machines x items per machine per day, 50 x 20 = 1000 items per day."
-        },
-        {
-          "q": "What powered the machines in the factories during the Industrial Revolution, according to the video?",
-          "options": [
-            "Windmills",
-            "Coal-fired steam engines",
-            "Water wheels only",
-            "Hand cranks"
-          ],
-          "answer": 1,
-          "why": "The script says coal-fired steam engines supplied the power to run the machines."
-        }
-      ],
-      "modified": 1793009794
     },
     {
       "file": "out/пределы-ru.mp4",
@@ -430,55 +2668,25 @@
           "why": "При подстановке нуля получаем 3·0 + 1 = 1, к этому числу всё стремится."
         }
       ],
-      "modified": 1793009589
-    },
-    {
-      "file": "out/dna-and-inheritance-en.mp4",
-      "poster": "posters/dna-and-inheritance-en.jpg",
-      "title": "DNA and Inheritance",
-      "lang": "en",
-      "seconds": 43.2,
-      "width": 1920,
-      "height": 1080,
-      "scenes": 6,
-      "grade": 9,
-      "course": "biology",
-      "quiz": [
+      "chapters": [
         {
-          "q": "How many chromosomes does a human have in total?",
-          "options": [
-            "23",
-            "46",
-            "23 pairs plus one",
-            "44"
-          ],
-          "answer": 1,
-          "why": "The script says humans have 46 chromosomes, sorted into 23 pairs."
+          "t": 0.0,
+          "title": "X → a"
         },
         {
-          "q": "A child receives how many chromosomes from each parent?",
-          "options": [
-            "46",
-            "23",
-            "12",
-            "22"
-          ],
-          "answer": 1,
-          "why": "A child gets 23 from the mother and 23 from the father."
+          "t": 10.52,
+          "title": "Например, функция икс в квадрате при икс…"
         },
         {
-          "q": "Which combination of alleles gives blue eyes?",
-          "options": [
-            "Bb",
-            "BB",
-            "bB",
-            "bb"
-          ],
-          "answer": 3,
-          "why": "The script says only bb gives blue eyes, while Bb gives brown eyes."
+          "t": 25.68,
+          "title": "Lim(x→2) x² = 4"
+        },
+        {
+          "t": 34.16,
+          "title": "Lim(x→0) (3x + 1) = ?"
         }
       ],
-      "modified": 1793009457
+      "modified": 1793009589
     },
     {
       "file": "out/древний-рим-ru.mp4",
@@ -524,6 +2732,28 @@
           ],
           "answer": 2,
           "why": "В видео упоминается, что римляне построили более 80 000 километров дорог."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "Древний Рим — одна из величайших…"
+        },
+        {
+          "t": 8.79,
+          "title": "60 000 000 человек"
+        },
+        {
+          "t": 18.52,
+          "title": "80 000 км дорог"
+        },
+        {
+          "t": 28.25,
+          "title": "91 км — длина акведука"
+        },
+        {
+          "t": 38.64,
+          "title": "Римское право легло в основу многих…"
         }
       ],
       "modified": 1793009274
@@ -574,55 +2804,29 @@
           "why": "В видео сказано, что Древний Египет просуществовал более трёх тысяч лет."
         }
       ],
-      "modified": 1793009134
-    },
-    {
-      "file": "out/the-second-world-war-en.mp4",
-      "poster": "posters/the-second-world-war-en.jpg",
-      "title": "The Second World War: A Global Conflict",
-      "lang": "en",
-      "seconds": 47.2,
-      "width": 1920,
-      "height": 1080,
-      "scenes": 6,
-      "grade": 11,
-      "course": "history",
-      "quiz": [
+      "chapters": [
         {
-          "q": "When did the Second World War begin?",
-          "options": [
-            "September 1, 1939",
-            "June 6, 1944",
-            "May 8, 1945",
-            "September 2, 1945"
-          ],
-          "answer": 0,
-          "why": "The script says it began when Germany invaded Poland on September 1, 1939."
+          "t": 0.0,
+          "title": "3000 лет"
         },
         {
-          "q": "How many people died in the Second World War?",
-          "options": [
-            "Around 6 million",
-            "Over 70 million",
-            "Around 70,000",
-            "Over 700 million"
-          ],
-          "answer": 1,
-          "why": "The script states that over 70 million people died."
+          "t": 10.18,
+          "title": "H = 147 м, t > 20 лет"
         },
         {
-          "q": "Which event is named as a key turning point that shifted momentum toward the Allies?",
-          "options": [
-            "The invasion of Poland",
-            "The founding of the United Nations",
-            "The Battle of Stalingrad",
-            "The dropping of atomic bombs"
-          ],
-          "answer": 2,
-          "why": "The script lists the Battle of Stalingrad and D-Day as key turning points."
+          "t": 19.06,
+          "title": "S = a²"
+        },
+        {
+          "t": 26.68,
+          "title": "Если сторона основания 230 метров, то…"
+        },
+        {
+          "t": 38.21,
+          "title": "Иероглифы = числа"
         }
       ],
-      "modified": 1793008957
+      "modified": 1793009134
     },
     {
       "file": "out/казахское-ханство-ru.mp4",
@@ -670,55 +2874,33 @@
           "why": "В 1731 году часть казахских родов приняла российское подданство."
         }
       ],
-      "modified": 1793008795
-    },
-    {
-      "file": "out/the-silk-road-en.mp4",
-      "poster": "posters/the-silk-road-en.jpg",
-      "title": "The Silk Road",
-      "lang": "en",
-      "seconds": 46.6,
-      "width": 1920,
-      "height": 1080,
-      "scenes": 6,
-      "grade": 6,
-      "course": "history",
-      "quiz": [
+      "chapters": [
         {
-          "q": "About how long was the network of Silk Road trade routes linking China to the Mediterranean?",
-          "options": [
-            "About 6,400 km",
-            "About 4,000 km",
-            "About 320 km",
-            "About 150 km"
-          ],
-          "answer": 0,
-          "why": "The script states the routes spanned roughly 6,400 km."
+          "t": 0.0,
+          "title": "1465 год"
         },
         {
-          "q": "If a camel can load about 200 kg, how much can twenty camels carry?",
-          "options": [
-            "4,000 kg",
-            "2,000 kg",
-            "400 kg",
-            "200 kg"
-          ],
-          "answer": 0,
-          "why": "The script gives 20 × 200 kg = 4,000 kg."
+          "t": 12.68,
+          "title": "≈1 000 000 человек"
         },
         {
-          "q": "At about 40 km a day, roughly how long would a 6,000 km journey take?",
-          "options": [
-            "About 150 days",
-            "About 100 days",
-            "About 240 days",
-            "About 60 days"
-          ],
-          "answer": 0,
-          "why": "The script gives 6,000 km ÷ 40 km/day = 150 days."
+          "t": 23.04,
+          "title": "Хан → совет биев"
+        },
+        {
+          "t": 32.47,
+          "title": "Основу хозяйства составляло кочевое…"
+        },
+        {
+          "t": 44.15,
+          "title": "1731 год"
+        },
+        {
+          "t": 55.81,
+          "title": "Запомни: Казахское ханство — первое…"
         }
       ],
-      "modified": 1793008612
+      "modified": 1793008795
     },
     {
       "file": "out/всемирная-история-xx-век-ru.mp4",
@@ -766,103 +2948,33 @@
           "why": "В сценарии сказано, что человек впервые полетел в космос в тысяча девятьсот шестьдесят первом году."
         }
       ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "1900 → 2000"
+        },
+        {
+          "t": 12.02,
+          "title": "Первая мировая война длилась с тысяча…"
+        },
+        {
+          "t": 26.16,
+          "title": "Вторая мировая война стала самой…"
+        },
+        {
+          "t": 40.35,
+          "title": "1945–1991; ≈ 45 лет"
+        },
+        {
+          "t": 53.5,
+          "title": "1961; 1969"
+        },
+        {
+          "t": 65.92,
+          "title": "Главный урок века прост: история делается…"
+        }
+      ],
       "modified": 1793008418
-    },
-    {
-      "file": "out/the-photoelectric-effect-en.mp4",
-      "poster": "posters/the-photoelectric-effect-en.jpg",
-      "title": "The Photoelectric Effect",
-      "lang": "en",
-      "seconds": 56.9,
-      "width": 1920,
-      "height": 1080,
-      "scenes": 6,
-      "grade": 11,
-      "course": "physics",
-      "quiz": [
-        {
-          "q": "According to the video, what decides whether electrons are ejected from a clean metal surface?",
-          "options": [
-            "The color of the light",
-            "The brightness of the light",
-            "How long you wait",
-            "The size of the metal"
-          ],
-          "answer": 0,
-          "why": "The script says the color, not the brightness, decides."
-        },
-        {
-          "q": "In the video, Einstein says light comes in packets. What are these packets called?",
-          "options": [
-            "Electrons",
-            "Photons",
-            "Work functions",
-            "Volts"
-          ],
-          "answer": 1,
-          "why": "The script states light comes in packets called photons."
-        },
-        {
-          "q": "A metal has a work function of 2 eV and the photon gives 3 eV. What kinetic energy does the electron get?",
-          "options": [
-            "1 eV",
-            "2 eV",
-            "3 eV",
-            "5 eV"
-          ],
-          "answer": 0,
-          "why": "E_k = hf − W = 3 eV − 2 eV = 1 eV."
-        }
-      ],
-      "modified": 1793008251
-    },
-    {
-      "file": "out/logarithms-en.mp4",
-      "poster": "posters/logarithms-en.jpg",
-      "title": "Logarithms: The Power Finder",
-      "lang": "en",
-      "seconds": 38.4,
-      "width": 1920,
-      "height": 1080,
-      "scenes": 4,
-      "grade": 10,
-      "course": "math",
-      "quiz": [
-        {
-          "q": "What does a logarithm answer?",
-          "options": [
-            "What power you must raise a base to, to get a certain number",
-            "What number you get when you add two numbers",
-            "What base gives the largest exponent",
-            "What number multiplied by zero equals one"
-          ],
-          "answer": 0,
-          "why": "The script says a logarithm answers what power you must raise a base to, to get a certain number."
-        },
-        {
-          "q": "What is log base two of eight?",
-          "options": [
-            "2",
-            "3",
-            "4",
-            "8"
-          ],
-          "answer": 1,
-          "why": "Since two times two times two equals eight, log base two of eight is three."
-        },
-        {
-          "q": "According to the video, which value equals zero?",
-          "options": [
-            "log base three of eighty-one",
-            "log base two of eight",
-            "log base ten of one",
-            "log base ten of eight"
-          ],
-          "answer": 2,
-          "why": "The script states that log base ten of one equals zero."
-        }
-      ],
-      "modified": 1793008098
     },
     {
       "file": "out/логарифмы-ru.mp4",
@@ -910,55 +3022,25 @@
           "why": "3 во второй степени равно 9, поэтому ответ 2."
         }
       ],
-      "modified": 1793007984
-    },
-    {
-      "file": "out/the-magnetic-field-en.mp4",
-      "poster": "posters/the-magnetic-field-en.jpg",
-      "title": "The Magnetic Field",
-      "lang": "en",
-      "seconds": 40.3,
-      "width": 1920,
-      "height": 1080,
-      "scenes": 5,
-      "grade": 11,
-      "course": "physics",
-      "quiz": [
+      "chapters": [
         {
-          "q": "What is a magnetic field?",
-          "options": [
-            "An invisible area around a magnet where magnetic forces act on other magnets or moving charges",
-            "A visible line drawn around a magnet",
-            "A type of electric charge",
-            "A force that only acts on stationary objects"
-          ],
-          "answer": 0,
-          "why": "The script says a magnetic field is an invisible area around a magnet where magnetic forces act."
+          "t": 0.0,
+          "title": "Логарифм — это показатель степени. Он…"
         },
         {
-          "q": "According to the video, what can the field strength near a strong MRI machine be?",
-          "options": [
-            "0.01 tesla",
-            "1 tesla",
-            "1.5 tesla",
-            "90 tesla"
-          ],
-          "answer": 2,
-          "why": "The script states that near a strong MRI machine it can be 1.5 tesla."
+          "t": 9.97,
+          "title": "Например, log₂(8) — это степень, в которую…"
         },
         {
-          "q": "A charge of 1 coulomb moves at 1 meter per second perpendicular to a 1 tesla field. What is the force?",
-          "options": [
-            "0.01 N",
-            "1 N",
-            "1.5 N",
-            "90 N"
-          ],
-          "answer": 1,
-          "why": "Using F = q v B sin(θ) gives (1 C)(1 m/s)(1 T) sin(90°) = 1 N."
+          "t": 21.62,
+          "title": "Общая формула: log_a(b) = c означает, что a…"
+        },
+        {
+          "t": 32.08,
+          "title": "Попробуй сам: вычисли log₃(9). Подумай, в…"
         }
       ],
-      "modified": 1793007791
+      "modified": 1793007984
     },
     {
       "file": "out/электролиз-ru.mp4",
@@ -1004,6 +3086,28 @@
           ],
           "answer": 0,
           "why": "Заряд равен q = I · t = 1 А · 10 с = 10 Кл."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "Электролиз — это разложение вещества…"
+        },
+        {
+          "t": 11.03,
+          "title": "2H₂O → 2H₂ + O₂"
+        },
+        {
+          "t": 20.75,
+          "title": "M = k · q, q = I · t"
+        },
+        {
+          "t": 32.07,
+          "title": "Q = I · t"
+        },
+        {
+          "t": 41.65,
+          "title": "Попробуй сам: если ток один ампер идёт…"
         }
       ],
       "modified": 1793007664
@@ -1054,6 +3158,28 @@
           "why": "В скрипте указано: получается одна AA, две Aa и одна aa, то есть 1 : 2 : 1."
         }
       ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "Генетика изучает наследственность. Признаки…"
+        },
+        {
+          "t": 11.79,
+          "title": "Первый закон Менделя: при скрещивании чистых…"
+        },
+        {
+          "t": 24.69,
+          "title": "Второй закон: во втором поколении…"
+        },
+        {
+          "t": 35.51,
+          "title": "Решётка Пеннета показывает все варианты…"
+        },
+        {
+          "t": 46.9,
+          "title": "Запомни главное: одна копия гена достаётся…"
+        }
+      ],
       "modified": 1793007500
     },
     {
@@ -1100,6 +3226,28 @@
           ],
           "answer": 2,
           "why": "The script shows cos theta = 4 / 5 = 0.8."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "Imagine a right triangle with one angle…"
+        },
+        {
+          "t": 8.85,
+          "title": "Divide the opposite side by the hypotenuse…"
+        },
+        {
+          "t": 18.08,
+          "title": "Now take the side next to the angle, the…"
+        },
+        {
+          "t": 28.58,
+          "title": "So remember: sine uses the side opposite the…"
+        },
+        {
+          "t": 37.86,
+          "title": "Try it yourself: find a right triangle…"
         }
       ],
       "modified": 1793007356
@@ -1150,6 +3298,28 @@
           "why": "Гипотенуза равна 10, а синус — это противолежащий катет к гипотенузе: 6/10 = 0,6."
         }
       ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "Острый угол α"
+        },
+        {
+          "t": 10.95,
+          "title": "Синус — это отношение противолежащего катета…"
+        },
+        {
+          "t": 20.28,
+          "title": "Например, катеты равны трём и четырём…"
+        },
+        {
+          "t": 31.53,
+          "title": "Значит, синус и косинус острого угла всегда…"
+        },
+        {
+          "t": 40.16,
+          "title": "Проверь сам: в треугольнике с катетами 6 и 8…"
+        }
+      ],
       "modified": 1793007241
     },
     {
@@ -1196,6 +3366,28 @@
           ],
           "answer": 0,
           "why": "Медь стоит правее водорода, поэтому водород не выделяется."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "Металлы, стоящие в ряду активности левее…"
+        },
+        {
+          "t": 10.57,
+          "title": "Например, при реакции цинка с соляной…"
+        },
+        {
+          "t": 21.78,
+          "title": "Масса водорода вычисляется по уравнению…"
+        },
+        {
+          "t": 35.29,
+          "title": "Медь стоит правее водорода, поэтому с…"
+        },
+        {
+          "t": 44.29,
+          "title": "Запомните: металл реагирует с кислотой, если…"
         }
       ],
       "modified": 1793007107
@@ -1246,6 +3438,32 @@
           "why": "В видео сказано: ген — это участок ДНК, отвечающий за один признак."
         }
       ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "ДНК → гены → признаки"
+        },
+        {
+          "t": 9.83,
+          "title": "А = Т, Г ≡ Ц"
+        },
+        {
+          "t": 21.91,
+          "title": "23 + 23 = 46 хромосом"
+        },
+        {
+          "t": 32.45,
+          "title": "Участок ДНК, отвечающий за один признак…"
+        },
+        {
+          "t": 43.56,
+          "title": "Гены бывают доминантными и рецессивными…"
+        },
+        {
+          "t": 52.04,
+          "title": "Запомни главное: ДНК — это инструкция жизни…"
+        }
+      ],
       "modified": 1793006979
     },
     {
@@ -1260,6 +3478,7 @@
       "grade": 7,
       "course": "geography",
       "quiz": null,
+      "chapters": null,
       "modified": 1793006673
     },
     {
@@ -1308,55 +3527,29 @@
           "why": "Куб — это число, умноженное на себя три раза, например 2³ = 2 × 2 × 2."
         }
       ],
-      "modified": 1793004020
-    },
-    {
-      "file": "out/area-of-a-circle-en.mp4",
-      "poster": "posters/area-of-a-circle-en.jpg",
-      "title": "Area of a Circle",
-      "lang": "en",
-      "seconds": 45.9,
-      "width": 1920,
-      "height": 1080,
-      "scenes": 5,
-      "grade": 8,
-      "course": "math",
-      "quiz": [
+      "chapters": [
         {
-          "q": "What does the area of a circle measure?",
-          "options": [
-            "The distance from the center to the edge",
-            "The amount of flat space inside the circle's edge",
-            "The length around the circle's boundary",
-            "The number of radii that fit across the circle"
-          ],
-          "answer": 1,
-          "why": "The script says area is the flat space inside the circle's edge."
+          "t": 0.0,
+          "title": "A² a³"
         },
         {
-          "q": "For a circle with a radius of 3 cm, what is the area?",
-          "options": [
-            "3π ≈ 9.4 cm²",
-            "6π ≈ 18.8 cm²",
-            "9π ≈ 28.3 cm²",
-            "12π ≈ 37.7 cm²"
-          ],
-          "answer": 2,
-          "why": "The script computes π × 3² = 9π ≈ 28.3 cm²."
+          "t": 8.74,
+          "title": "5² = 5 × 5 = 25"
         },
         {
-          "q": "A circle has a radius of 5 meters. Square the radius and multiply by pi. What is the area?",
-          "options": [
-            "10π ≈ 31.4 m²",
-            "25π ≈ 78.5 m²",
-            "5π ≈ 15.7 m²",
-            "50π ≈ 157 m²"
-          ],
-          "answer": 1,
-          "why": "The script gives π × 5² = 25π ≈ 78.5 m²."
+          "t": 19.43,
+          "title": "2³ = 2 × 2 × 2 = 8"
+        },
+        {
+          "t": 29.71,
+          "title": "Запомни: показатель степени показывает…"
+        },
+        {
+          "t": 39.51,
+          "title": "4² = ? 3³ = ?"
         }
       ],
-      "modified": 1793003076
+      "modified": 1793004020
     },
     {
       "file": "out/площадь-круга-ru.mp4",
@@ -1404,55 +3597,29 @@
           "why": "В видео число пи примерно равно трём целым четырнадцати сотым."
         }
       ],
-      "modified": 1793002970
-    },
-    {
-      "file": "out/average-speed-en.mp4",
-      "poster": "posters/average-speed-en.jpg",
-      "title": "Average Speed Made Simple",
-      "lang": "en",
-      "seconds": 45.2,
-      "width": 1920,
-      "height": 1080,
-      "scenes": 5,
-      "grade": 7,
-      "course": "physics",
-      "quiz": [
+      "chapters": [
         {
-          "q": "What is the formula for average speed?",
-          "options": [
-            "v = d / t",
-            "v = t / d",
-            "v = d × t",
-            "v = d + t"
-          ],
-          "answer": 0,
-          "why": "The script states average speed equals total distance divided by total time."
+          "t": 0.0,
+          "title": "S — площадь круга"
         },
         {
-          "q": "A cyclist rides 120 m in 30 s. What is the average speed?",
-          "options": [
-            "2 m/s",
-            "4 m/s",
-            "6 m/s",
-            "90 m/s"
-          ],
-          "answer": 1,
-          "why": "120 m divided by 30 s gives 4 m/s."
+          "t": 12.61,
+          "title": "R = 5 см, S ≈ 78,5 см²"
         },
         {
-          "q": "A runner covers 200 m in 50 s. What is the average speed?",
-          "options": [
-            "2 m/s",
-            "4 m/s",
-            "5 m/s",
-            "250 m/s"
-          ],
-          "answer": 1,
-          "why": "200 m divided by 50 s gives 4 m/s."
+          "t": 25.96,
+          "title": "S = πr², π ≈ 3,14"
+        },
+        {
+          "t": 36.23,
+          "title": "3,14 · 25 = 78,5"
+        },
+        {
+          "t": 47.65,
+          "title": "А теперь попробуй сам: найди площадь круга…"
         }
       ],
-      "modified": 1793002852
+      "modified": 1793002970
     },
     {
       "file": "out/средняя-скорость-ru.mp4",
@@ -1500,55 +3667,25 @@
           "why": "150 / 3 = 50 км/ч."
         }
       ],
-      "modified": 1793002740
-    },
-    {
-      "file": "out/proportions-en.mp4",
-      "poster": "posters/proportions-en.jpg",
-      "title": "Proportions Made Simple",
-      "lang": "en",
-      "seconds": 43.5,
-      "width": 1920,
-      "height": 1080,
-      "scenes": 5,
-      "grade": 6,
-      "course": "math",
-      "quiz": [
+      "chapters": [
         {
-          "q": "What does a proportion say about two ratios?",
-          "options": [
-            "They are equal",
-            "They are opposites",
-            "They are both zero",
-            "They are unrelated"
-          ],
-          "answer": 0,
-          "why": "The video states a proportion says two ratios are equal."
+          "t": 0.0,
+          "title": "V₁ ≠ v₂ ≠ ... ≠ vₙ"
         },
         {
-          "q": "If three apples cost six dollars, how much do six apples cost?",
-          "options": [
-            "Twelve dollars",
-            "Six dollars",
-            "Three dollars",
-            "Nine dollars"
-          ],
-          "answer": 0,
-          "why": "The script says six apples cost twelve dollars."
+          "t": 13.9,
+          "title": "Например, велосипедист проехал двенадцать…"
         },
         {
-          "q": "In cross multiplication of a / b = c / d, what do you set equal?",
-          "options": [
-            "a × d = b × c",
-            "a × b = c × d",
-            "a + d = b + c",
-            "a / d = b / c"
-          ],
-          "answer": 0,
-          "why": "The video gives a × d = b × c as the cross multiplication rule."
+          "t": 26.56,
+          "title": "V_ср = s_общ / t_общ"
+        },
+        {
+          "t": 39.98,
+          "title": "А теперь проверь себя: если машина ехала сто…"
         }
       ],
-      "modified": 1793002635
+      "modified": 1793002740
     },
     {
       "file": "out/пропорции-ru.mp4",
@@ -1596,55 +3733,29 @@
           "why": "x = 20 / 10 = 2, как показано в примере."
         }
       ],
-      "modified": 1793002531
-    },
-    {
-      "file": "out/perimeter-en.mp4",
-      "poster": "posters/perimeter-en.jpg",
-      "title": "Understanding Perimeter",
-      "lang": "en",
-      "seconds": 42.0,
-      "width": 1920,
-      "height": 1080,
-      "scenes": 5,
-      "grade": 4,
-      "course": "math",
-      "quiz": [
+      "chapters": [
         {
-          "q": "What is the perimeter of a rectangle with length 5 meters and width 3 meters?",
-          "options": [
-            "16 meters",
-            "8 meters",
-            "15 meters",
-            "30 meters"
-          ],
-          "answer": 0,
-          "why": "The script shows 5 + 3 + 5 + 3 = 16 m."
+          "t": 0.0,
+          "title": "A : b = c : d"
         },
         {
-          "q": "What is the formula for the perimeter of a square with side length s?",
-          "options": [
-            "P = 4s",
-            "P = 2s",
-            "P = 2(l + w)",
-            "P = 2l + 2w"
-          ],
-          "answer": 0,
-          "why": "The script states the perimeter of a square is 4 times s."
+          "t": 11.89,
+          "title": "2 : 3 = 4 : 6"
         },
         {
-          "q": "What is the perimeter of a triangle with sides 6, 8, and 10 inches?",
-          "options": [
-            "24 inches",
-            "14 inches",
-            "18 inches",
-            "48 inches"
-          ],
-          "answer": 0,
-          "why": "The script adds 6 + 8 + 10 = 24 in."
+          "t": 22.66,
+          "title": "У пропорции есть главное свойство…"
+        },
+        {
+          "t": 35.04,
+          "title": "X = b · c / a"
+        },
+        {
+          "t": 46.69,
+          "title": "Попробуй сам: если пять относится к…"
         }
       ],
-      "modified": 1793002412
+      "modified": 1793002531
     },
     {
       "file": "out/периметр-ru.mp4",
@@ -1692,55 +3803,25 @@
           "why": "В видео ответ: P = 4 · 4 = 16 см."
         }
       ],
-      "modified": 1793002305
-    },
-    {
-      "file": "out/multiplying-by-10-and-100-en.mp4",
-      "poster": "posters/multiplying-by-10-and-100-en.jpg",
-      "title": "Multiplying by 10 and 100",
-      "lang": "en",
-      "seconds": 41.7,
-      "width": 1920,
-      "height": 1080,
-      "scenes": 6,
-      "grade": 3,
-      "course": "math",
-      "quiz": [
+      "chapters": [
         {
-          "q": "When you multiply a whole number by 10, what happens to each digit?",
-          "options": [
-            "It moves one place to the left",
-            "It moves two places to the left",
-            "It moves one place to the right",
-            "It stays in the same place"
-          ],
-          "answer": 0,
-          "why": "The script says multiplying by ten moves every digit one place to the left."
+          "t": 0.0,
+          "title": "Периметр — это длина замкнутой границы…"
         },
         {
-          "q": "What is 4 × 100?",
-          "options": [
-            "40",
-            "400",
-            "4000",
-            "1004"
-          ],
-          "answer": 1,
-          "why": "The script shows 4 × 100 = 400, with two zeros appearing."
+          "t": 10.65,
+          "title": "Например, у прямоугольного огорода стороны…"
         },
         {
-          "q": "Following the rule in the video, what is 7 × 10?",
-          "options": [
-            "70",
-            "700",
-            "17",
-            "77"
-          ],
-          "answer": 0,
-          "why": "Times ten adds one zero, so 7 × 10 = 70."
+          "t": 22.16,
+          "title": "P = 2 · (a + b)"
+        },
+        {
+          "t": 35.19,
+          "title": "P = 4 · 4 = 16 см"
         }
       ],
-      "modified": 1793002194
+      "modified": 1793002305
     },
     {
       "file": "out/умножение-на-10-и-100-ru.mp4",
@@ -1788,55 +3869,29 @@
           "why": "В общем правиле сказано, что умножение на сто добавляет два ноля."
         }
       ],
-      "modified": 1793002084
-    },
-    {
-      "file": "out/quadratic-equations-en.mp4",
-      "poster": "posters/quadratic-equations-en.jpg",
-      "title": "Quadratic Equations in 60 Seconds",
-      "lang": "en",
-      "seconds": 43.6,
-      "width": 1920,
-      "height": 1080,
-      "scenes": 6,
-      "grade": 8,
-      "course": "math",
-      "quiz": [
+      "chapters": [
         {
-          "q": "What is the standard form of a quadratic equation?",
-          "options": [
-            "ax² + bx + c = 0",
-            "ax + b = 0",
-            "x² = 0",
-            "(x + 2)(x + 3) = 0"
-          ],
-          "answer": 0,
-          "why": "The video states the standard form sets everything equal to zero as ax² + bx + c = 0."
+          "t": 0.0,
+          "title": "×10, ×100"
         },
         {
-          "q": "How do you factor x² + 5x + 6 = 0?",
-          "options": [
-            "(x + 1)(x + 6) = 0",
-            "(x + 2)(x + 3) = 0",
-            "(x - 2)(x - 3) = 0",
-            "(x + 5)(x + 1) = 0"
-          ],
-          "answer": 1,
-          "why": "Two and three multiply to six and add to five, giving (x + 2)(x + 3) = 0."
+          "t": 10.43,
+          "title": "3 × 10 = 30"
         },
         {
-          "q": "Solving x² - 4 = 0 gives which solutions?",
-          "options": [
-            "x = 4",
-            "x = -4",
-            "x = ±2",
-            "x = ±4"
-          ],
-          "answer": 2,
-          "why": "Adding four gives x² = 4, so taking the square root gives x = ±2."
+          "t": 20.21,
+          "title": "4 × 100 = 400"
+        },
+        {
+          "t": 30.93,
+          "title": "Вот общее правило: умножение на десять…"
+        },
+        {
+          "t": 42.44,
+          "title": "А теперь попробуй сам: умножь семь на сто, а…"
         }
       ],
-      "modified": 1792996901
+      "modified": 1793002084
     },
     {
       "file": "out/квадратные-уравнения-ru.mp4",
@@ -1884,55 +3939,29 @@
           "why": "В видео: если D меньше нуля — корней нет."
         }
       ],
-      "modified": 1792996797
-    },
-    {
-      "file": "out/pythagorean-theorem-en.mp4",
-      "poster": "posters/pythagorean-theorem-en.jpg",
-      "title": "Pythagoras Made Simple",
-      "lang": "en",
-      "seconds": 42.0,
-      "width": 1920,
-      "height": 1080,
-      "scenes": 4,
-      "grade": 8,
-      "course": "math",
-      "quiz": [
+      "chapters": [
         {
-          "q": "In a right triangle, what is the longest side called?",
-          "options": [
-            "The hypotenuse",
-            "The leg",
-            "The square root",
-            "The right angle"
-          ],
-          "answer": 0,
-          "why": "The script says the longest side, across from the right angle, is called the hypotenuse."
+          "t": 0.0,
+          "title": "Ax² + bx + c = 0"
         },
         {
-          "q": "If the two shorter sides are 3 and 4, what is the hypotenuse?",
-          "options": [
-            "5",
-            "7",
-            "25",
-            "9"
-          ],
-          "answer": 0,
-          "why": "The script shows 9 + 16 = 25, so the hypotenuse is 5."
+          "t": 11.34,
+          "title": "Например, икс в квадрате минус пять икс плюс…"
         },
         {
-          "q": "For a right triangle with legs 6 and 8, what is the hypotenuse?",
-          "options": [
-            "10",
-            "14",
-            "48",
-            "100"
-          ],
-          "answer": 0,
-          "why": "The script shows 36 + 64 = 100, and the square root of 100 is 10."
+          "t": 21.77,
+          "title": "Корни находим по формуле: икс равен минус бэ…"
+        },
+        {
+          "t": 34.35,
+          "title": "Посчитаем дискриминант: двадцать пять минус…"
+        },
+        {
+          "t": 45.68,
+          "title": "Запомни главное: сначала найди дискриминант…"
         }
       ],
-      "modified": 1792996689
+      "modified": 1792996797
     },
     {
       "file": "out/теорема-пифагора-ru.mp4",
@@ -1980,55 +4009,25 @@
           "why": "6² + 8² = 36 + 64 = 100, значит c = √100 = 10."
         }
       ],
-      "modified": 1792996601
-    },
-    {
-      "file": "out/percentages-en.mp4",
-      "poster": "posters/percentages-en.jpg",
-      "title": "Understanding Percentages",
-      "lang": "en",
-      "seconds": 38.3,
-      "width": 1920,
-      "height": 1080,
-      "scenes": 5,
-      "grade": 6,
-      "course": "math",
-      "quiz": [
+      "chapters": [
         {
-          "q": "What does twenty-five percent mean?",
-          "options": [
-            "Twenty-five out of every hundred parts",
-            "One out of every twenty-five parts",
-            "Twenty-five out of every forty parts",
-            "One hundred out of twenty-five parts"
-          ],
-          "answer": 0,
-          "why": "The script says a percentage means per hundred, so 25% = 25/100."
+          "t": 0.0,
+          "title": "A² + b² = c²"
         },
         {
-          "q": "In a class of forty students, ten ride bicycles. What percent is that?",
-          "options": [
-            "10%",
-            "40%",
-            "25%",
-            "20%"
-          ],
-          "answer": 2,
-          "why": "10/40 = 0.25 = 25%, as shown in the script."
+          "t": 11.77,
+          "title": "Возьмём катеты три и четыре. Их квадраты …"
         },
         {
-          "q": "A jacket costs eighty dollars and is twenty-five percent off. What is the discount?",
-          "options": [
-            "25 dollars",
-            "20 dollars",
-            "60 dollars",
-            "80 dollars"
-          ],
-          "answer": 1,
-          "why": "The script computes discount = 80 × 25/100 = 20 dollars."
+          "t": 24.33,
+          "title": "Вот и сама теорема: сумма квадратов катетов…"
+        },
+        {
+          "t": 36.18,
+          "title": "А теперь проверь сам: если катеты равны…"
         }
       ],
-      "modified": 1792996506
+      "modified": 1792996601
     },
     {
       "file": "out/проценты-ru.mp4",
@@ -2076,55 +4075,25 @@
           "why": "По формуле: 30 × 60 / 100 = 18 девочек."
         }
       ],
-      "modified": 1792996411
-    },
-    {
-      "file": "out/adding-and-subtracting-to-100-en.mp4",
-      "poster": "posters/adding-and-subtracting-to-100-en.jpg",
-      "title": "Adding and Subtracting to 100",
-      "lang": "en",
-      "seconds": 48.3,
-      "width": 1920,
-      "height": 1080,
-      "scenes": 5,
-      "grade": 3,
-      "course": "math",
-      "quiz": [
+      "chapters": [
         {
-          "q": "What is 34 + 25?",
-          "options": [
-            "59",
-            "69",
-            "49",
-            "58"
-          ],
-          "answer": 0,
-          "why": "The video shows 30 + 20 = 50 and 4 + 5 = 9, giving 59."
+          "t": 0.0,
+          "title": "1% = 1/100 = 0,01"
         },
         {
-          "q": "What is 72 - 38?",
-          "options": [
-            "44",
-            "34",
-            "36",
-            "42"
-          ],
-          "answer": 1,
-          "why": "The video shows 72 - 30 = 42, then 42 - 8 = 34."
+          "t": 9.41,
+          "title": "Например, найдём пятнадцать процентов от…"
         },
         {
-          "q": "What is 46 + 27?",
-          "options": [
-            "63",
-            "73",
-            "53",
-            "72"
-          ],
-          "answer": 1,
-          "why": "Adding tens 40 + 20 = 60 and ones 6 + 7 = 13 gives 73."
+          "t": 20.65,
+          "title": "Общая формула проста: часть равна целому…"
+        },
+        {
+          "t": 31.58,
+          "title": "30 × 60 / 100 = 18"
         }
       ],
-      "modified": 1792996323
+      "modified": 1792996411
     },
     {
       "file": "out/сложение-и-вычитание-до-100-ru.mp4",
@@ -2172,55 +4141,25 @@
           "why": "В видео говорится: единицы под единицами, десятки под десятками."
         }
       ],
-      "modified": 1792996221
-    },
-    {
-      "file": "out/circle-radius-and-diameter-en.mp4",
-      "poster": "posters/circle-radius-and-diameter-en.jpg",
-      "title": "Radius and Diameter of a Circle",
-      "lang": "en",
-      "seconds": 39.9,
-      "width": 1920,
-      "height": 1080,
-      "scenes": 5,
-      "grade": 5,
-      "course": "math",
-      "quiz": [
+      "chapters": [
         {
-          "q": "In the video, the radius of the circle is 5 cm. What is the diameter?",
-          "options": [
-            "2.5 cm",
-            "5 cm",
-            "10 cm",
-            "20 cm"
-          ],
-          "answer": 2,
-          "why": "The diameter is twice the radius, so 2 × 5 = 10 cm."
+          "t": 0.0,
+          "title": "Сегодня мы научимся складывать и вычитать…"
         },
         {
-          "q": "Which formula correctly shows the relationship between diameter and radius?",
-          "options": [
-            "d = r / 2",
-            "d = 2r",
-            "d = r + 2",
-            "d = 2 + r"
-          ],
-          "answer": 1,
-          "why": "The script says diameter equals two times radius."
+          "t": 8.0,
+          "title": "Например, если у нас есть 34 конфеты и мы…"
         },
         {
-          "q": "The diameter of a circle is 12 cm. What is its radius?",
-          "options": [
-            "24 cm",
-            "12 cm",
-            "6 cm",
-            "3 cm"
-          ],
-          "answer": 2,
-          "why": "Radius equals diameter divided by two, so 12 / 2 = 6 cm."
+          "t": 21.83,
+          "title": "34 +28 --- 62"
+        },
+        {
+          "t": 30.43,
+          "title": "56 + 37 = ?"
         }
       ],
-      "modified": 1792929910
+      "modified": 1792996221
     },
     {
       "file": "out/окружность-радиус-и-диаметр-ru.mp4",
@@ -2268,55 +4207,29 @@
           "why": "Радиус равен половине диаметра: r = 12/2 = 6 см."
         }
       ],
-      "modified": 1792929828
-    },
-    {
-      "file": "out/the-solar-system-en.mp4",
-      "poster": "posters/the-solar-system-en.jpg",
-      "title": "The Solar System in One Minute",
-      "lang": "en",
-      "seconds": 53.3,
-      "width": 1920,
-      "height": 1080,
-      "scenes": 5,
-      "grade": 4,
-      "course": "physics",
-      "quiz": [
+      "chapters": [
         {
-          "q": "How many planets orbit the Sun in our solar system?",
-          "options": [
-            "Four",
-            "Eight",
-            "Six",
-            "Ten"
-          ],
-          "answer": 1,
-          "why": "The script says the Sun is orbited by eight planets."
+          "t": 0.0,
+          "title": "O — центр окружности"
         },
         {
-          "q": "About how far is Earth from the Sun?",
-          "options": [
-            "88 million kilometers",
-            "165 million kilometers",
-            "150 million kilometers",
-            "15 million kilometers"
-          ],
-          "answer": 2,
-          "why": "The script states Earth is about 150 million kilometers from the Sun."
+          "t": 13.12,
+          "title": "R = 5 см"
         },
         {
-          "q": "Which planet takes about 165 Earth years to orbit the Sun once?",
-          "options": [
-            "Mercury",
-            "Earth",
-            "Jupiter",
-            "Neptune"
-          ],
-          "answer": 3,
-          "why": "The script says Neptune needs about 165 Earth years per orbit."
+          "t": 26.76,
+          "title": "D = 2·r, r = d/2"
+        },
+        {
+          "t": 38.85,
+          "title": "Проверим на числах: если радиус равен пяти…"
+        },
+        {
+          "t": 47.97,
+          "title": "А теперь сам: если диаметр окружности равен…"
         }
       ],
-      "modified": 1792929725
+      "modified": 1792929828
     },
     {
       "file": "out/солнечная-система-ru.mp4",
@@ -2364,55 +4277,29 @@
           "why": "365 / 88 ≈ 4,1, значит год Меркурия короче примерно в 4,1 раза."
         }
       ],
-      "modified": 1792929609
-    },
-    {
-      "file": "out/parts-of-speech-en.mp4",
-      "poster": "posters/parts-of-speech-en.jpg",
-      "title": "Parts of Speech",
-      "lang": "en",
-      "seconds": 46.3,
-      "width": 1920,
-      "height": 1080,
-      "scenes": 6,
-      "grade": 5,
-      "course": "languages",
-      "quiz": [
+      "chapters": [
         {
-          "q": "How many main parts of speech are there to learn?",
-          "options": [
-            "Four",
-            "Six",
-            "Eight",
-            "Ten"
-          ],
-          "answer": 2,
-          "why": "The video says there are eight main kinds to learn."
+          "t": 0.0,
+          "title": "8 планет"
         },
         {
-          "q": "Which word is a preposition?",
-          "options": [
-            "quickly",
-            "under",
-            "because",
-            "wow"
-          ],
-          "answer": 1,
-          "why": "The video lists in, on, and under as prepositions."
+          "t": 14.33,
+          "title": "≈ 4,5 млрд км"
         },
         {
-          "q": "In \"The clever fox quickly jumps over the fence,\" which word is the adjective?",
-          "options": [
-            "fox",
-            "jumps",
-            "clever",
-            "quickly"
-          ],
-          "answer": 2,
-          "why": "The video identifies clever as the adjective in that sentence."
+          "t": 24.75,
+          "title": "Земля облетает Солнце за один год. Это…"
+        },
+        {
+          "t": 35.08,
+          "title": "Чем дальше планета от Солнца, тем длиннее её…"
+        },
+        {
+          "t": 47.48,
+          "title": "365 / 88 ≈ 4,1 раза"
         }
       ],
-      "modified": 1792929498
+      "modified": 1792929609
     },
     {
       "file": "out/части-речи-ru.mp4",
@@ -2460,55 +4347,29 @@
           "why": "Прилагательное обозначает признак предмета и отвечает на вопрос «какой?»."
         }
       ],
-      "modified": 1792929392
-    },
-    {
-      "file": "out/multiplying-two-digit-numbers-en.mp4",
-      "poster": "posters/multiplying-two-digit-numbers-en.jpg",
-      "title": "Multiplying Two-Digit Numbers",
-      "lang": "en",
-      "seconds": 37.9,
-      "width": 1920,
-      "height": 1080,
-      "scenes": 5,
-      "grade": 4,
-      "course": "math",
-      "quiz": [
+      "chapters": [
         {
-          "q": "How do we split 23 and 14 in the video's method?",
-          "options": [
-            "23 = 20 + 3 and 14 = 10 + 4",
-            "23 = 10 + 13 and 14 = 7 + 7",
-            "23 = 2 + 3 and 14 = 1 + 4",
-            "23 = 25 - 2 and 14 = 15 - 1"
-          ],
-          "answer": 0,
-          "why": "The script splits 23 into 20 + 3 and 14 into 10 + 4."
+          "t": 0.0,
+          "title": "Части речи"
         },
         {
-          "q": "What are the four products from 23 × 14 in the video?",
-          "options": [
-            "200, 80, 30, and 12",
-            "200, 40, 60, and 12",
-            "230, 80, 30, and 10",
-            "20, 80, 30, and 24"
-          ],
-          "answer": 0,
-          "why": "The script lists 20×10, 20×4, 3×10, and 3×4 as 200, 80, 30, and 12."
+          "t": 9.46,
+          "title": "Кто? что? → стол"
         },
         {
-          "q": "What is the final answer to 23 × 14 in the video?",
-          "options": [
-            "322",
-            "232",
-            "344",
-            "242"
-          ],
-          "answer": 0,
-          "why": "The script adds 200 + 80 + 30 + 12 to get 322."
+          "t": 19.79,
+          "title": "Что делать? → бежать"
+        },
+        {
+          "t": 27.57,
+          "title": "Какой? → красный"
+        },
+        {
+          "t": 38.15,
+          "title": "Чтобы определить часть речи, задай к слову…"
         }
       ],
-      "modified": 1792929296
+      "modified": 1792929392
     },
     {
       "file": "out/умножение-двузначных-чисел-ru.mp4",
@@ -2554,6 +4415,28 @@
           ],
           "answer": 0,
           "why": "В конце видео: 32 × 12 = 320 + 64 = 384."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "23 × 14 = ?"
+        },
+        {
+          "t": 10.52,
+          "title": "Например, умножим двадцать три на…"
+        },
+        {
+          "t": 22.38,
+          "title": "Двадцать три умножить на десять будет двести…"
+        },
+        {
+          "t": 32.98,
+          "title": "230 + 92 = 322"
+        },
+        {
+          "t": 44.24,
+          "title": "Запомни правило: раскладывай двузначное…"
         }
       ],
       "modified": 1792929206
@@ -2604,55 +4487,29 @@
           "why": "Отрицание строим с do или does и словом not."
         }
       ],
-      "modified": 1792929084
-    },
-    {
-      "file": "out/density-en.mp4",
-      "poster": "posters/density-en.jpg",
-      "title": "Density: How Much Stuff in How Much Space",
-      "lang": "en",
-      "seconds": 32.8,
-      "width": 1920,
-      "height": 1080,
-      "scenes": 4,
-      "grade": 7,
-      "course": "chemistry",
-      "quiz": [
+      "chapters": [
         {
-          "q": "What does density tell us?",
-          "options": [
-            "How much mass is packed into a given space",
-            "How heavy an object is regardless of size",
-            "How much volume an object takes up",
-            "How long an object is"
-          ],
-          "answer": 0,
-          "why": "The video defines density as mass packed into volume."
+          "t": 0.0,
+          "title": "Настоящее простое время говорит о том, что…"
         },
         {
-          "q": "A metal cube has a mass of 8 g and a volume of 2 cm³. What is its density?",
-          "options": [
-            "2 g/cm³",
-            "4 g/cm³",
-            "8 g/cm³",
-            "16 g/cm³"
-          ],
-          "answer": 1,
-          "why": "8 g divided by 2 cm³ equals 4 g/cm³."
+          "t": 10.4,
+          "title": "Например, я хожу в школу каждый день. Она…"
         },
         {
-          "q": "A block has a mass of 30 g and a volume of 10 cm³. What is its density?",
-          "options": [
-            "3 g/cm³",
-            "10 g/cm³",
-            "30 g/cm³",
-            "40 g/cm³"
-          ],
-          "answer": 0,
-          "why": "Using d = m / V, 30 g divided by 10 cm³ equals 3 g/cm³."
+          "t": 21.98,
+          "title": "С местоимениями he, she, it к глаголу…"
+        },
+        {
+          "t": 33.07,
+          "title": "Отрицание строим с помощником do или does и…"
+        },
+        {
+          "t": 42.42,
+          "title": "We play every day…"
         }
       ],
-      "modified": 1792928110
+      "modified": 1792929084
     },
     {
       "file": "out/плотность-ru.mp4",
@@ -2700,55 +4557,29 @@
           "why": "Делим массу на объём: 1600 кг / 2 м³ = 800 кг/м³."
         }
       ],
-      "modified": 1792928043
-    },
-    {
-      "file": "out/present-simple-en.mp4",
-      "poster": "posters/present-simple-en.jpg",
-      "title": "Present Simple Explained",
-      "lang": "en",
-      "seconds": 37.5,
-      "width": 1920,
-      "height": 1080,
-      "scenes": 4,
-      "grade": 5,
-      "course": "languages",
-      "quiz": [
+      "chapters": [
         {
-          "q": "What does the present simple describe?",
-          "options": [
-            "Habits, routines and facts that are always true",
-            "Only things happening right now",
-            "Only past events",
-            "Only future plans"
-          ],
-          "answer": 0,
-          "why": "The video says the present simple describes habits, routines and facts that are always true."
+          "t": 0.0,
+          "title": "Почему килограмм пуха занимает целую гору, а…"
         },
         {
-          "q": "Which sentence is correct with he, she or it?",
-          "options": [
-            "She read books before bed.",
-            "She reads books before bed.",
-            "She reading books before bed.",
-            "She is read books before bed."
-          ],
-          "answer": 1,
-          "why": "With he, she and it, you add an s to the verb."
+          "t": 11.05,
+          "title": "Ρ(железо) ≈ 7800 кг/м³"
         },
         {
-          "q": "At what temperature does water boil, according to the video?",
-          "options": [
-            "50 degrees",
-            "100 degrees",
-            "150 degrees",
-            "200 degrees"
-          ],
-          "answer": 1,
-          "why": "The video says water boils at one hundred degrees."
+          "t": 24.09,
+          "title": "Ρ = m / V"
+        },
+        {
+          "t": 32.69,
+          "title": "Например, брусок объёмом два кубических…"
+        },
+        {
+          "t": 44.53,
+          "title": "Теперь попробуй сам: подумай, утонет ли…"
         }
       ],
-      "modified": 1792927943
+      "modified": 1792928043
     },
     {
       "file": "out/the-water-cycle-en.mp4",
@@ -2794,6 +4625,32 @@
           ],
           "answer": 2,
           "why": "The sun makes the water evaporate into the air, so the shirt dries."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "Water is always moving around our planet in…"
+        },
+        {
+          "t": 10.16,
+          "title": "The vapour cools high in the sky and…"
+        },
+        {
+          "t": 20.94,
+          "title": "Rain lands on mountains and hills, then…"
+        },
+        {
+          "t": 30.88,
+          "title": "Here is an example with numbers. If about…"
+        },
+        {
+          "t": 40.73,
+          "title": "The whole cycle keeps repeating…"
+        },
+        {
+          "t": 52.05,
+          "title": "You can see the cycle at home. On a sunny…"
         }
       ],
       "modified": 1792927820
@@ -2844,55 +4701,29 @@
           "why": "В скрипте: закрытый кран экономит до 10 литров за 1 минуту."
         }
       ],
-      "modified": 1792927705
-    },
-    {
-      "file": "out/photosynthesis-en.mp4",
-      "poster": "posters/photosynthesis-en.jpg",
-      "title": "Photosynthesis Explained",
-      "lang": "en",
-      "seconds": 33.9,
-      "width": 1920,
-      "height": 1080,
-      "scenes": 5,
-      "grade": 6,
-      "course": "biology",
-      "quiz": [
+      "chapters": [
         {
-          "q": "What does photosynthesis require to produce glucose?",
-          "options": [
-            "Carbon dioxide, water, and sunlight",
-            "Oxygen, water, and sunlight",
-            "Glucose, oxygen, and water",
-            "Carbon dioxide, oxygen, and water"
-          ],
-          "answer": 0,
-          "why": "The script states plants use sunlight, water, and carbon dioxide to make food."
+          "t": 0.0,
+          "title": "Вода на Земле не исчезает, а постоянно…"
         },
         {
-          "q": "About how much energy is stored in one mole of glucose?",
-          "options": [
-            "2,800 kilojoules",
-            "280 kilojoules",
-            "28,000 kilojoules",
-            "18 kilojoules"
-          ],
-          "answer": 0,
-          "why": "The script says one mole of glucose stores about 2,800 kJ."
+          "t": 9.71,
+          "title": "Под лучами солнца вода нагревается и…"
         },
         {
-          "q": "How many oxygen molecules are released per glucose molecule produced?",
-          "options": [
-            "6",
-            "1",
-            "12",
-            "18"
-          ],
-          "answer": 0,
-          "why": "The equation in the script shows 6 O₂ released per glucose molecule."
+          "t": 21.38,
+          "title": "Вверху пар охлаждается и снова становится…"
+        },
+        {
+          "t": 33.89,
+          "title": "Часть дождевой воды стекает в реки и…"
+        },
+        {
+          "t": 46.32,
+          "title": "Круговорот воды очищает воду и снабжает ею…"
         }
       ],
-      "modified": 1792927572
+      "modified": 1792927705
     },
     {
       "file": "out/фотосинтез-ru.mp4",
@@ -2940,55 +4771,29 @@
           "why": "Фотосинтез идёт в хлоропластах, а зелёный пигмент хлорофилл ловит свет."
         }
       ],
-      "modified": 1792927481
-    },
-    {
-      "file": "out/adding-fractions-en.mp4",
-      "poster": "posters/adding-fractions-en.jpg",
-      "title": "Adding Fractions",
-      "lang": "en",
-      "seconds": 50.6,
-      "width": 1920,
-      "height": 1080,
-      "scenes": 6,
-      "grade": 6,
-      "course": "math",
-      "quiz": [
+      "chapters": [
         {
-          "q": "Before you can add fractions, what must be the same?",
-          "options": [
-            "The numerators",
-            "The denominators",
-            "The whole numbers",
-            "The answer"
-          ],
-          "answer": 1,
-          "why": "The bottom numbers must be the same so each piece is the same size."
+          "t": 0.0,
+          "title": "Растения умеют готовить себе еду сами. Для…"
         },
         {
-          "q": "What is 1/2 + 1/3?",
-          "options": [
-            "2/5",
-            "3/6",
-            "5/6",
-            "2/6"
-          ],
-          "answer": 2,
-          "why": "3/6 + 2/6 = 5/6."
+          "t": 10.8,
+          "title": "Посмотрим на числа: чтобы получить шесть…"
         },
         {
-          "q": "After rewriting 1/3 with denominator 6, what fraction do you get?",
-          "options": [
-            "2/6",
-            "3/6",
-            "1/6",
-            "2/3"
-          ],
-          "answer": 0,
-          "why": "The script says one third becomes two sixths."
+          "t": 24.79,
+          "title": "Вот общая формула фотосинтеза. Углекислый…"
+        },
+        {
+          "t": 36.88,
+          "title": "Фотосинтез идёт в зелёных частях растения, в…"
+        },
+        {
+          "t": 47.8,
+          "title": "Запомни главное: фотосинтез — это…"
         }
       ],
-      "modified": 1792927365
+      "modified": 1792927481
     },
     {
       "file": "out/сложение-дробей-ru.mp4",
@@ -3036,55 +4841,29 @@
           "why": "1/4 + 1/4 = 2/4, а это равно 1/2."
         }
       ],
-      "modified": 1792927265
-    },
-    {
-      "file": "out/area-of-a-rectangle-en.mp4",
-      "poster": "posters/area-of-a-rectangle-en.jpg",
-      "title": "Area of a Rectangle",
-      "lang": "en",
-      "seconds": 40.1,
-      "width": 1920,
-      "height": 1080,
-      "scenes": 5,
-      "grade": 4,
-      "course": "math",
-      "quiz": [
+      "chapters": [
         {
-          "q": "What does the area of a rectangle measure?",
-          "options": [
-            "The space inside its edges",
-            "The distance around its edges",
-            "The length of its longest side",
-            "The number of corners it has"
-          ],
-          "answer": 0,
-          "why": "The video says area is the amount of flat space inside the edges."
+          "t": 0.0,
+          "title": "A/c + b/c = (a + b)/c"
         },
         {
-          "q": "A rectangle is 5 units long and 3 units wide. What is its area?",
-          "options": [
-            "8 square units",
-            "15 square units",
-            "16 square units",
-            "10 square units"
-          ],
-          "answer": 1,
-          "why": "The video shows 5 × 3 = 15 square units."
+          "t": 8.5,
+          "title": "1/8 + 2/8 = 3/8"
         },
         {
-          "q": "What is the rule for the area of a rectangle?",
-          "options": [
-            "Area = length + width",
-            "Area = length × width",
-            "Area = length − width",
-            "Area = 2 × length"
-          ],
-          "answer": 1,
-          "why": "The video states A = length × width."
+          "t": 17.51,
+          "title": "Если знаменатели разные, сначала приводим…"
+        },
+        {
+          "t": 27.0,
+          "title": "3/6 + 2/6 = 5/6"
+        },
+        {
+          "t": 35.05,
+          "title": "1/4 + 1/4 = 2/4 = 1/2"
         }
       ],
-      "modified": 1792927165
+      "modified": 1792927265
     },
     {
       "file": "out/площадь-прямоугольника-ru.mp4",
@@ -3130,6 +4909,24 @@
           ],
           "answer": 0,
           "why": "В видео: S = 8 × 4 = 32 см²."
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0.0,
+          "title": "Площадь — это сколько места фигура занимает…"
+        },
+        {
+          "t": 10.37,
+          "title": "5 см × 3 см = 15 см²"
+        },
+        {
+          "t": 21.79,
+          "title": "S = a × b"
+        },
+        {
+          "t": 33.41,
+          "title": "S = 8 × 4 = 32 см²"
         }
       ],
       "modified": 1792927034
@@ -3180,55 +4977,29 @@
           "why": "По формуле I = U / R получаем 12 / 4 = 3 А."
         }
       ],
-      "modified": 1792918201
-    },
-    {
-      "file": "out/newton-s-second-law-en.mp4",
-      "poster": "posters/newton-s-second-law-en.jpg",
-      "title": "Newton's Second Law",
-      "lang": "en",
-      "seconds": 26.2,
-      "width": 1920,
-      "height": 1080,
-      "scenes": 6,
-      "grade": 9,
-      "course": "physics",
-      "quiz": [
+      "chapters": [
         {
-          "q": "According to the video, what happens to acceleration when you push harder on a box?",
-          "options": [
-            "It gets bigger",
-            "It gets smaller",
-            "It stays the same",
-            "It becomes zero"
-          ],
-          "answer": 0,
-          "why": "The video says bigger force gives bigger acceleration."
+          "t": 0.0,
+          "title": "Представь, что электрический ток — это поток…"
         },
         {
-          "q": "A force of 10 N pushes a 2 kg object. What is its acceleration?",
-          "options": [
-            "5 m/s²",
-            "10 m/s²",
-            "20 m/s²",
-            "2 m/s²"
-          ],
-          "answer": 0,
-          "why": "The example gives a = F / m = 10 N / 2 kg = 5 m/s²."
+          "t": 10.23,
+          "title": "Возьмём лампочку с сопротивлением десять ом…"
         },
         {
-          "q": "You double the push on the same object. What happens to its acceleration?",
-          "options": [
-            "It doubles",
-            "It halves",
-            "It stays the same",
-            "It becomes four times larger"
-          ],
-          "answer": 0,
-          "why": "The video states that 2F gives 2a on the same object."
+          "t": 19.03,
+          "title": "I = U / R"
+        },
+        {
+          "t": 29.97,
+          "title": "U = I · R, R = U / I"
+        },
+        {
+          "t": 38.38,
+          "title": "Попробуй сам: если напряжение двенадцать…"
         }
       ],
-      "modified": 1792918044
+      "modified": 1792918201
     },
     {
       "file": "out/arifmeticheskaya-progressiya-1min.mp4",
@@ -3242,6 +5013,7 @@
       "grade": 9,
       "course": "math",
       "quiz": null,
+      "chapters": null,
       "modified": 1792916959
     }
   ]

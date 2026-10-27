@@ -59,7 +59,7 @@ def main():
         target = os.path.join(QUIZZES, stem + ".json")
         if os.path.exists(target):
             continue
-        m = re.search(r"-(ru|en)$", stem)
+        m = re.search(r"-(ru|en|kk)$", stem)
         slug = stem[: -len(m.group(1)) - 1] if m else stem
         script_path = os.path.join("runs", slug, "script.json")
         if not os.path.exists(script_path):

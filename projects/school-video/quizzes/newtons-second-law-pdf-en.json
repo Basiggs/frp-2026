@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "q": "Which formula expresses Newton's second law?",
+      "options": [
+        "F = m · a",
+        "a = F · m",
+        "F = m / a",
+        "m = F · a"
+      ],
+      "answer": 0,
+      "why": "The script states force equals mass times acceleration."
+    },
+    {
+      "q": "A 10 kg box is pushed with 50 N while friction pulls back with 20 N. What is its acceleration?",
+      "options": [
+        "5 m/s²",
+        "3 m/s²",
+        "2 m/s²",
+        "7 m/s²"
+      ],
+      "answer": 1,
+      "why": "The net force is 30 N, and 30 N / 10 kg = 3 m/s²."
+    },
+    {
+      "q": "With the same force of 60 N, which mass accelerates at 2 m/s²?",
+      "options": [
+        "10 kg",
+        "20 kg",
+        "30 kg",
+        "60 kg"
+      ],
+      "answer": 2,
+      "why": "60 N / 30 kg = 2 m/s²."
+    }
+  ]
+}
