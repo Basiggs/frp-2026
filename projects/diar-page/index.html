@@ -1,0 +1,119 @@
+<!doctype html>
+<!-- Our project page (FRP 2026). Filled from our paper kit (diar-paper/main.tex).
+     Replace every [link] with a real link. Every red X is a number we have NOT measured yet:
+     put in the same number as in our paper, or delete the sentence. Never invent a number.
+     images/demo.jpg is a mockup: replace it with a real screenshot of our page (same name).
+     Names: use first names only, and only after your mentor says the parents agreed. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checked 1-minute school videos — FRP 2026</title>
+<meta name="description" content="An app that turns a topic or a teacher's PDF into a checked 1-minute explainer video in Russian and English.">
+<style>
+  :root { --accent: #A3283D; --ink: #222; --muted: #666; --line: #e6e1df; --soft: #faf7f5; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--ink); background: #fff; }
+  main { max-width: 860px; margin: 0 auto; padding: 40px 20px 60px; }
+  header { text-align: center; }
+  h1 { font-size: clamp(28px, 5vw, 42px); line-height: 1.15; margin: 0 0 12px; }
+  .authors { font-size: 19px; } .aff { color: var(--muted); margin-top: 4px; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin: 22px 0 8px; }
+  .links a { background: var(--ink); color: #fff; text-decoration: none; padding: 8px 18px; border-radius: 999px; font-weight: 600; font-size: 15px; }
+  .links a.soon { background: #bbb; pointer-events: none; }
+  figure { margin: 28px 0; } figure img { width: 100%; border-radius: 10px; border: 1px solid var(--line); }
+  figcaption { color: var(--muted); font-size: 15px; text-align: center; margin-top: 6px; }
+  h2 { font-size: 26px; margin: 44px 0 10px; text-align: center; }
+  .tldr { background: var(--soft); border-left: 5px solid var(--accent); padding: 14px 18px; border-radius: 0 8px 8px 0; }
+  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 18px 0; }
+  .steps div { border: 2px solid var(--accent); border-radius: 10px; padding: 12px; text-align: center; font-size: 15px; }
+  .steps b { display: block; color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; font-size: 16px; margin: 14px 0; }
+  th, td { padding: 9px 10px; border-bottom: 1px solid var(--line); text-align: center; }
+  th { border-bottom: 2px solid var(--ink); } td:first-child, th:first-child { text-align: left; }
+  tr.best td { font-weight: 700; background: #fdf1f3; }
+  .table-wrap { overflow-x: auto; }
+  @media (max-width: 600px) { table { font-size: 13px; } th, td { padding: 7px 3px; } }
+  .x { color: #d00; font-weight: 700; }
+  .note { color: var(--muted); font-size: 15px; }
+  pre { background: var(--soft); padding: 14px; border-radius: 8px; overflow-x: auto; font-size: 14px; }
+  footer { color: var(--muted); font-size: 14px; text-align: center; margin-top: 50px; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Can AI-made 1-minute videos teach a school topic correctly?</h1>
+    <div class="authors">Diar</div>
+    <div class="aff">FRP 2026, AI Engineering track · ISSAI, Nazarbayev University</div>
+    <div class="links">
+      <a href="[link]">📄 Paper</a>
+      <a href="[link]">▶ Demo</a>
+      <a href="[link]">💻 Code</a>
+    </div>
+  </header>
+
+  <figure>
+    <img src="images/teaser.jpg" alt="A student at a tablet and a robot that checks a film strip with a magnifying glass">
+    <figcaption>Our idea: a lesson becomes a short video, and every video is checked before a student sees it. (Illustration made with an image model.)</figcaption>
+  </figure>
+
+  <p class="tldr"><b>In one sentence:</b> our app turns one topic line or a teacher's PDF into a 1-minute explainer video in Russian or English, and an AI check reads every script and stops it before a video with a mistake is made.</p>
+
+  <h2>The problem</h2>
+  <p>A student who missed a lesson often looks for a short video, but a good video takes a teacher hours to make. A language model can write the script in seconds, but it can also write a wrong number with full confidence. Teachers have their own materials, and an AI video must not add facts that are not in them.</p>
+
+  <h2>How it works</h2>
+  <div class="steps">
+    <div><b>1. Input</b>A topic line or a teacher's PDF, in Russian or English</div>
+    <div><b>2. Model</b>A chat model writes a 4–6 scene script; a second request checks it</div>
+    <div><b>3. Output</b>A 1-minute video with AI pictures, an AI voice, captions and a short quiz</div>
+  </div>
+  <p>The app uses only the class models on the class server: a chat model (DeepSeek-V4.1-Flash), an image model, a voice model and a speech recognition model. The check acts as “a strict school textbook editor”: it checks the facts, every arithmetic result and the formulas. If the check says no, the app makes no video. In PDF mode the app reads the PDF text with <code>pypdf</code> and the model must use only its facts. ffmpeg builds a 1080p video. On 27 October we had 71 videos (37 in Russian, 33 in English, 1 early test) in 7 subjects, 26 to 80 seconds long (median 48 s).</p>
+
+  <h2>Results</h2>
+  <p>Is the AI check right? We wrote 10 test scripts: 5 with one planted mistake and 5 correct ones. A planted mistake that the check stops is <i>caught</i>; a correct script that it stops is a <i>false alarm</i>.</p>
+  <div class="table-wrap"><table>
+    <tr><th>Test script</th><th>Should</th><th>First run</th><th>After change</th></tr>
+    <tr><td>1.99² = 3.96 (right: 3.9601)</td><td>stop</td><td><span class="x">X</span></td><td><span class="x">X</span></td></tr>
+    <tr><td>24 million km² = 2.4 billion football fields (right: 3.4)</td><td>stop</td><td><span class="x">X</span></td><td><span class="x">X</span></td></tr>
+    <tr><td>40 m in 8 s “at a calm walk” (5 m/s is a run)</td><td>stop</td><td><span class="x">X</span></td><td><span class="x">X</span></td></tr>
+    <tr><td>6² + 8² = 100, so c = 12 (right: 10)</td><td>stop</td><td><span class="x">X</span></td><td><span class="x">X</span></td></tr>
+    <tr><td>Water boils at 50 °C at sea level (right: 100 °C)</td><td>stop</td><td><span class="x">X</span></td><td><span class="x">X</span></td></tr>
+    <tr><td>5 correct scripts</td><td>pass</td><td><span class="x">X</span></td><td><span class="x">X</span></td></tr>
+    <tr class="best"><td>Caught (of 5) / false alarms (of 5)</td><td></td><td><span class="x">X</span> / <span class="x">X</span></td><td><span class="x">X</span> / <span class="x">X</span></td></tr>
+  </table></div>
+  <p>Our tests with people:</p>
+  <div class="table-wrap"><table>
+    <tr><th>Test</th><th>Result</th></tr>
+    <tr><td>A teacher checks 10 videos that passed the AI check: mistakes found</td><td><span class="x">X</span> (<span class="x">X</span> of 10 videos OK)</td></tr>
+    <tr><td>6 classmates, quiz before → after one video (guessing: 1.25 of 5)</td><td><span class="x">X</span> of 5 → <span class="x">X</span> of 5</td></tr>
+    <tr><td>AI check during our batches (25–26 Oct)</td><td>36 of 67 scripts stopped</td></tr>
+    <tr><td>Time per video (36 videos, before the check)</td><td>67 to 127 s, median 105 s</td></tr>
+  </table></div>
+  <p class="note"><span class="x">X</span> = not measured yet.</p>
+  <p>The check already found real mistakes in our scripts, for example 1.99² = 3.96 in a Russian script about limits. But it also stopped correct scripts: for the independence of Kazakhstan it reported 2026 − 1991 = 35 as a problem and in the same line said that it is correct. [After the tests: which mistake did the check miss, and did the scores go up after the video?]</p>
+
+  <figure>
+    <img src="images/demo.jpg" alt="Mockup of the app: the video gallery, one scene of a video and the quiz page">
+    <figcaption>Mockup of our pages (replace it with a real screenshot): the gallery (a), one scene of a video (b) and the quiz before and after the video (c).</figcaption>
+  </figure>
+
+  <h2>Limitations and ethics</h2>
+  <p>The same model writes and checks the script, so it can miss its own mistakes, and the check reads only the text, not the pictures. Only one teacher checked only 10 videos, and the AI check had only 10 test scripts. The classmates did the same questions twice, so a part of the gain can come from the first quiz, not from the video.</p>
+  <p>The teacher and the classmates were volunteers; we write only scores and no names. The pictures and voices are made by AI models; no real person's face or voice is in them. Only videos that passed the AI check are on the public page.</p>
+
+  <h2>Cite</h2>
+<pre>@misc{diar2026videos,
+  title  = {Can AI-made 1-minute videos teach a school topic correctly?
+            An app that turns a topic or a teacher's PDF into a checked
+            explainer video in Russian and English},
+  author = {Diar},
+  note   = {FRP 2026, ISSAI, Nazarbayev University},
+  year   = {2026}
+}</pre>
+
+  <footer>Made at the ISSAI Fall Research Program 2026 · Page template: FRP AI Engineering</footer>
+</main>
+</body>
+</html>
