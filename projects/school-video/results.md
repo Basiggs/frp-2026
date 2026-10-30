@@ -1,31 +1,31 @@
 # School topics as videos — results
 
-72 lessons, made by one pipeline: chat model writes the script, an AI check reads it, pictures and voice are generated, ffmpeg cuts the video.
+75 lessons, made by one pipeline: chat model writes the script, an AI check reads it, pictures and voice are generated, ffmpeg cuts the video.
 
 ## Four numbers
 
-- **72** videos — `data.json`
+- **75** videos — `data.json`
 - **7** subjects: biology, chemistry, geography, history, languages, math, physics — `data.json`
-- **65 min** of video — `data.json`
-- **210** quiz questions — `data.json`
+- **82 min** of video — `data.json`
+- **219** quiz questions — `data.json`
 
 ## All numbers with their file
 
 | number | what | file |
 |---|---|---|
-| 72 | videos in the gallery | `data.json` |
+| 75 | videos in the gallery | `data.json` |
 | 7 | subjects | `data.json` |
-| 65 | minutes of finished video | `data.json` |
-| 210 | quiz questions | `data.json` |
-| 70 | videos with chapter marks | `data.json` |
-| 70 | videos with a school grade | `grades.json` |
-| 22 | scripts sent to the AI check | `runs/*/check.json` |
-| 13 | scripts that passed the AI check | `runs/*/check.json` |
+| 82 | minutes of finished video | `data.json` |
+| 219 | quiz questions | `data.json` |
+| 73 | videos with chapter marks | `data.json` |
+| 73 | videos with a school grade | `grades.json` |
+| 24 | scripts sent to the AI check | `runs/*/check.json` |
+| 15 | scripts that passed the AI check | `runs/*/check.json` |
 | 9 | scripts the AI check stopped | `runs/*/check.json` |
 
 ## What is still weak
 
-- Only 22 of 72 scripts were sent to the AI check (13 passed, 9 stopped); the rest were made before the check existed.
+- Only 24 of 75 scripts were sent to the AI check (15 passed, 9 stopped); the rest were made before the check existed.
 - The pictures come from the image model at 1536 px and are upscaled to 1080p, so they look soft.
 - A full video takes about 3 minutes to build, so a live demo needs a backup.
 
