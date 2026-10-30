@@ -48,7 +48,7 @@
     <div class="aff">FRP 2026, AI Engineering track · ISSAI, Nazarbayev University</div>
     <div class="links">
       <a href="[link]">📄 Paper</a>
-      <a href="https://basiggs.github.io/frp-2026/projects/school-video/pages/">▶ Demo</a>
+      <a href="https://basiggs.github.io/frp-2026/projects/school-video/pages/?v=2">▶ Demo</a>
       <a href="https://github.com/Basiggs/frp-2026">💻 Code</a>
     </div>
   </header>
@@ -69,7 +69,7 @@
     <div><b>2. Model</b>A chat model writes a 4–6 scene script; a second request checks it</div>
     <div><b>3. Output</b>A 1-minute video with AI pictures, an AI voice, captions and a short quiz</div>
   </div>
-  <p>The app uses only the class models on the class server: a chat model (DeepSeek-V4.1-Flash), an image model, a voice model and a speech recognition model. The check acts as “a strict school textbook editor”: it checks the facts, every arithmetic result and the formulas. If the check says no, the app makes no video. In PDF mode the app reads the PDF text with <code>pypdf</code> and the model must use only its facts. ffmpeg builds a 1080p video. On 27 October we had 71 videos (37 in Russian, 33 in English, 1 early test) in 7 subjects, 26 to 80 seconds long (median 48 s).</p>
+  <p>The app uses only the class models on the class server: a chat model (DeepSeek-V4.1-Flash), an image model, a voice model and a speech recognition model. The check acts as “a strict school textbook editor”: it checks the facts, every arithmetic result and the formulas. If the check says no, the app makes no video. In PDF mode the app reads the PDF text with <code>pypdf</code> and the model must use only its facts. ffmpeg builds a 1080p video. On 30 October we had 75 videos (39 in Russian, 34 in English, 1 in Kazakh, 1 early test) in 7 subjects, 37 to 102 seconds long (median 64 s, 82 minutes in all).</p>
 
   <h2>Results</h2>
   <p>Is the AI check right? We wrote 10 test scripts: 5 with one planted mistake and 5 correct ones. A planted mistake that the check stops is <i>caught</i>; a correct script that it stops is a <i>false alarm</i>.</p>

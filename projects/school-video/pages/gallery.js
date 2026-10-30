@@ -707,7 +707,7 @@
     });
   }
 
-  fetch('data.json')
+  fetch('data.json?v=2')
     .then(r => {
       if (!r.ok) throw new Error('data.json: HTTP ' + r.status);
       return r.json();
@@ -717,7 +717,7 @@
       buildGrades();
       buildCourses();
       render();
-      fetch('tracks.json')
+      fetch('tracks.json?v=2')
         .then(r => {
           if (!r.ok) throw new Error('tracks.json: HTTP ' + r.status);
           return r.json();
