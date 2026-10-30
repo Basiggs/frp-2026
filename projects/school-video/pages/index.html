@@ -11,12 +11,12 @@
   <header>
     <div class="headtop">
       <div>
-        <h1>School topics as videos</h1>
+        <h1 data-i18n="title">School topics as videos</h1>
         <div class="sub" id="count">Loading…</div>
       </div>
       <div class="headright">
         <nav class="nav" aria-label="Pages">
-          <a href="index.html" class="on" aria-current="page">Videos</a>
+          <a href="index.html" class="on" aria-current="page" data-i18n="navVideos">Videos</a>
         </nav>
         <div class="langmenu">
           <button class="langbtn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-label="Language">
@@ -35,9 +35,9 @@
     </div>
     <div class="searchrow headsearch">
       <label class="box">
-        <span class="icon">⌕</span>
-        <input type="text" id="search" placeholder="Find a topic: density, fractions, water cycle…"
-               aria-label="Find a topic" autocomplete="off">
+        <span class="icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg></span>
+        <input type="text" id="search" data-i18n-ph="search" placeholder="Find a topic: density, fractions, water cycle…"
+               aria-label="Find a topic" autocomplete="off" data-i18n-aria="searchAria">
         <button type="button" class="clear" id="clearSearch" aria-label="Clear search" hidden>×</button>
         <kbd>/</kbd>
       </label>
@@ -55,9 +55,9 @@
         <div class="meta" id="nowMeta"></div>
       </div>
       <div class="spacer"></div>
-      <a class="ghost" id="download" download>Download</a>
-      <button class="ghost" id="testBtn" hidden>Test</button>
-      <button class="ghost" id="close">Close</button>
+      <a class="ghost" id="download" download data-i18n="download">Download</a>
+      <button class="ghost" id="testBtn" hidden data-i18n="test">Test</button>
+      <button class="ghost" id="close" data-i18n="close">Close</button>
     </div>
     <div class="chapters" id="chapters" hidden aria-label="Video chapters">
       <div class="chapstrip" id="chapstrip"><div class="chapprog" id="chapprog"></div></div>
@@ -69,8 +69,8 @@
 
   <section class="tracks" id="tracks" hidden aria-label="Learning tracks">
     <div class="trackshead">
-      <h2>Learning tracks</h2>
-      <span>Step-by-step series</span>
+      <h2 data-i18n="tracks">Learning tracks</h2>
+      <span data-i18n="stepSeries">Step-by-step series</span>
     </div>
     <div class="trackrow" id="trackrow"></div>
   </section>
@@ -78,17 +78,17 @@
   <div class="trackbar" id="trackbar" hidden>
     <span id="trackbarText"></span>
     <span class="spacer"></span>
-    <button class="ghost" id="trackClear" type="button">Clear track</button>
+    <button class="ghost" id="trackClear" type="button" data-i18n="clearTrack">Clear track</button>
   </div>
 
   <div class="filterbar" id="filterbar">
     <div class="searchrow gradebar">
-      <span class="gradehint">Subject</span>
+      <span class="gradehint" data-i18n="subject">Subject</span>
       <div class="chips" id="courses" role="group" aria-label="Filter by subject"></div>
     </div>
 
     <div class="searchrow gradebar">
-      <span class="gradehint">Grade</span>
+      <span class="gradehint" data-i18n="grade">Grade</span>
       <div class="chips" id="grades" role="group" aria-label="Filter by grade"></div>
       <span class="gradehint" id="gradeHint"></span>
     </div>

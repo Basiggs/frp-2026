@@ -29,7 +29,118 @@
   let currentCourse = '';
   let currentTrack = '';
   let tracks = [];
+  let uiLang = 'en';
   let currentQuiz = null;
+
+  const SUBJECTS = {
+    en: {},
+    ru: { math: 'Математика', physics: 'Физика', chemistry: 'Химия', biology: 'Биология',
+          geography: 'География', history: 'История', languages: 'Языки' },
+    kk: { math: 'Математика', physics: 'Физика', chemistry: 'Химия', biology: 'Биология',
+          geography: 'География', history: 'Тарих', languages: 'Тілдер' }
+  };
+
+  const T = {
+    en: {
+      title: 'School topics as videos', navVideos: 'Videos', navCreate: 'Create & upload',
+      search: 'Find a topic: density, fractions, water cycle…', searchAria: 'Find a topic',
+      subject: 'Subject', grade: 'Grade', tracks: 'Learning tracks', stepSeries: 'Step-by-step series',
+      clearTrack: 'Clear track', download: 'Download', test: 'Test', close: 'Close',
+      allLang: 'All', allSubjects: 'All subjects', allGrades: 'All grades',
+      videos: '{n} videos', videoOne: '{n} video', inTrack: 'in “{x}”',
+      forGrade: 'for grade {x}', inLangEn: 'in English', inLangRu: 'in Russian', inLangKk: 'in Kazakh',
+      forQuery: 'for “{x}”', lesson: 'Lesson {n}', upNext: 'Up next', play: 'Play',
+      trackMeta: '{n} lessons · {s}', trackBar: 'Track: <b>{t}</b> — lessons 1 to {n} in order',
+      scenes: '{n} scenes',
+      latest: 'Latest video: {d} · made with the class chat, image and voice models',
+      emptyQuery: 'No video for “{q}” yet. Make it in class.',
+      emptyGrade: 'No video for grade {g} yet. Pick a topic idea in class.',
+      emptyLang: 'No videos in this language yet.',
+      loadFail: 'Could not load the list', loadHint: ' — run python3 make_gallery.py and reload.',
+      quickQ: 'Quick question', pausedTag: 'video paused — answer, then continue',
+      cont: 'Continue watching', right: 'Right! ', notQuite: 'Not quite. ',
+      miniTest: 'Mini test', questionsAbout: '{n} questions about the video',
+      checkAnswers: 'Check answers', tryAgain: 'Try again', score: '{r} of {n} right', checked: 'Checked',
+      gradeTag: 'Grade {x}', lessonOf: 'Lesson {n} of {total} in {title}', nextIn: 'Next in {x}',
+      moreOf: 'More {x}', relatedGrade: 'Related for grade {g}'
+    },
+    ru: {
+      title: 'Школьные темы в видео', navVideos: 'Видео', navCreate: 'Создать и загрузить',
+      search: 'Найдите тему: плотность, дроби, круговорот воды…', searchAria: 'Найти тему',
+      subject: 'Предмет', grade: 'Класс', tracks: 'Учебные треки', stepSeries: 'Пошаговые серии',
+      clearTrack: 'Сбросить трек', download: 'Скачать', test: 'Тест', close: 'Закрыть',
+      allLang: 'Все', allSubjects: 'Все предметы', allGrades: 'Все классы',
+      videos: '{n} видео', videoOne: '{n} видео', inTrack: 'трек «{x}»',
+      forGrade: '{x} класс', inLangEn: 'на английском', inLangRu: 'на русском', inLangKk: 'на казахском',
+      forQuery: '«{x}»', lesson: 'Урок {n}', upNext: 'Дальше', play: 'Смотреть',
+      trackMeta: 'Уроков: {n} · {s}', trackBar: 'Трек: <b>{t}</b> — уроки с 1 по {n} по порядку',
+      scenes: '{n} сцен',
+      latest: 'Последнее видео: {d} · сделано с чат-, графической и голосовой моделями класса',
+      emptyQuery: 'Пока нет видео по «{q}». Создайте его на уроке.',
+      emptyGrade: 'Пока нет видео для {g} класса. Выберите тему на уроке.',
+      emptyLang: 'Пока нет видео на этом языке.',
+      loadFail: 'Не удалось загрузить список', loadHint: ' — запустите python3 make_gallery.py и обновите страницу.',
+      quickQ: 'Быстрый вопрос', pausedTag: 'видео на паузе — ответьте и продолжите',
+      cont: 'Продолжить просмотр', right: 'Верно! ', notQuite: 'Не совсем. ',
+      miniTest: 'Мини-тест', questionsAbout: '{n} вопроса о видео',
+      checkAnswers: 'Проверить ответы', tryAgain: 'Ещё раз', score: '{r} из {n} верно', checked: 'Проверено',
+      gradeTag: '{x} класс', lessonOf: 'Урок {n} из {total} в треке «{title}»', nextIn: 'Дальше: {x}',
+      moreOf: 'Ещё: {x}', relatedGrade: 'Похожее для {g} класса'
+    },
+    kk: {
+      title: 'Мектеп тақырыптары — видеода', navVideos: 'Видео', navCreate: 'Жасау және жүктеу',
+      search: 'Тақырып табыңыз: тығыздық, бөлшектер, су айналымы…', searchAria: 'Тақырып табу',
+      subject: 'Пән', grade: 'Сынып', tracks: 'Оқу бағыттары', stepSeries: 'Қадамдық сериялар',
+      clearTrack: 'Бағытты жабу', download: 'Жүктеу', test: 'Тест', close: 'Жабу',
+      allLang: 'Барлығы', allSubjects: 'Барлық пәндер', allGrades: 'Барлық сыныптар',
+      videos: '{n} видео', videoOne: '{n} видео', inTrack: '«{x}» бағыты',
+      forGrade: '{x}-сынып', inLangEn: 'ағылшынша', inLangRu: 'орысша', inLangKk: 'қазақша',
+      forQuery: '«{x}»', lesson: '{n}-сабақ', upNext: 'Келесі', play: 'Қарау',
+      trackMeta: 'Сабақ: {n} · {s}', trackBar: '«<b>{t}</b>» бағыты — {n} сабақ ретімен',
+      scenes: '{n} көрініс',
+      latest: 'Соңғы видео: {d} · сыныптың чат, сурет және дауыс модельдерімен жасалды',
+      emptyQuery: '«{q}» бойынша видео жоқ. Оны сабақта жасаңыз.',
+      emptyGrade: '{g}-сыныпқа видео жоқ. Сабақта тақырып таңдаңыз.',
+      emptyLang: 'Бұл тілде видео әзірге жоқ.',
+      loadFail: 'Тізімді жүктеу мүмкін болмады', loadHint: ' — make_gallery.py іске қосып, бетті жаңартыңыз.',
+      quickQ: 'Жылдам сұрақ', pausedTag: 'видео тоқтады — жауап беріп, жалғастырыңыз',
+      cont: 'Қарауды жалғастыру', right: 'Дұрыс! ', notQuite: 'Дәл емес. ',
+      miniTest: 'Шағын тест', questionsAbout: 'видео туралы {n} сұрақ',
+      checkAnswers: 'Жауаптарды тексеру', tryAgain: 'Қайта көру', score: '{r} / {n} дұрыс', checked: 'Тексерілді',
+      gradeTag: '{x}-сынып', lessonOf: '«{title}» — {n}/{total} сабақ', nextIn: 'Келесі: {x}',
+      moreOf: 'Тағы: {x}', relatedGrade: '{g}-сыныпқа ұқсас'
+    }
+  };
+
+  function t(key, vars) {
+    let str = (T[uiLang] && T[uiLang][key]) || T.en[key] || key;
+    if (vars) Object.keys(vars).forEach(k => { str = str.split('{' + k + '}').join(vars[k]); });
+    return str;
+  }
+
+  function courseName(key) {
+    return (SUBJECTS[uiLang] && SUBJECTS[uiLang][key]) || courseLabel(key);
+  }
+
+  function applyStatic() {
+    document.documentElement.lang = uiLang;
+    document.querySelectorAll('[data-i18n]').forEach(el => { el.textContent = t(el.dataset.i18n); });
+    document.querySelectorAll('[data-i18n-ph]').forEach(el => { el.placeholder = t(el.dataset.i18nPh); });
+    document.querySelectorAll('[data-i18n-aria]').forEach(el => { el.setAttribute('aria-label', t(el.dataset.i18nAria)); });
+    const allChip = document.querySelector('.chip[data-lang=""]');
+    if (allChip) allChip.textContent = t('allLang');
+    langBtn.querySelector('.langlabel').textContent =
+      currentLang ? document.querySelector('.chip[data-lang="' + currentLang + '"]').textContent : t('allLang');
+  }
+
+  function setUiLang(code) {
+    uiLang = code === 'ru' || code === 'kk' ? code : 'en';
+    applyStatic();
+    buildCourses();
+    buildGrades();
+    buildTracks();
+    render();
+  }
   let currentVideo = null;
   let midDone = false;
   let picks = [];
@@ -47,10 +158,10 @@
 
   function metaLine(v) {
     const parts = [];
-    if (v.course) parts.push(courseLabel(v.course));
+    if (v.course) parts.push(courseName(v.course));
     if (v.lang) parts.push(v.lang.toUpperCase());
     parts.push(hhmmss(v.seconds));
-    if (v.scenes) parts.push(v.scenes + ' scenes');
+    if (v.scenes) parts.push(t('scenes', { n: v.scenes }));
     if (v.width) parts.push(v.height + 'p');
     return parts.join(' · ');
   }
@@ -139,9 +250,9 @@
     const card = document.createElement('div');
     card.className = 'ask';
     const h = document.createElement('h3');
-    h.append('Quick question');
+    h.append(t('quickQ'));
     const tag = document.createElement('span');
-    tag.textContent = 'video paused — answer, then continue';
+    tag.textContent = t('pausedTag');
     h.appendChild(tag);
     const p = document.createElement('p');
     p.textContent = item.q;
@@ -155,7 +266,7 @@
     const go = document.createElement('button');
     go.type = 'button';
     go.className = 'primary';
-    go.textContent = 'Continue watching';
+    go.textContent = t('cont');
     let answered = false;
     (item.options || []).forEach((text, i) => {
       const b = document.createElement('button');
@@ -171,7 +282,7 @@
         });
         const right = i === item.answer;
         fb.className = 'fb ' + (right ? 'ok' : 'bad');
-        fb.textContent = (right ? 'Right! ' : 'Not quite. ') + (item.why || '');
+        fb.textContent = (right ? t('right') : t('notQuite')) + (item.why || '');
         go.focus();
       });
       opts.appendChild(b);
@@ -214,9 +325,9 @@
     quizEl.innerHTML = '';
 
     const h = document.createElement('h3');
-    h.append('Mini test');
+    h.append(t('miniTest'));
     const sub = document.createElement('span');
-    sub.textContent = currentQuiz.length + ' questions about the video';
+    sub.textContent = t('questionsAbout', { n: currentQuiz.length });
     h.appendChild(sub);
     quizEl.appendChild(h);
 
@@ -250,14 +361,14 @@
     check.type = 'button';
     check.className = 'primary';
     check.id = 'checkQuiz';
-    check.textContent = 'Check answers';
+    check.textContent = t('checkAnswers');
     const score = document.createElement('span');
     score.className = 'score';
     score.id = 'quizScore';
     const again = document.createElement('button');
     again.type = 'button';
     again.className = 'again';
-    again.textContent = 'Try again';
+    again.textContent = t('tryAgain');
     again.addEventListener('click', showQuiz);
     footBox.append(check, score, again);
     quizEl.appendChild(footBox);
@@ -280,9 +391,9 @@
         }
         if (picks[qi] === item.answer) right++;
       });
-      score.textContent = right + ' of ' + currentQuiz.length + ' right';
+      score.textContent = t('score', { r: right, n: currentQuiz.length });
       check.disabled = true;
-      check.textContent = 'Checked';
+      check.textContent = t('checked');
     });
 
     quizEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
@@ -295,17 +406,17 @@
       if (i >= 0 && i < member.videos.length - 1) {
         return {
           video: member.videos[i + 1],
-          why: 'Lesson ' + (i + 2) + ' of ' + member.videos.length + ' in ' + member.title
+          why: t('lessonOf', { n: i + 2, total: member.videos.length, title: member.title })
         };
       }
     }
     const same = all.filter(x => x !== v && x.course === v.course && x.lang === v.lang)
       .sort((a, b) => (a.grade || 99) - (b.grade || 99));
     const up = same.find(x => (x.grade || 0) > (v.grade || 0));
-    if (up) return { video: up, why: 'Next in ' + courseLabel(v.course) };
-    if (same.length) return { video: same[0], why: 'More ' + courseLabel(v.course) };
+    if (up) return { video: up, why: t('nextIn', { x: courseName(v.course) }) };
+    if (same.length) return { video: same[0], why: t('moreOf', { x: courseName(v.course) }) };
     const other = all.find(x => x !== v && x.lang === v.lang && x.grade === v.grade);
-    if (other) return { video: other, why: 'Related for grade ' + v.grade };
+    if (other) return { video: other, why: t('relatedGrade', { g: v.grade }) };
     return null;
   }
 
@@ -318,11 +429,11 @@
     }
     const x = n.video;
     upnextEl.hidden = false;
-    upnextEl.innerHTML = '<div class="upnexthead"><h3>Up next</h3><span>' + esc(n.why) + '</span></div>' +
+    upnextEl.innerHTML = '<div class="upnexthead"><h3>' + esc(t('upNext')) + '</h3><span>' + esc(n.why) + '</span></div>' +
       '<button type="button" class="upnextcard">' +
         '<img loading="lazy" src="' + esc(x.poster) + '" alt="">' +
         '<span class="un"><b>' + esc(x.title) + '</b><span>' + esc(metaLine(x)) + '</span></span>' +
-        '<span class="ugo">Play</span>' +
+        '<span class="ugo">' + esc(t('play')) + '</span>' +
       '</button>';
     upnextEl.querySelector('.upnextcard').addEventListener('click', () => play(x));
   }
@@ -370,22 +481,22 @@
   function buildTracks() {
     trackrow.innerHTML = '';
     tracksEl.hidden = !tracks.length;
-    tracks.forEach(t => {
+    tracks.forEach(tr => {
       const b = document.createElement('button');
       b.type = 'button';
       b.className = 'trackcard';
-      b.setAttribute('aria-pressed', String(currentTrack === t.id));
-      const first = t.videos[0];
+      b.setAttribute('aria-pressed', String(currentTrack === tr.id));
+      const first = tr.videos[0];
       b.innerHTML = '<img loading="lazy" src="' + esc(first.poster) + '" alt="">' +
-        '<span class="tk"><span class="tmeta">' + t.videos.length + ' lessons · ' +
-        esc(courseLabel(first.course)) + '</span><b>' + esc(t.title) + '</b>' +
-        '<span class="tsub">' + esc(t.subtitle) + '</span></span>';
-      b.addEventListener('click', () => applyTrack(currentTrack === t.id ? '' : t.id));
+        '<span class="tk"><span class="tmeta">' +
+        esc(t('trackMeta', { n: tr.videos.length, s: courseName(first.course) })) + '</span><b>' + esc(tr.title) + '</b>' +
+        '<span class="tsub">' + esc(tr.subtitle) + '</span></span>';
+      b.addEventListener('click', () => applyTrack(currentTrack === tr.id ? '' : tr.id));
       trackrow.appendChild(b);
     });
-    const t = tracks.find(x => x.id === currentTrack);
-    trackbar.hidden = !t;
-    if (t) trackbarText.innerHTML = 'Track: <b>' + esc(t.title) + '</b> — lessons 1 to ' + t.videos.length + ' in order';
+    const cur = tracks.find(x => x.id === currentTrack);
+    trackbar.hidden = !cur;
+    if (cur) trackbarText.innerHTML = t('trackBar', { t: esc(cur.title), n: cur.videos.length });
   }
 
   function applyTrack(id) {
@@ -400,14 +511,9 @@
       clearSearch.hidden = true;
     }
     document.querySelectorAll('.chip[data-lang]').forEach(c => {
-      const on = c.dataset.lang === currentLang;
-      c.setAttribute('aria-pressed', String(on));
-      if (on) langBtn.querySelector('.langlabel').textContent = c.textContent;
+      c.setAttribute('aria-pressed', String(c.dataset.lang === currentLang));
     });
-    buildCourses();
-    buildGrades();
-    buildTracks();
-    render();
+    setUiLang(currentLang);
   }
 
   trackClear.addEventListener('click', () => applyTrack(''));
@@ -437,29 +543,33 @@
           '<img loading="lazy" src="' + esc(v.poster) + '" alt="">' +
           (v.lang ? '<span class="lang">' + esc(v.lang) + '</span>' : '') +
           '<span class="dur">' + hhmmss(v.seconds) + '</span>' +
-          (lessonOf ? '<span class="lesson">Lesson ' + lessonOf.get(v) + '</span>' : '') +
+          (lessonOf ? '<span class="lesson">' + esc(t('lesson', { n: lessonOf.get(v) })) + '</span>' : '') +
           '<span class="play"><span></span></span>' +
         '</div>' +
-        '<div class="body"><h3>' + esc(v.title) + '</h3><p>' + esc(metaLine(v)) + '</p></div>';
+        '<div class="body"><h3>' + esc(v.title) + '</h3><div class="tags">' +
+          (v.course ? '<span class="tag subj">' + esc(courseName(v.course)) + '</span>' : '') +
+          (v.grade ? '<span class="tag">' + esc(t('gradeTag', { x: v.grade })) + '</span>' : '') +
+          (v.lang ? '<span class="tag">' + esc(v.lang.toUpperCase()) + '</span>' : '') +
+        '</div></div>';
       card.addEventListener('click', () => play(v, card));
       grid.appendChild(card);
     });
     emptyEl.hidden = list.length > 0;
     if (!list.length && query) {
-      emptyEl.innerHTML = 'No video for “' + esc(query) + '” yet. Make it in class..';
+      emptyEl.innerHTML = t('emptyQuery', { q: esc(query) });
     } else if (!list.length && currentGrade) {
-      emptyEl.innerHTML = 'No video for grade ' + currentGrade + ' yet. ' +
-        'Pick a topic idea in class.';
+      emptyEl.innerHTML = t('emptyGrade', { g: currentGrade });
     } else if (!list.length) {
-      emptyEl.innerHTML = 'No videos in this language yet.';
+      emptyEl.innerHTML = t('emptyLang');
     }
     const track = tracks.find(x => x.id === currentTrack);
-    countEl.textContent = list.length + (list.length === 1 ? ' video' : ' videos') +
-      (track ? ' in “' + track.title + '”' : '') +
-      (currentCourse ? ' in ' + courseLabel(currentCourse) : '') +
-      (currentGrade ? ' for grade ' + currentGrade : '') +
-      (currentLang ? ' in ' + (currentLang === 'ru' ? 'Russian' : currentLang === 'kk' ? 'Kazakh' : 'English') : '') +
-      (query ? ' for “' + query + '”' : '');
+    const bits = [t(list.length === 1 ? 'videoOne' : 'videos', { n: list.length })];
+    if (track) bits.push(t('inTrack', { x: track.title }));
+    if (currentCourse) bits.push(uiLang === 'en' ? 'in ' + courseName(currentCourse) : courseName(currentCourse));
+    if (currentGrade) bits.push(t('forGrade', { x: currentGrade }));
+    if (currentLang) bits.push(t('inLang' + currentLang.charAt(0).toUpperCase() + currentLang.slice(1)));
+    if (query) bits.push(t('forQuery', { x: query }));
+    countEl.textContent = bits.join(uiLang === 'en' ? ' ' : ' · ');
   }
 
   searchEl.addEventListener('input', () => {
@@ -506,9 +616,8 @@
       currentLang = chip.dataset.lang;
       document.querySelectorAll('.chip[data-lang]').forEach(c =>
         c.setAttribute('aria-pressed', String(c === chip)));
-      langBtn.querySelector('.langlabel').textContent = chip.textContent;
       closeLang();
-      render();
+      setUiLang(currentLang);
     });
   });
 
@@ -565,7 +674,7 @@
       const b = document.createElement('button');
       b.type = 'button';
       b.className = 'chip';
-      b.textContent = key === '' ? 'All subjects' : courseLabel(key);
+      b.textContent = key === '' ? t('allSubjects') : courseName(key);
       b.setAttribute('aria-pressed', String(currentCourse === key));
       if (key !== '' && !all.some(v => v.course === key)) b.classList.add('noVideos');
       b.addEventListener('click', () => {
@@ -584,7 +693,7 @@
       const b = document.createElement('button');
       b.type = 'button';
       b.className = 'chip';
-      b.textContent = g === '' ? 'All grades' : String(g);
+      b.textContent = g === '' ? t('allGrades') : String(g);
       b.setAttribute('aria-label', g === '' ? 'All grades' : 'Grade ' + g);
       b.setAttribute('aria-pressed', String(String(currentGrade) === String(g)));
       if (g !== '' && !all.some(v => v.grade === g)) b.classList.add('noVideos');
@@ -625,13 +734,12 @@
         .catch(err => { console.error('tracks:', err.message || err); });
       if (all.length) {
         const newest = new Date(all[0].modified * 1000);
-        foot.textContent = 'Latest video: ' + newest.toLocaleDateString() +
-          ' · made with the class chat, image and voice models';
+        foot.textContent = t('latest', { d: newest.toLocaleDateString() });
       }
     })
     .catch(err => {
-      countEl.textContent = 'Could not load the list';
+      countEl.textContent = t('loadFail');
       emptyEl.hidden = false;
-      emptyEl.textContent = String(err.message || err) + ' — run python3 make_gallery.py and reload.';
+      emptyEl.textContent = String(err.message || err) + t('loadHint');
     });
 })();
