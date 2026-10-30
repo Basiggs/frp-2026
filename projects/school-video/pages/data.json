@@ -1,6 +1,150 @@
 {
  "videos": [
   {
+   "file": "newtons-second-law-pdf-ru.mp4",
+   "poster": "posters/newtons-second-law-pdf-ru.jpg",
+   "title": "Второй закон Ньютона",
+   "lang": "ru",
+   "seconds": 94.2,
+   "width": 1920,
+   "height": 1080,
+   "scenes": 6,
+   "grade": 8,
+   "course": "",
+   "quiz": [
+    {
+     "q": "Какая формула выражает второй закон Ньютона?",
+     "options": [
+      "F = m · a",
+      "a = m · F",
+      "F = a / m",
+      "m = F · a"
+     ],
+     "answer": 0,
+     "why": "В видео сказано: F равно m умножить на a."
+    },
+    {
+     "q": "Чему равен 1 ньютон?",
+     "options": [
+      "1 кг·м/с²",
+      "1 кг/м·с²",
+      "1 кг·м²/с",
+      "1 кг·с/м"
+     ],
+     "answer": 0,
+     "why": "1 Н — это сила, сообщающая 1 кг ускорение 1 м/с², то есть 1 кг·м/с²."
+    },
+    {
+     "q": "Тележку массой 15 кг толкают с силой 30 Н. Каково её ускорение?",
+     "options": [
+      "2 м/с²",
+      "4 м/с²",
+      "0,5 м/с²",
+      "15 м/с²"
+     ],
+     "answer": 0,
+     "why": "a = F / m = 30 Н / 15 кг = 2 м/с²."
+    }
+   ],
+   "chapters": [
+    {
+     "t": 0.0,
+     "title": "Пустая тележка разгоняется быстро, а полная…"
+    },
+    {
+     "t": 17.38,
+     "title": "F = m · a"
+    },
+    {
+     "t": 32.34,
+     "title": "1 Н = 1 кг·м/с²"
+    },
+    {
+     "t": 46.51,
+     "title": "Тележку массой 15 кг толкают с силой 30 Н…"
+    },
+    {
+     "t": 58.59,
+     "title": "Автомобиль массой 1200 кг разгоняется с…"
+    },
+    {
+     "t": 73.24,
+     "title": "Ящик 10 кг толкают с силой 50 Н, а трение…"
+    }
+   ],
+   "modified": 1793263557
+  },
+  {
+   "file": "calculus-ab-pdf-en.mp4",
+   "poster": "posters/calculus-ab-pdf-en.jpg",
+   "title": "Three Tests Before Demo Day",
+   "lang": "en",
+   "seconds": 76.3,
+   "width": 1920,
+   "height": 1080,
+   "scenes": 5,
+   "grade": 12,
+   "course": "",
+   "quiz": [
+    {
+     "q": "How many checked scripts were stopped by the AI check?",
+     "options": [
+      "3 of 23",
+      "9 of 23",
+      "12 of 23",
+      "23 of 23"
+     ],
+     "answer": 1,
+     "why": "The script says nine of twenty-three checked scripts were stopped."
+    },
+    {
+     "q": "How many videos are in the gallery, and what is their total size?",
+     "options": [
+      "12 videos, 183 MB",
+      "12 videos, 200 MB",
+      "23 videos, 183 MB",
+      "10 videos, 183 MB"
+     ],
+     "answer": 0,
+     "why": "The gallery has twelve videos at one hundred eighty-three megabytes, under the two hundred megabyte limit."
+    },
+    {
+     "q": "In the second test, how many scripts are correct ones?",
+     "options": [
+      "3",
+      "5",
+      "6",
+      "10"
+     ],
+     "answer": 1,
+     "why": "The test uses ten scripts: five with one planted mistake and five correct ones."
+    }
+   ],
+   "chapters": [
+    {
+     "t": 0.0,
+     "title": "Your app has seventy-two videos…"
+    },
+    {
+     "t": 17.23,
+     "title": "But nine of twenty-three checked scripts…"
+    },
+    {
+     "t": 32.39,
+     "title": "First, publish the gallery: twelve videos…"
+    },
+    {
+     "t": 48.79,
+     "title": "Second, test the AI check with ten scripts…"
+    },
+    {
+     "t": 62.35,
+     "title": "Third, tick the six Newton facts in the…"
+    }
+   ],
+   "modified": 1793262832
+  },
+  {
    "file": "электролиз-ru.mp4",
    "poster": "posters/электролиз-ru.jpg",
    "title": "Электролиз: ток разлагает вещество",
@@ -417,80 +561,6 @@
    "modified": 1793103681
   },
   {
-   "file": "второй-закон-ньютона-pdf-ru.mp4",
-   "poster": "posters/второй-закон-ньютона-pdf-ru.jpg",
-   "title": "Второй закон Ньютона",
-   "lang": "ru",
-   "seconds": 72.9,
-   "width": 1920,
-   "height": 1080,
-   "scenes": 6,
-   "grade": 9,
-   "course": "",
-   "quiz": [
-    {
-     "q": "Какая формула выражает второй закон Ньютона?",
-     "options": [
-      "F = m · a",
-      "a = m · F",
-      "F = m / a",
-      "m = a / F"
-     ],
-     "answer": 0,
-     "why": "В видео формула второго закона записана как F = m · a."
-    },
-    {
-     "q": "Тележку массой 15 кг толкают с равнодействующей силой 30 Н. Какое у неё ускорение?",
-     "options": [
-      "2 м/с²",
-      "15 м/с²",
-      "30 м/с²",
-      "450 м/с²"
-     ],
-     "answer": 0,
-     "why": "По формуле a = F / m = 30 Н / 15 кг = 2 м/с²."
-    },
-    {
-     "q": "Какая равнодействующая сила действует на автомобиль массой 1200 кг при ускорении 2 м/с²?",
-     "options": [
-      "2400 Н",
-      "600 Н",
-      "1202 Н",
-      "1200 Н"
-     ],
-     "answer": 0,
-     "why": "По формуле F = m · a = 1200 кг · 2 м/с² = 2400 Н."
-    }
-   ],
-   "chapters": [
-    {
-     "t": 0.0,
-     "title": "Исаак Ньютон, 1687 год"
-    },
-    {
-     "t": 19.98,
-     "title": "F = m · a"
-    },
-    {
-     "t": 31.71,
-     "title": "1 Н = 1 кг·м/с²"
-    },
-    {
-     "t": 41.34,
-     "title": "Тележку массой 15 кг толкают с…"
-    },
-    {
-     "t": 50.79,
-     "title": "Автомобиль массой 1200 кг разгоняется с…"
-    },
-    {
-     "t": 64.77,
-     "title": "При одной и той же силе вдвое большая масса…"
-    }
-   ],
-   "modified": 1793103566
-  },
-  {
    "file": "орташа-жылдамдық-kk.mp4",
    "poster": "posters/орташа-жылдамдық-kk.jpg",
    "title": "Орташа жылдамдық",
@@ -753,76 +823,6 @@
     }
    ],
    "modified": 1793100057
-  },
-  {
-   "file": "ancient-rome-en.mp4",
-   "poster": "posters/ancient-rome-en.jpg",
-   "title": "Ancient Rome",
-   "lang": "en",
-   "seconds": 64.6,
-   "width": 1920,
-   "height": 1080,
-   "scenes": 5,
-   "grade": 5,
-   "course": "history",
-   "quiz": [
-    {
-     "q": "In what year was Rome founded?",
-     "options": [
-      "753 BCE",
-      "117 CE",
-      "80,000 BCE",
-      "5,000 BCE"
-     ],
-     "answer": 0,
-     "why": "The script states Ancient Rome began in 753 BCE."
-    },
-    {
-     "q": "About how many kilometers of Roman roads stretched across the empire?",
-     "options": [
-      "5,000 km",
-      "80,000 km",
-      "117 km",
-      "753 km"
-     ],
-     "answer": 1,
-     "why": "The script says Roman roads stretched about 80,000 kilometers."
-    },
-    {
-     "q": "About how many soldiers were in a Roman legion?",
-     "options": [
-      "117",
-      "5,000",
-      "80,000",
-      "753"
-     ],
-     "answer": 1,
-     "why": "The script states a Roman legion had about 5,000 soldiers."
-    }
-   ],
-   "chapters": [
-    {
-     "t": 0.0,
-     "title": "753 BCE: Rome founded"
-    },
-    {
-     "t": 12.88,
-     "title": "80,000 km of roads"
-    },
-    {
-     "t": 26.84,
-     "title": "Under Trajan in 117 CE the empire covered…"
-    },
-    {
-     "t": 39.6,
-     "title": "A Roman legion had about 5,000 soldiers and…"
-    },
-    {
-     "t": 52.68,
-     "title": "Your turn: draw one straight Roman road on a…"
-    }
-   ],
-   "modified": 1793099475
   }
  ]
 }
