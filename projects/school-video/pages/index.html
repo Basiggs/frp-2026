@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>School topics as videos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="headtop">
+      <div>
+        <h1>School topics as videos</h1>
+        <div class="sub" id="count">Loading…</div>
+      </div>
+      <div class="headright">
+        <nav class="nav" aria-label="Pages">
+          <a href="index.html" class="on" aria-current="page">Videos</a>
+        </nav>
+        <div class="langmenu">
+          <button class="langbtn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-label="Language">
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18"/></svg>
+            <span class="langlabel">All</span>
+            <span class="caret" aria-hidden="true"></span>
+          </button>
+          <div class="langlist" id="langList" role="group" aria-label="Filter by language">
+            <button class="chip" data-lang="" aria-pressed="true">All</button>
+            <button class="chip" data-lang="ru" aria-pressed="false">Русский</button>
+            <button class="chip" data-lang="en" aria-pressed="false">English</button>
+            <button class="chip" data-lang="kk" aria-pressed="false">Қазақша</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="searchrow headsearch">
+      <label class="box">
+        <span class="icon">⌕</span>
+        <input type="text" id="search" placeholder="Find a topic: density, fractions, water cycle…"
+               aria-label="Find a topic" autocomplete="off">
+        <button type="button" class="clear" id="clearSearch" aria-label="Clear search" hidden>×</button>
+        <kbd>/</kbd>
+      </label>
+    </div>
+  </header>
+
+  <section id="now" aria-live="polite">
+    <div class="playerbox">
+      <video id="player" controls playsinline preload="metadata"></video>
+      <div class="midq" id="midq" hidden aria-live="assertive"></div>
+    </div>
+    <div class="nowbar">
+      <div>
+        <h2 id="nowTitle"></h2>
+        <div class="meta" id="nowMeta"></div>
+      </div>
+      <div class="spacer"></div>
+      <a class="ghost" id="download" download>Download</a>
+      <button class="ghost" id="testBtn" hidden>Test</button>
+      <button class="ghost" id="close">Close</button>
+    </div>
+    <div class="chapters" id="chapters" hidden aria-label="Video chapters">
+      <div class="chapstrip" id="chapstrip"><div class="chapprog" id="chapprog"></div></div>
+      <div class="chaplist" id="chaplist"></div>
+    </div>
+    <div class="quiz" id="quiz" hidden aria-live="polite"></div>
+    <div class="upnext" id="upnext" hidden aria-live="polite"></div>
+  </section>
+
+  <section class="tracks" id="tracks" hidden aria-label="Learning tracks">
+    <div class="trackshead">
+      <h2>Learning tracks</h2>
+      <span>Step-by-step series</span>
+    </div>
+    <div class="trackrow" id="trackrow"></div>
+  </section>
+
+  <div class="trackbar" id="trackbar" hidden>
+    <span id="trackbarText"></span>
+    <span class="spacer"></span>
+    <button class="ghost" id="trackClear" type="button">Clear track</button>
+  </div>
+
+  <div class="filterbar" id="filterbar">
+    <div class="searchrow gradebar">
+      <span class="gradehint">Subject</span>
+      <div class="chips" id="courses" role="group" aria-label="Filter by subject"></div>
+    </div>
+
+    <div class="searchrow gradebar">
+      <span class="gradehint">Grade</span>
+      <div class="chips" id="grades" role="group" aria-label="Filter by grade"></div>
+      <span class="gradehint" id="gradeHint"></span>
+    </div>
+  </div>
+
+  <div class="ideas" id="ideas" hidden>
+    <h3 id="ideaTitle"></h3>
+    <div class="chips" id="ideachips"></div>
+  </div>
+
+  <main class="grid" id="grid"></main>
+  <div class="empty" id="empty" hidden>No videos in this language yet.</div>
+  <footer id="foot"></footer>
+</div>
+
+<script src="common.js"></script>
+<script src="gallery.js"></script>
+
+</body>
+</html>

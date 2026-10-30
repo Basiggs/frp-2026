@@ -1,0 +1,828 @@
+{
+ "videos": [
+  {
+   "file": "электролиз-ru.mp4",
+   "poster": "posters/электролиз-ru.jpg",
+   "title": "Электролиз: ток разлагает вещество",
+   "lang": "ru",
+   "seconds": 66.2,
+   "width": 1920,
+   "height": 1080,
+   "scenes": 5,
+   "grade": 11,
+   "course": "chemistry",
+   "quiz": [
+    {
+     "q": "Что такое электролиз по сценарию видео?",
+     "options": [
+      "Разложение вещества электрическим током",
+      "Нагревание раствора электрическим током",
+      "Смешивание двух растворов",
+      "Испарение воды под действием тока"
+     ],
+     "answer": 0,
+     "why": "В видео сказано: электролиз — это разложение вещества электрическим током."
+    },
+    {
+     "q": "Сколько молей кислорода получается при электролизе двух молей воды?",
+     "options": [
+      "Один моль",
+      "Два моля",
+      "Три моля",
+      "Полмоля"
+     ],
+     "answer": 0,
+     "why": "По реакции 2H₂O → 2H₂ + O₂ из двух молей воды выходит один моль кислорода."
+    },
+    {
+     "q": "Какой заряд пройдёт через раствор, если ток 1 А идёт 10 секунд?",
+     "options": [
+      "10 Кл",
+      "1 Кл",
+      "100 Кл",
+      "0,1 Кл"
+     ],
+     "answer": 0,
+     "why": "Заряд равен q = I · t = 1 А · 10 с = 10 Кл."
+    }
+   ],
+   "chapters": [
+    {
+     "t": 0.0,
+     "title": "Электролиз — это разложение вещества…"
+    },
+    {
+     "t": 14.64,
+     "title": "2H₂O → 2H₂ + O₂"
+    },
+    {
+     "t": 28.76,
+     "title": "M = k · q, q = I · t"
+    },
+    {
+     "t": 42.84,
+     "title": "Q = I · t"
+    },
+    {
+     "t": 55.3,
+     "title": "Попробуй сам: если ток один ампер идёт…"
+    }
+   ],
+   "modified": 1793107349
+  },
+  {
+   "file": "что-такое-звук-ru.mp4",
+   "poster": "posters/что-такое-звук-ru.jpg",
+   "title": "Что такое звук",
+   "lang": "ru",
+   "seconds": 69.9,
+   "width": 1920,
+   "height": 1080,
+   "scenes": 5,
+   "grade": null,
+   "course": "",
+   "quiz": [
+    {
+     "q": "Что происходит с частицами среды при распространении звука?",
+     "options": [
+      "Они колеблются и передают колебания друг другу",
+      "Они движутся вместе со звуком к уху",
+      "Они исчезают в среде",
+      "Они двигаются только вверх и вниз без передачи дальше"
+     ],
+     "answer": 0,
+     "why": "Звук — это продольная волна: колеблющиеся частицы среды передают колебания друг другу."
+    },
+    {
+     "q": "Сколько колебаний в секунду совершает камертон с частотой 440 герц?",
+     "options": [
+      "340",
+      "440",
+      "2000",
+      "6"
+     ],
+     "answer": 1,
+     "why": "Частота 440 Гц означает 440 колебаний в секунду."
+    },
+    {
+     "q": "Гроза находится в 2 км. Примерно через сколько секунд дойдёт звук грома, если скорость звука 340 м/с?",
+     "options": [
+      "Около 340 секунд",
+      "Около 2 секунд",
+      "Около 6 секунд",
+      "Около 440 секунд"
+     ],
+     "answer": 2,
+     "why": "t = s / v = 2000 / 340 ≈ 6 с."
+    }
+   ],
+   "chapters": [
+    {
+     "t": 0.0,
+     "title": "Звук — это продольная волна: колеблющиеся…"
+    },
+    {
+     "t": 12.56,
+     "title": "Источник звука колеблется. Камертон с…"
+    },
+    {
+     "t": 29.29,
+     "title": "Скорость звука в воздухе примерно 340 метров…"
+    },
+    {
+     "t": 42.4,
+     "title": "S = v · t"
+    },
+    {
+     "t": 54.21,
+     "title": "Проверь сам: если гроза в двух километрах…"
+    }
+   ],
+   "modified": 1793107250
+  },
+  {
+   "file": "части-речи-ru.mp4",
+   "poster": "posters/части-речи-ru.jpg",
+   "title": "Части речи",
+   "lang": "ru",
+   "seconds": 70.5,
+   "width": 1920,
+   "height": 1080,
+   "scenes": 5,
+   "grade": 5,
+   "course": "languages",
+   "quiz": [
+    {
+     "q": "На какой вопрос отвечает имя существительное?",
+     "options": [
+      "кто? что?",
+      "что делать?",
+      "какой?",
+      "где?"
+     ],
+     "answer": 0,
+     "why": "Существительное обозначает предмет и отвечает на вопросы «кто?» или «что?»."
+    },
+    {
+     "q": "К какой части речи относится слово «бежать»?",
+     "options": [
+      "существительное",
+      "прилагательное",
+      "глагол",
+      "наречие"
+     ],
+     "answer": 2,
+     "why": "Слово «бежать» обозначает действие и отвечает на вопрос «что делать?», значит это глагол."
+    },
+    {
+     "q": "На какой вопрос отвечает имя прилагательное?",
+     "options": [
+      "кто?",
+      "что делать?",
+      "что?",
+      "какой?"
+     ],
+     "answer": 3,
+     "why": "Прилагательное обозначает признак предмета и отвечает на вопрос «какой?»."
+    }
+   ],
+   "chapters": [
+    {
+     "t": 0.0,
+     "title": "Части речи"
+    },
+    {
+     "t": 13.29,
+     "title": "Кто? что? → стол"
+    },
+    {
+     "t": 28.32,
+     "title": "Что делать? → бежать"
+    },
+    {
+     "t": 39.98,
+     "title": "Какой? → красный"
+    },
+    {
+     "t": 52.47,
+     "title": "Чтобы определить часть речи, задай к слову…"
+    }
+   ],
+   "modified": 1793107144
+  },
+  {
+   "file": "теорема-пифагора-ru.mp4",
+   "poster": "posters/теорема-пифагора-ru.jpg",
+   "title": "Теорема Пифагора",
+   "lang": "ru",
+   "seconds": 61.7,
+   "width": 1920,
+   "height": 1080,
+   "scenes": 4,
+   "grade": 8,
+   "course": "math",
+   "quiz": [
+    {
+     "q": "Что утверждает теорема Пифагора?",
+     "options": [
+      "Сумма квадратов катетов равна квадрату гипотенузы",
+      "Сумма катетов равна гипотенузе",
+      "Квадрат катета равен сумме квадратов гипотенузы и другого катета",
+      "Гипотенуза равна разности катетов"
+     ],
+     "answer": 0,
+     "why": "В видео сказано: сумма квадратов катетов равна квадрату гипотенузы."
+    },
+    {
+     "q": "Катеты равны 3 и 4. Чему равна гипотенуза?",
+     "options": [
+      "7",
+      "5",
+      "25",
+      "9"
+     ],
+     "answer": 1,
+     "why": "3² + 4² = 9 + 16 = 25, значит c = √25 = 5."
+    },
+    {
+     "q": "Если катеты равны 6 и 8, чему равна гипотенуза?",
+     "options": [
+      "14",
+      "48",
+      "10",
+      "100"
+     ],
+     "answer": 2,
+     "why": "6² + 8² = 36 + 64 = 100, значит c = √100 = 10."
+    }
+   ],
+   "chapters": [
+    {
+     "t": 0.0,
+     "title": "A² + b² = c²"
+    },
+    {
+     "t": 15.35,
+     "title": "Возьмём катеты три и четыре. Их квадраты …"
+    },
+    {
+     "t": 31.94,
+     "title": "Вот и сама теорема: сумма квадратов катетов…"
+    },
+    {
+     "t": 46.73,
+     "title": "А теперь проверь сам: если катеты равны…"
+    }
+   ],
+   "modified": 1793106546
+  },
+  {
+   "file": "древний-рим-ru.mp4",
+   "poster": "posters/древний-рим-ru.jpg",
+   "title": "Древний Рим",
+   "lang": "ru",
+   "seconds": 62.4,
+   "width": 1920,
+   "height": 1080,
+   "scenes": 5,
+   "grade": 5,
+   "course": "history",
+   "quiz": [
+    {
+     "q": "В каком году, согласно видео, был основан Рим?",
+     "options": [
+      "753 г. до н.э.",
+      "91 г. до н.э.",
+      "60 г. до н.э.",
+      "80 г. до н.э."
+     ],
+     "answer": 0,
+     "why": "В видео указано, что Рим основан в 753 г. до н.э."
+    },
+    {
+     "q": "Какова была длина самого длинного акведука, Аква Марция?",
+     "options": [
+      "80 000 км",
+      "91 км",
+      "60 км",
+      "753 км"
+     ],
+     "answer": 1,
+     "why": "В видео сказано, что Аква Марция имела длину около 91 километра."
+    },
+    {
+     "q": "Сколько километров дорог построили римляне?",
+     "options": [
+      "Более 60 000 км",
+      "Более 91 000 км",
+      "Более 80 000 км",
+      "Более 753 км"
+     ],
+     "answer": 2,
+     "why": "В видео упоминается, что римляне построили более 80 000 километров дорог."
+    }
+   ],
+   "chapters": [
+    {
+     "t": 0.0,
+     "title": "Древний Рим — одна из величайших…"
+    },
+    {
+     "t": 11.29,
+     "title": "60 000 000 человек"
+    },
+    {
+     "t": 23.78,
+     "title": "80 000 км дорог"
+    },
+    {
+     "t": 37.11,
+     "title": "91 км — длина акведука"
+    },
+    {
+     "t": 50.13,
+     "title": "Римское право легло в основу многих…"
+    }
+   ],
+   "modified": 1793103990
+  },
+  {
+   "file": "генетика-законы-менделя-ru.mp4",
+   "poster": "posters/генетика-законы-менделя-ru.jpg",
+   "title": "Законы Менделя",
+   "lang": "ru",
+   "seconds": 77.0,
+   "width": 1920,
+   "height": 1080,
+   "scenes": 5,
+   "grade": 11,
+   "course": "biology",
+   "quiz": [
+    {
+     "q": "Сколько копий гена для каждого признака получает ребёнок?",
+     "options": [
+      "Одну — только от отца",
+      "Одну — только от матери",
+      "Две — по одной от каждого родителя",
+      "Четыре — по две от каждого родителя"
+     ],
+     "answer": 2,
+     "why": "В скрипте сказано: каждый ребёнок получает по одной копии гена от отца и от матери."
+    },
+    {
+     "q": "Какое расщепление по признаку даёт скрещивание Aa × Aa во втором поколении?",
+     "options": [
+      "1 доминантный : 1 рецессивный",
+      "3 доминантных : 1 рецессивный",
+      "1 доминантный : 3 рецессивных",
+      "Все потомки одинаковы"
+     ],
+     "answer": 1,
+     "why": "Второй закон Менделя даёт отношение три к одному: три красных и одно белое."
+    },
+    {
+     "q": "Какое соотношение генотипов AA : Aa : aa показывает решётка Пеннета?",
+     "options": [
+      "1 : 1 : 1",
+      "1 : 2 : 1",
+      "3 : 1 : 0",
+      "0 : 2 : 2"
+     ],
+     "answer": 1,
+     "why": "В скрипте указано: получается одна AA, две Aa и одна aa, то есть 1 : 2 : 1."
+    }
+   ],
+   "chapters": [
+    {
+     "t": 0.0,
+     "title": "Генетика изучает наследственность. Признаки…"
+    },
+    {
+     "t": 16.05,
+     "title": "Первый закон Менделя: при скрещивании чистых…"
+    },
+    {
+     "t": 32.22,
+     "title": "Второй закон: во втором поколении…"
+    },
+    {
+     "t": 46.57,
+     "title": "Решётка Пеннета показывает все варианты…"
+    },
+    {
+     "t": 62.84,
+     "title": "Запомни главное: одна копия гена достаётся…"
+    }
+   ],
+   "modified": 1793103681
+  },
+  {
+   "file": "второй-закон-ньютона-pdf-ru.mp4",
+   "poster": "posters/второй-закон-ньютона-pdf-ru.jpg",
+   "title": "Второй закон Ньютона",
+   "lang": "ru",
+   "seconds": 72.9,
+   "width": 1920,
+   "height": 1080,
+   "scenes": 6,
+   "grade": 9,
+   "course": "",
+   "quiz": [
+    {
+     "q": "Какая формула выражает второй закон Ньютона?",
+     "options": [
+      "F = m · a",
+      "a = m · F",
+      "F = m / a",
+      "m = a / F"
+     ],
+     "answer": 0,
+     "why": "В видео формула второго закона записана как F = m · a."
+    },
+    {
+     "q": "Тележку массой 15 кг толкают с равнодействующей силой 30 Н. Какое у неё ускорение?",
+     "options": [
+      "2 м/с²",
+      "15 м/с²",
+      "30 м/с²",
+      "450 м/с²"
+     ],
+     "answer": 0,
+     "why": "По формуле a = F / m = 30 Н / 15 кг = 2 м/с²."
+    },
+    {
+     "q": "Какая равнодействующая сила действует на автомобиль массой 1200 кг при ускорении 2 м/с²?",
+     "options": [
+      "2400 Н",
+      "600 Н",
+      "1202 Н",
+      "1200 Н"
+     ],
+     "answer": 0,
+     "why": "По формуле F = m · a = 1200 кг · 2 м/с² = 2400 Н."
+    }
+   ],
+   "chapters": [
+    {
+     "t": 0.0,
+     "title": "Исаак Ньютон, 1687 год"
+    },
+    {
+     "t": 19.98,
+     "title": "F = m · a"
+    },
+    {
+     "t": 31.71,
+     "title": "1 Н = 1 кг·м/с²"
+    },
+    {
+     "t": 41.34,
+     "title": "Тележку массой 15 кг толкают с…"
+    },
+    {
+     "t": 50.79,
+     "title": "Автомобиль массой 1200 кг разгоняется с…"
+    },
+    {
+     "t": 64.77,
+     "title": "При одной и той же силе вдвое большая масса…"
+    }
+   ],
+   "modified": 1793103566
+  },
+  {
+   "file": "орташа-жылдамдық-kk.mp4",
+   "poster": "posters/орташа-жылдамдық-kk.jpg",
+   "title": "Орташа жылдамдық",
+   "lang": "kk",
+   "seconds": 48.9,
+   "width": 1920,
+   "height": 1080,
+   "scenes": 4,
+   "grade": 7,
+   "course": "physics",
+   "quiz": [
+    {
+     "q": "Орташа жылдамдық қалай анықталады?",
+     "options": [
+      "Барлық жолды сол жолға кеткен уақытқа бөлу арқылы",
+      "Уақытты жолға көбейту арқылы",
+      "Жолды уақытқа көбейту арқылы",
+      "Уақытты жолға бөлу арқылы"
+     ],
+     "answer": 0,
+     "why": "Скриптте v = s / t формуласы берілген."
+    },
+    {
+     "q": "Велосипедші 24 км жолды 2 сағатта жүрсе, оның орташа жылдамдығы қанша?",
+     "options": [
+      "12 км/сағ",
+      "24 км/сағ",
+      "48 км/сағ",
+      "6 км/сағ"
+     ],
+     "answer": 0,
+     "why": "24 / 2 = 12 км/сағ."
+    },
+    {
+     "q": "Автобус 120 км-ді 2 сағатта жүрсе, оның орташа жылдамдығы қанша болады?",
+     "options": [
+      "60 км/сағ",
+      "120 км/сағ",
+      "240 км/сағ",
+      "40 км/сағ"
+     ],
+     "answer": 0,
+     "why": "120 / 2 = 60 км/сағ."
+    }
+   ],
+   "chapters": [
+    {
+     "t": 0.0,
+     "title": "V = s / t"
+    },
+    {
+     "t": 13.28,
+     "title": "Мысалы, велосипедші екі сағатта жиырма төрт…"
+    },
+    {
+     "t": 26.32,
+     "title": "Сондықтан формула қарапайым: орташа…"
+    },
+    {
+     "t": 36.56,
+     "title": "Енді өзің қорытындылап көр: автобус бір жүз…"
+    }
+   ],
+   "modified": 1793102470
+  },
+  {
+   "file": "pythagorean-theorem-en.mp4",
+   "poster": "posters/pythagorean-theorem-en.jpg",
+   "title": "Pythagoras Made Simple",
+   "lang": "en",
+   "seconds": 58.3,
+   "width": 1920,
+   "height": 1080,
+   "scenes": 4,
+   "grade": 8,
+   "course": "math",
+   "quiz": [
+    {
+     "q": "In a right triangle, what is the longest side called?",
+     "options": [
+      "The hypotenuse",
+      "The leg",
+      "The square root",
+      "The right angle"
+     ],
+     "answer": 0,
+     "why": "The script says the longest side, across from the right angle, is called the hypotenuse."
+    },
+    {
+     "q": "If the two shorter sides are 3 and 4, what is the hypotenuse?",
+     "options": [
+      "5",
+      "7",
+      "25",
+      "9"
+     ],
+     "answer": 0,
+     "why": "The script shows 9 + 16 = 25, so the hypotenuse is 5."
+    },
+    {
+     "q": "For a right triangle with legs 6 and 8, what is the hypotenuse?",
+     "options": [
+      "10",
+      "14",
+      "48",
+      "100"
+     ],
+     "answer": 0,
+     "why": "The script shows 36 + 64 = 100, and the square root of 100 is 10."
+    }
+   ],
+   "chapters": [
+    {
+     "t": 0.0,
+     "title": "A² + b² = c²"
+    },
+    {
+     "t": 15.39,
+     "title": "Suppose the short sides are three and four…"
+    },
+    {
+     "t": 31.48,
+     "title": "A² + b² = c²"
+    },
+    {
+     "t": 45.08,
+     "title": "Now your turn. A right triangle has legs six…"
+    }
+   ],
+   "modified": 1793101388
+  },
+  {
+   "file": "present-simple-en.mp4",
+   "poster": "posters/present-simple-en.jpg",
+   "title": "Present Simple Explained",
+   "lang": "en",
+   "seconds": 51.8,
+   "width": 1920,
+   "height": 1080,
+   "scenes": 4,
+   "grade": 5,
+   "course": "languages",
+   "quiz": [
+    {
+     "q": "What does the present simple describe?",
+     "options": [
+      "Habits, routines and facts that are always true",
+      "Only things happening right now",
+      "Only past events",
+      "Only future plans"
+     ],
+     "answer": 0,
+     "why": "The video says the present simple describes habits, routines and facts that are always true."
+    },
+    {
+     "q": "Which sentence is correct with he, she or it?",
+     "options": [
+      "She read books before bed.",
+      "She reads books before bed.",
+      "She reading books before bed.",
+      "She is read books before bed."
+     ],
+     "answer": 1,
+     "why": "With he, she and it, you add an s to the verb."
+    },
+    {
+     "q": "At what temperature does water boil, according to the video?",
+     "options": [
+      "50 degrees",
+      "100 degrees",
+      "150 degrees",
+      "200 degrees"
+     ],
+     "answer": 1,
+     "why": "The video says water boils at one hundred degrees."
+    }
+   ],
+   "chapters": [
+    {
+     "t": 0.0,
+     "title": "The present simple describes things that…"
+    },
+    {
+     "t": 14.28,
+     "title": "Look at these examples. I play football…"
+    },
+    {
+     "t": 28.32,
+     "title": "With I, you, we and they, just use the base…"
+    },
+    {
+     "t": 40.08,
+     "title": "Now it is your turn. Say one thing you do…"
+    }
+   ],
+   "modified": 1793101117
+  },
+  {
+   "file": "density-en.mp4",
+   "poster": "posters/density-en.jpg",
+   "title": "Density: How Much Stuff in How Much Space",
+   "lang": "en",
+   "seconds": 46.3,
+   "width": 1920,
+   "height": 1080,
+   "scenes": 4,
+   "grade": 7,
+   "course": "chemistry",
+   "quiz": [
+    {
+     "q": "What does density tell us?",
+     "options": [
+      "How much mass is packed into a given space",
+      "How heavy an object is regardless of size",
+      "How much volume an object takes up",
+      "How long an object is"
+     ],
+     "answer": 0,
+     "why": "The video defines density as mass packed into volume."
+    },
+    {
+     "q": "A metal cube has a mass of 8 g and a volume of 2 cm³. What is its density?",
+     "options": [
+      "2 g/cm³",
+      "4 g/cm³",
+      "8 g/cm³",
+      "16 g/cm³"
+     ],
+     "answer": 1,
+     "why": "8 g divided by 2 cm³ equals 4 g/cm³."
+    },
+    {
+     "q": "A block has a mass of 30 g and a volume of 10 cm³. What is its density?",
+     "options": [
+      "3 g/cm³",
+      "10 g/cm³",
+      "30 g/cm³",
+      "40 g/cm³"
+     ],
+     "answer": 0,
+     "why": "Using d = m / V, 30 g divided by 10 cm³ equals 3 g/cm³."
+    }
+   ],
+   "chapters": [
+    {
+     "t": 0.0,
+     "title": "Density tells us how much mass is packed…"
+    },
+    {
+     "t": 12.2,
+     "title": "8 g / 2 cm³ = 4 g/cm³"
+    },
+    {
+     "t": 25.0,
+     "title": "D = m / V"
+    },
+    {
+     "t": 36.24,
+     "title": "Try it yourself: a block has a mass of…"
+    }
+   ],
+   "modified": 1793100057
+  },
+  {
+   "file": "ancient-rome-en.mp4",
+   "poster": "posters/ancient-rome-en.jpg",
+   "title": "Ancient Rome",
+   "lang": "en",
+   "seconds": 64.6,
+   "width": 1920,
+   "height": 1080,
+   "scenes": 5,
+   "grade": 5,
+   "course": "history",
+   "quiz": [
+    {
+     "q": "In what year was Rome founded?",
+     "options": [
+      "753 BCE",
+      "117 CE",
+      "80,000 BCE",
+      "5,000 BCE"
+     ],
+     "answer": 0,
+     "why": "The script states Ancient Rome began in 753 BCE."
+    },
+    {
+     "q": "About how many kilometers of Roman roads stretched across the empire?",
+     "options": [
+      "5,000 km",
+      "80,000 km",
+      "117 km",
+      "753 km"
+     ],
+     "answer": 1,
+     "why": "The script says Roman roads stretched about 80,000 kilometers."
+    },
+    {
+     "q": "About how many soldiers were in a Roman legion?",
+     "options": [
+      "117",
+      "5,000",
+      "80,000",
+      "753"
+     ],
+     "answer": 1,
+     "why": "The script states a Roman legion had about 5,000 soldiers."
+    }
+   ],
+   "chapters": [
+    {
+     "t": 0.0,
+     "title": "753 BCE: Rome founded"
+    },
+    {
+     "t": 12.88,
+     "title": "80,000 km of roads"
+    },
+    {
+     "t": 26.84,
+     "title": "Under Trajan in 117 CE the empire covered…"
+    },
+    {
+     "t": 39.6,
+     "title": "A Roman legion had about 5,000 soldiers and…"
+    },
+    {
+     "t": 52.68,
+     "title": "Your turn: draw one straight Roman road on a…"
+    }
+   ],
+   "modified": 1793099475
+  }
+ ]
+}
